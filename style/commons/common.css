@@ -156,7 +156,7 @@ html, body {overflow-x: hidden;}
 .searchHistory ul>li {display:inline-block;padding:4px 12px;margin-bottom:8px;border:1px solid #cecece;border-radius: 20px;background:#f8f8f8;}
 .searchHistory ul>li:not(:last-child) {margin-right:6px}
 .searchHistory ul>li>div {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
-.searchHistory ul>li .txt {margin-right:4px;font-size:1rem;color:#5d5d5d;font-family: NotoSans,sans-serif;letter-spacing: -0.05em;}
+.searchHistory ul>li .txt {margin-right:4px;font-size:1rem;color:#5d5d5d;font-family: Pretendard,sans-serif;letter-spacing: -0.05em;}
 
 .keywordList {margin-top:56px}
 .keywordList .titArea {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-bottom:12px}
@@ -165,7 +165,7 @@ html, body {overflow-x: hidden;}
 .keywordList .list {border-bottom:1px solid #ebebeb}
 .keywordList .list:first-child {border-top:1px solid #ebebeb}
 .keywordList .list a {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding:7px 20px 7px 12px}
-.keywordList .list .num {display:inline-block;width:40px;color:#2e2e2e;font-size:1rem;font-family:MetroB,sans-serif;}
+.keywordList .list .num {display:inline-block;width:40px;color:#2e2e2e;font-size:1rem;font-family:PretendardB,sans-serif;}
 .keywordList .list:nth-of-type(1) .num, .keywordList .list:nth-of-type(2) .num, .keywordList .list:nth-of-type(3) .num, .keywordList .list:nth-of-type(4) .num {color:#ff7200;}
 .keywordList .list .keyword {display:inline-block;color:#595959;width:calc(100% - 80px);font-size:1.071rem;font-family: Pretendard,sans-serif;}
 .keywordList .list .info {width:40px;color:#0f0f0f;font-size:1.071rem;text-align: right;}
