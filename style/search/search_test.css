@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* 검색 상단 */
+.searchResultInfo {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin: 0 6px 8px 6px;}
+.searchResultInfo .total {color:#000;font-size: 1.142rem;font-weight: 700;font-family: Pretendard,sans-serif;}
+.searchResultInfo .total>span {color:#000;font-size: 1.142rem;font-family: Pretendard,sans-serif;font-weight: 700}
+
+/* 검색 컨텐츠 */
+.resultContent {padding: 20px 12px 12px 12px;background:#fff;border-radius: 15px;overflow: hidden;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
+.resultContent:not(:last-child) {margin-bottom: 12px;}
+.resultContent .resultTitle {position:relative;margin-bottom: 12px;}
+.resultContent .resultTitle .tit {color:#0f0f0f;font-family: Pretendard,sans-serif;font-size: 1.285rem;font-weight: 700}
+.resultContent .resultTitle strong {color: #767676;font-family: Pretendard,sans-serif;font-size: 1rem;}
+.resultContent .resultTitle .count {color: #767676;font-family: Pretendard,sans-serif;font-size: 1rem;}
+.resultContent .resultTitle .resultMore {display:block;position:absolute;top: 4px;right:0;width: 12px;height: 12px;background:url(../../images/search/moreBtn1.png) no-repeat center;background-size: 12px auto;text-indent: -9999px;}
+
+/* 원문 인덱스 */
+.viewIndexW {margin-top: 12px;}
+.viewIndexW>ul {font-size:0}
+.viewIndexW>ul>li {display:inline-block;margin-right: 8px;padding-left: 20px;color:#6b6b6b;font-size: 1rem;font-family: Pretendard,sans-serif;font-weight: 500}
+.viewIndexW>ul>li.viewIndex1 {background: url(../../images/search/viewType1.png) no-repeat left top;background-size: 16px auto;}
+.viewIndexW>ul>li.viewIndex2 {background: url(../../images/search/viewType2.png) no-repeat left top;background-size: 16px auto;}
+.viewIndexW>ul>li.viewIndex3 {background: url(../../images/search/viewType3.png) no-repeat left top;background-size: 16px auto;}
+
+/* 검색리스트 */
+.resultList {margin-top: 24px;}
+.resultList>ul>li:not(:last-child) {margin-bottom: 24px;}
+.resultList>ul>li .typeW {font-size:0;margin-bottom:4px}
+.resultList>ul>li .type {display:inline-block;color:#809fb8;font-family: Pretendard,sans-serif;font-weight: 500;font-size: 0.857rem;}
+.resultList>ul>li .type:not(:last-child) {margin-right: 8px;}
+.resultList>ul>li .tit {display:block;margin-bottom: 10px;color:#000;font-size: 1.214rem;font-family: Pretendard,sans-serif;font-weight: 500;line-height: 1;word-break: break-all;}
+.resultList>ul>li .tit .highlight {position:relative;color:#000;font-size: 1.214rem;font-family: Pretendard,sans-serif;font-weight: 500;z-index: 1;}
+.resultList>ul>li .tit .highlight::after {content:"";display:block;position:absolute;bottom: 2px;left:0;width: 100%;height: 9px;background:#fff09c;z-index: -1;}
+.resultList>ul>li .info {font-size:0;margin-bottom: 12px;}
+.resultList>ul>li .info>li {display:inline-block;position:relative;color:#828282;font-size: 1rem;word-break: break-all;font-family: Pretendard,sans-serif;}
+.resultList>ul>li .info a {color:#828282;font-size: 1rem;font-family: Pretendard,sans-serif;}
+.resultList>ul>li .info>li:not(:last-child) {padding-right: 8px;margin-right: 6px;}
+.resultList>ul>li .info>li:not(:last-child)::after {content:"";display:block;position:absolute;top: 2px;right:0;width:1px;height: 12px;background:#828282}
+
+.resultList>ul>li .btns>ul {font-size:0}
+.resultList>ul>li .btns>ul>li {display:inline-block;}
+.resultList>ul>li .btns>ul>li:not(:last-child) {margin-right:8px}
+.resultList>ul>li .btns>ul>li>a {display:block;padding: 6px 10px;color:#6b6b6b;border:1px solid #e5e5e5;font-size: 1rem;border-radius: 5px;font-family: Pretendard,sans-serif;font-weight: 500;}
+.resultList>ul>li .btns>ul>li>a.viewOrigin {padding: 6px 10px 6px 26px;}
+.resultList>ul>li .btns>ul>li>a.viewOrigin1 {background: url(../../images/search/viewType1.png) no-repeat left 6px top 6px;background-size: 16px auto;}
+.resultList>ul>li .btns>ul>li>a.viewOrigin2 {background:url(../../images/search/viewType2.png) no-repeat left 6px top 6px;background-size: 16px auto;}
+.resultList>ul>li .btns>ul>li>a.viewOrigin3 {background:url(../../images/search/viewType3.png) no-repeat left 6px top 6px;background-size: 16px auto;}

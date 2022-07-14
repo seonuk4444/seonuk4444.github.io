@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+:root {font-size:15px}
+
+@media screen and (max-width:1024px) {
+    :root {font-size:14px}
+}
+
+html, body {overflow-x: hidden;}
+
+/* 건너뛰기 */
+#divAccessibility{position:absolute;left:0;top:0;z-index:130}
+#divAccessibility li{float:left}
+#divAccessibility a{position:absolute;width:1px;height:1px;top:-50px;overflow:hidden;text-align:center}
+#divAccessibility a:focus, #divAccessibility a:active{position:absolute;top:0;width:200px;height:auto;padding:5px;background-color:#fff;border:solid 1px #0079c6;color:#0079c6;z-index:2}
+
+/* 숨김영역 */
+.skip{position:absolute;width:1px;height:1px;text-indent:-9999px;overflow:hidden;border:none}
+
+/* view */
+.block {display:block !important}
+.inlineB {display:inline-block !important;}
+.hide {display:none;}
+
+/* align */
+.fl {float:left !important}
+.fr {float:right !important}
+.clb {clear:both !important}
+.alignC {text-align:center !important}
+.alignL {text-align:left !important}
+.alignR {text-align:right !important}
+
+/* margin */
+.mAuto {margin:0 auto !important}
+.mg0 {margin:0 !important}
+.mt0 {margin-top:0px !important}
+.mt05 {margin-top:5px !important}
+.mt10 {margin-top:10px !important}
+.mt15 {margin-top:15px !important}
+.mt20 {margin-top:20px !important}
+.mt25 {margin-top:25px !important}
+.mt30 {margin-top:30px !important}
+.mt40 {margin-top:40px !important}
+.mt50 {margin-top:50px !important}
+.mr0 {margin-right:0px !important}
+.mr05 {margin-right:5px !important}
+.mr10 {margin-right:10px !important}
+.mr15 {margin-right:15px !important}
+.mr20 {margin-right:20px !important}
+.mr30 {margin-right:30px !important}
+.mr40 {margin-right:40px !important}
+.mr50 {margin-right:50px !important}
+.mb0 {margin-bottom:0px!important}
+.mb05 {margin-bottom:05px!important}
+.mb10 {margin-bottom:10px!important}
+.mb15 {margin-bottom:15px!important}
+.mb20 {margin-bottom:20px !important}
+.mb25 {margin-bottom:25px !important}
+.mb30 {margin-bottom:30px !important}
+.mb40 {margin-bottom:40px !important}
+.mb50 {margin-bottom:50px !important}
+.ml0 {margin-left:0 !important}
+.ml05 {margin-left:5px !important}
+.ml10 {margin-left:10px !important}
+.ml15 {margin-left:15px !important}
+.ml20 {margin-left:20px !important}
+.ml30 {margin-left:30px !important}
+.ml40 {margin-left:40px !important}
+.ml50 {margin-left:50px !important}
+/* padding */
+.pd0 {padding:0 !important;}
+.pd05 {padding:5px !important;}
+.pd10 {padding:10px !important;}
+.pd15 {padding:15px !important;}
+.pd20 {padding:20px !important;}
+.pd30 {padding:30px !important;}
+.pt0 {padding-top:0px !important;}
+.pt05 {padding-top:5px !important;}
+.pt10 {padding-top:10px !important;}
+.pt15 {padding-top:15px !important;}
+.pt20 {padding-top:20px !important;}
+.pt30 {padding-top:30px !important;}
+.pt40 {padding-top:40px !important;}
+.pt50 {padding-top:50px !important;}
+.pb0 {padding-bottom:0px !important;}
+.pb05 {padding-bottom:5px !important;}
+.pb10 {padding-bottom:10px !important;}
+.pb15 {padding-bottom:15px !important;}
+.pb20 {padding-bottom:20px !important;}
+.pb30 {padding-bottom:30px !important;}
+.pb40 {padding-bottom:40px !important;}
+.pb50 {padding-bottom:50px !important;}
+.pl0 {padding-left:0px !important;}
+.pl05 {padding-left:5px !important;}
+.pl10 {padding-left:10px !important;}
+.pl15 {padding-left:15px !important;}
+.pl20 {padding-left:20px !important;}
+.pl30 {padding-left:30px !important;}
+.pl40 {padding-left:40px !important;}
+.pl50 {padding-left:50px !important;}
+.pr0 {padding-right:0px !important;}
+.pr05 {padding-right:5px !important;}
+.pr10 {padding-right:10px !important;}
+.pr15 {padding-right:15px !important;}
+.pr20 {padding-right:20px !important;}
+.pr30 {padding-right:30px !important;}
+.pr40 {padding-right:40px !important;}
+.pr50 {padding-right:50px !important;}
+/* width */
+.w20 {width: 20px !important;}
+.w30 {width: 30px !important;}
+.w40 {width: 40px !important;}
+.w50 {width: 50px !important;}
+.w60 {width: 60px !important;}
+.w70 {width: 70px !important;}
+.w80 {width: 80px !important;}
+.w90 {width: 90px !important;}
+.w100 {width: 100px !important;}
+.w120 {width: 120px !important;}
+.w150 {width: 150px !important;}
+.w200 {width: 200px !important;}
+.w250 {width: 250px !important;}
+.w300 {width: 300px !important;}
+.w350 {width: 350px !important;}
+.w400 {width: 400px !important;}
+.w450 {width: 450px !important;}
+.w500 {width: 500px !important;}
+.w550 {width: 550px !important;}
+.wp100 {width: 100% !important;}
+
+@media screen and (max-width:767px) {
+    .mw100 {width:100% !important}    
+}
+
+/* clearfix */
+.clear::after {content:"";display:block;clear: both;}
+
+/* blackBg */
+.blackBg1 {display:none;position:fixed;top:0;right:0;width:100%;height:100vh;background:rgba(0,0,0,0.55);z-index: 11;}
+
+/* divSearch */
+#divSearch {position:fixed;bottom:-100%;right:0;width:100%;height:100vh;padding:12px 12px 24px 12px;background:#fff;z-index: 20;box-sizing: border-box;overflow-y: auto;opacity: 0;visibility: hidden;transition:bottom .4s}
+#divSearch.on {opacity: 1;visibility: visible;bottom:0}
+#divSearch .searchTop {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+#divSearch .searchTop .searchClose {display:block;width:12px;height:20px;margin-right:8px;background:url(../../images/commons/back1.png);text-indent: -9999px;}
+#divSearch .searchTop .detailSearchBtn {display:block;margin:7px 0 0 4px;padding-top:22px;background:url(../../images/commons/detailSearchIco.png) no-repeat center top;color:#7b7b7b;font-family: PretendardSB,sans-serif;font-size:1rem;letter-spacing: -0.025em;word-break: keep-all;}
+#divSearch .textDel {right:50px}
+#divSearch .searchBtn {right:18px}
+
+.searchHistory {margin-top:40px}
+.searchHistory .titArea {position:relative;margin-bottom:16px}
+.searchHistory .titArea .tit {display:inline-block;color:#0f0f0f;font-family: PretendardSB,sans-serif;font-size:1.285rem}
+.searchHistory .titArea .shBtn {position:absolute;top:10px;right:0;width:16px;height:4px;background:url(../../images/commons/toggleBtn1.png) no-repeat center;background-size:16px auto;transform: rotate(90deg);text-indent: -9999px;}
+
+.searchHistory ul {font-size:0}
+.searchHistory ul>li {display:inline-block;padding:4px 12px;margin-bottom:8px;border:1px solid #cecece;border-radius: 20px;background:#f8f8f8;}
+.searchHistory ul>li:not(:last-child) {margin-right:6px}
+.searchHistory ul>li>div {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.searchHistory ul>li .txt {margin-right:4px;font-size:1rem;color:#5d5d5d;font-family: NotoSans,sans-serif;letter-spacing: -0.05em;}
+
+.keywordList {margin-top:56px}
+.keywordList .titArea {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-bottom:12px}
+.keywordList .titArea .tit {display:inline-block;color:#0f0f0f;font-family: PretendardSB,sans-serif;font-size:1.285rem}
+.keywordList .titArea .date {color:#929292;font-family: PretendardM,sans-serif;font-size:0.857rem}
+.keywordList .list {border-bottom:1px solid #ebebeb}
+.keywordList .list:first-child {border-top:1px solid #ebebeb}
+.keywordList .list a {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding:7px 20px 7px 12px}
+.keywordList .list .num {display:inline-block;width:40px;color:#2e2e2e;font-size:1rem;font-family:MetroB,sans-serif;}
+.keywordList .list:nth-of-type(1) .num, .keywordList .list:nth-of-type(2) .num, .keywordList .list:nth-of-type(3) .num, .keywordList .list:nth-of-type(4) .num {color:#ff7200;}
+.keywordList .list .keyword {display:inline-block;color:#595959;width:calc(100% - 80px);font-size:1.071rem;font-family: Pretendard,sans-serif;}
+.keywordList .list .info {width:40px;color:#0f0f0f;font-size:1.071rem;text-align: right;}
+
+
+@keyframes animateBorder {
+    0% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* common.css 웹폰트 */
+/* .searchHistory .titArea .tit {font-weight:700;font-family: Pretendard}
+.keywordList .titArea .tit {font-weight:700;font-family: Pretendard}
+.keywordList .titArea .date {font-weight: 500;font-family: Pretendard}
+#divSearch .searchTop .detailSearchBtn {font-weight:700;font-family: Pretendard}
+.searchHistory ul>li .txt {font-family: 'Noto Sans KR', sans-serif} */
