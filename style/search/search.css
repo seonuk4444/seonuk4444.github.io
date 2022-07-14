@@ -5,6 +5,12 @@
 .searchResultInfo .total {color:#000;font-size: 1.142rem;font-family: PretendardB,sans-serif;}
 .searchResultInfo .total>span {color:#000;font-size: 1.142rem;font-family: PretendardB,sans-serif}
 
+.topFunction ul {font-size:0}
+.topFunction ul>li {display:inline-block}
+.topFunction ul>li:not(:last-child) {margin-right:16px}
+.topFunction ul>li .searchSetting {display:block;padding-left:22px;background:url(../../images/search/setting.png) no-repeat left top 1px;font-size:1.071rem;}
+.topFunction ul>li .facetBtn {display:block;padding-left:22px;background:url(../../images/search/filter.png) no-repeat left top 3px;font-size:1.071rem;}
+
 /* 검색 컨텐츠 */
 .resultContent {padding: 20px 12px 12px 12px;background:#fff;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
 .resultContent:not(:last-child) {margin-bottom: 12px;}
@@ -76,25 +82,3 @@
 
     .viewOriginList {top:35px}
 }
-
-
-/* search.css 웹폰트 */
-/* .searchResultInfo .total {font-weight:700;font-family: Pretendard}
-.searchResultInfo .total>span {font-weight:700;font-family: Pretendard}
-.resultContent .resultTitle .tit {font-weight:700;font-family: Pretendard}
-.viewIndexW>ul>li {font-weight: 500;font-family: Pretendard}
-.resultList>ul>li .type {font-weight: 500;font-family: Pretendard}
-.resultList>ul>li .tit {font-weight: 500;font-family: Pretendard}
-.resultList>ul>li .tit .highlight {font-weight: 500;font-family: Pretendard}
-.resultList>ul>li .btns>ul>li>a {font-weight: 500;font-family: Pretendard}
-.viewOriginList>ul>li {line-height: 22px;}
-.divViewList>ul>li {line-height: 22px;}
-@media screen and (max-width:1024px) {
-    .viewIndexW>ul>li.viewIndex1 {background-position:left top}
-    .viewIndexW>ul>li.viewIndex2 {background-position:left top}
-    .viewIndexW>ul>li.viewIndex3 {background-position:left top}
-    .resultList>ul>li .btns>ul>li>a.viewOrigin1 {background-position:left 6px top 6px}
-    .resultList>ul>li .btns>ul>li>a.viewOrigin2 {background-position:left 6px top 6px}
-    .resultList>ul>li .btns>ul>li>a.viewOrigin3 {background-position:left 6px top 6px}
-
-} */
