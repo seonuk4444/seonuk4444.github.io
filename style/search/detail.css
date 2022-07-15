@@ -8,16 +8,16 @@
 .topFunction>ul {font-size:0}
 .topFunction>ul>li {display:inline-block}
 .topFunction>ul>li:not(:last-child) {margin-right:16px}
-.topFunction>ul>li .searchSetting {display:block;padding-left:22px;background:url(../../images/search/setting.png) no-repeat left top 2px;font-size:1.071rem;}
+.topFunction>ul>li .searchSetting {display:block;padding-left:22px;background:url(../../images/search/setting.png) no-repeat left top 1px;font-size:1.071rem;}
 .topFunction>ul>li .facetBtn {display:block;padding-left:22px;background:url(../../images/search/filter.png) no-repeat left top 3px;font-size:1.071rem;}
 
 /* facet */
 .facet {position: fixed;width: 100%;top:0;left:0; z-index: 20;visibility: hidden;}
 .facet::after {content: "";display: block;  width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.7); opacity: 0; transition: 0.5s;}
-.facetCont {position: absolute; background: #fff;right:-100%; top:0;width: 90%;height:100%;margin:0 auto;padding:16px 8px;visibility: hidden;opacity: 0; transition: 0.5s;z-index: 20;overflow-y: auto;box-sizing: border-box;}
+.facetCont {position: fixed; background: #fff;right:0; bottom: -100%;width: 90%;height:100%;margin:0 auto;padding:16px 8px;visibility: hidden;opacity: 0; transition: 0.5s;z-index: 20;overflow-y: auto;box-sizing: border-box;}
 .facet.on {visibility: visible;}
 .facet.on::after {opacity: 1;}
-.facet.on .facetCont {right:0;opacity: 1;visibility: visible}
+.facet.on .facetCont {bottom:0;opacity: 1;visibility: visible}
 
 .facetCont .limSearch {margin-bottom:20px}
 .facetCont .limSearch .titArea {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-bottom:12px}
