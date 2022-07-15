@@ -132,6 +132,14 @@ html, body {overflow-x: hidden;}
     .mw100 {width:100% !important}    
 }
 
+/* select */
+.selType1 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:1px solid #dedede;border-radius: 5px;padding:5px 24px 5px 12px;color:#898989;font-size:0.928rem;background:url(../../images/commons/selectArrow1.png) no-repeat right 8px center transparent;}
+
+/* checkBox Custom */
+.customChk1 {display:none}
+.customChk1 + label {display: inline-block;width:16px;height:16px;background:url(../../images/commons/chk1.png)}
+.customChk1:checked + label {background:url(../../images/commons/chk1On.png)}
+
 /* clearfix */
 .clear::after {content:"";display:block;clear: both;}
 
@@ -150,13 +158,23 @@ html, body {overflow-x: hidden;}
 .searchHistory {margin-top:40px}
 .searchHistory .titArea {position:relative;margin-bottom:16px}
 .searchHistory .titArea .tit {display:inline-block;color:#0f0f0f;font-family: PretendardSB,sans-serif;font-size:1.285rem}
-.searchHistory .titArea .shBtn {position:absolute;top:10px;right:0;width:16px;height:4px;background:url(../../images/commons/toggleBtn1.png) no-repeat center;background-size:16px auto;transform: rotate(90deg);text-indent: -9999px;}
 
-.searchHistory ul {font-size:0}
-.searchHistory ul>li {display:inline-block;padding:4px 12px;margin-bottom:8px;border:1px solid #cecece;border-radius: 20px;background:#f8f8f8;}
-.searchHistory ul>li:not(:last-child) {margin-right:6px}
-.searchHistory ul>li>div {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
-.searchHistory ul>li .txt {margin-right:4px;font-size:1rem;color:#5d5d5d;font-family: Pretendard,sans-serif;letter-spacing: -0.05em;}
+.searchHistory .shManageW {position:absolute;top:10px;right:0;}
+.searchHistory .titArea .shBtn {display:block;width:16px;height:4px;background:url(../../images/commons/toggleBtn1.png) no-repeat center;background-size:16px auto;transform: rotate(90deg);text-indent: -9999px;}
+.searchHistory .shManageW>li {position:relative}
+.searchHistory .shManage {display:none;position:absolute;top:18px;right:0;width:100px;background:#fff;border:1px solid #b3b3b3;border-radius: 8px;text-align: center;}
+.searchHistory .shManage>li {padding:4px 0}
+.searchHistory .shManage>li:not(:last-child) {border-bottom:1px solid #b3b3b3}
+.searchHistory .shManage>li>a {font-size:1rem;}
+.searchHistory .shManage>li.allHistoryDel>a {color:#aaa}
+.searchHistory .shManage>li.noAuto>a {color:#161616}
+
+.searchHistory .noHistory {color:#969696;font-size:1.071rem}
+.searchHistory>ul {font-size:0}
+.searchHistory>ul>li {display:inline-block;padding:4px 12px;margin-bottom:8px;border:1px solid #cecece;border-radius: 20px;background:#f8f8f8;}
+.searchHistory>ul>li:not(:last-child) {margin-right:6px}
+.searchHistory>ul>li>div {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.searchHistory>ul>li .txt {margin-right:4px;font-size:1rem;color:#5d5d5d;font-family: Pretendard,sans-serif;letter-spacing: -0.05em;}
 
 .keywordList {margin-top:56px}
 .keywordList .titArea {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-bottom:12px}

@@ -47,6 +47,7 @@ $(document).ready(function(){
   });
 
 
+  //검색상세화면 뜨는 팝업 -> common js 로 옮길예정
   $('.searchInputW').on('click focus', function(){
     $('html, body').css('overflow','hidden');
     $('.blackBg1').show();
@@ -59,6 +60,18 @@ $(document).ready(function(){
     $('#divSearch').removeClass('on');
     return false;
   });
+
+  $('.shBtn').click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next('.shManage').slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next('.shManage').slideDown();
+    }
+    return false;
+  });
+
 
   var tabSlide = new Swiper('.swipeTab .inner',{
     slidesPerView:'auto',
