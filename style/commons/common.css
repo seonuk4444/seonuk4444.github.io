@@ -137,7 +137,7 @@ html, body {overflow-x: hidden;}
 
 /* checkBox Custom */
 .customChk1 {display:none}
-.customChk1 + label {display: inline-block;width:16px;height:16px;background:url(../../images/commons/chk1.png)}
+.customChk1 + label {display: inline-block;width:18px;height:18px;background:url(../../images/commons/chk1.png)}
 .customChk1:checked + label {background:url(../../images/commons/chk1On.png)}
 
 /* clearfix */

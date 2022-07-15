@@ -69,22 +69,25 @@ $(document).ready(function(){
     return false;
   });
 
-  var btnAction = '<a href="" class="btnAction">실행</a>';
 	$(document).on('click', '.facetCont .facetList .listCont>ul>li label', function() {
 		if(!$(this).prev().is(":checked")==true){
-			$('.btnAction').detach();
-			$(this).parent().append(btnAction);
+			$('.btnAction').removeClass('on');
+			$(this).parent().find('.btnAction').addClass('on');
+      $(this).parent().addClass('on');
 		} else {
-			$(this).parent().find('.btnAction').detach();
+			$(this).parent().find('.btnAction').removeClass('on');
+      $(this).parent().removeClass('on');
 		}
 	});
+
+
 	
 	$(document).on('click', '.facetCont .facetList .listCont>ul>li input:checkbox', function() {
 		if(!$(this).is(":checked")){
 		$('.facetCont .facetList .listCont>ul>li input:checkbox').each(function(key, val) {
 			if(val.checked) {
-				$('.btnAction').detach();
-				$(val).parent().append(btnAction);
+				$('.btnAction').removeClass('on');
+				$(val).parent().find('.btnAction').addClass('on');
 				return false;
 			}
 		});
