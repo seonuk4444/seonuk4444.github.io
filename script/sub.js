@@ -16,6 +16,16 @@ $(document).ready(function(){
     freeMode: true,
   });
 
+  $('.swipeTab .tab a').click(function(e){
+    e.preventDefault();
+  });
+
+  $(window).on('load',function(){
+    var chk = $('.swipeTab .tab.on').index();
+    console.log(chk)
+    tabSlide.slideTo(chk)
+  });
+
   $('.swipeTab .toggleBtn').click(function(){
     if($(this).hasClass('on')){
       $(this).removeClass('on');
