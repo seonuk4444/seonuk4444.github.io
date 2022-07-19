@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="style/sub.css">
     <link rel="stylesheet" href="style/search/search.css">
     <!-- //stylesheet -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- script -->
     <script src="ui/jquery-cdn/jquery-3.5.1.min.js"></script>
     <script src="ui/swiper/swiper.min.js"></script>
+    <script src="script/commons/common.js"></script>
     <script src="script/sub.js"></script>
     <script src="script/search/search.js"></script>
     <!-- //script -->
@@ -80,7 +80,19 @@
             <div class="searchHistory">
                 <div class="titArea">
                     <p class="tit">최근검색어</p>
-                    <a href="" class="shBtn" title="최근검색어 닫기">닫기</a>
+                    <ul class="shManageW">
+                        <li>
+                            <a href="" class="shBtn" title="최근검색어 옵션">최근검색어 옵션</a>
+                            <ul class="shManage">
+                                <li class="allHistoryDel">
+                                    <a href="" title="전체삭제">전체삭제</a>
+                                </li>
+                                <li class="noAuto">
+                                    <a href="" title="자동저장끄기">자동저장끄기</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <ul>
                     <li>

@@ -139,3 +139,160 @@
 
     .viewOriginList {top:35px}
 }
+
+/* thesisFacet */
+.thesisFacet {background:#fff;margin-bottom:16px;padding:20px 0 20px 0;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
+.thesisFacet .titArea {padding:0 12px}
+.thesisFacet .titArea .tit {position: relative;display:block;width:100%;color:#000;font-size:1.285rem;font-family: PretendardB,sans-serif;letter-spacing: -0.025em;}
+.thesisFacet .titArea .tit::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat;transition:.3s}
+.thesisFacet .titArea .tit.on::after {transform: translateY(-50%) rotate(180deg);}
+
+.thesisFacet .thFacetCont {margin-top:12px}
+.thesisFacet .thFacetCont .thSearch {position:relative;height:50px;border:1px solid #dadada;background:rgba(198,198,198,0.2);border-radius: 10px;box-sizing: border-box;margin:0 36px}
+.thesisFacet .thFacetCont .thSearch .thShInput {position:absolute;top:0;left:0;width:100%;height:100%;padding:0 52px 0 20px;border:none;border-radius: 10px;background:none;box-sizing: border-box;}
+.thesisFacet .thFacetCont .thSearch .thShBtn {position:absolute;top:50%;right:20px;transform: translateY(-50%);width:24px;height:24px;background:url(../../images/search/thesisSearchBtn.png) no-repeat;text-indent: -9999px;}
+
+.thesisFacet .thFacetCont .thShList {margin:12px 0 0 0}
+.thesisFacet .thFacetCont .thShList>ul>li:not(:last-child) {margin-bottom:8px}
+.thesisFacet .thFacetCont .thShList>ul>li>.thShListBtnW {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding-left:10px;margin:0 40px;position:relative}
+.thesisFacet .thFacetCont .thShList>ul>li>.thShListBtnW::before {content:"";display:block;position:absolute;top:11px;left:0;width:3px;height:3px;background:#000}
+.thesisFacet .thFacetCont .thShList>ul>li .year {display:inline-block;font-size:1.071rem;font-family: PretendardM,sans-serif;}
+.thesisFacet .thFacetCont .thShList>ul>li .thShListBtn {display:inline-block;margin-left:4px;padding: 0 6px 0 8px;background:#ff7200;border-radius: 10px;line-height: 1;margin-top:-2px}
+.thesisFacet .thFacetCont .thShList>ul>li .thShListBtn>span {position:relative;display:inline-block;padding-right:12px;color:#fff;font-size:0.928rem}
+.thesisFacet .thFacetCont .thShList>ul>li .thShListBtn>span::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:8px;height:4px;background:url(../../images/search/btnArrow3.png) no-repeat;}
+
+.thesisFacet .thFacetCont .thShList>ul>li>ul {display:none;margin:4px 0 0 0;padding:0 52px;}
+.thesisFacet .thFacetCont .thShList>ul>li>ul>li {position:relative;padding-left:10px;line-height: 28px;z-index: 1;}
+.thesisFacet .thFacetCont .thShList>ul>li>ul>li::before {content:"";display:block;position:absolute;top:14px;left:0;width:4px;height:1px;background:#737373}
+.thesisFacet .thFacetCont .thShList>ul>li>ul>li.on::after {content:"";display:block;position:absolute;top:0;left:-62px;width:calc(100% + 98px);height:100%;background:#e9f4f8;z-index: -1;}
+.thesisFacet .thFacetCont .thShList>ul>li>ul>li>a {color:#737373;font-size:1rem;font-family: PretendardM,sans-serif;}
+
+/* 검색상세 시작 */
+.detailNav {background:#f5f6f8;box-sizing: border-box;transition:padding-top .3s, padding-bottom .3s;padding:0 12px}
+.detailNav .tab {width:auto !important}
+.detailNav .tab>a {display:block;position:relative;padding-bottom:8px;color:#000;margin-right:16px;font-size:1.071rem;}
+.detailNav .tab>a::after {transition:.3s}
+.detailNav .tab.on>a::after {content:"";display:block;position:absolute;bottom:0;left:0;width:100%;height:2px;background:#000}
+.detailNav .tab.on.strong>a::after {opacity: 0;}
+.detailNav.fix {position:fixed;top:64px;left:0;width:100%;padding:12px 20px 0 20px;z-index: 6;box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+
+.detailCont {padding:20px 12px 20px 12px;background:#fff;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
+.detailCont:not(:last-child) {margin-bottom:12px}
+
+.detailCont .titArea {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.detailCont .titArea .tit {color:#0f0f0f;font-family: PretendardB,sans-serif;font-size:1.285rem;}
+.detailCont .detailInner {margin-top:16px}
+
+
+/* infoDetail */
+.detailCont.infoDetailW {padding:0;background:transparent;border-radius: 0px;box-shadow: none;}
+.infoDetail {background:#fff;padding:20px 12px 20px 12px;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
+.infoDetail .bookTitle {margin-bottom:16px;color:#000;font-family: PretendardM,sans-serif;font-size:1.214rem;}
+.infoDetail .infoCont>ul>li {vertical-align: top;}
+.infoDetail .infoCont>ul>li:not(:last-child) {margin-bottom:4px}
+.infoDetail .infoCont>ul>li::after {content:"";display:block;clear:both}
+.infoDetail .infoCont .tit {float:left;color:#828282;font-size:1rem;letter-spacing: -0.025em;}
+.infoDetail .infoCont .tit.subject {float:none}
+.infoDetail .infoCont .txt {color:#1e1e1e;font-size:1rem;margin-left:90px;letter-spacing: -0.025em;}
+.infoDetail .infoCont .txt a.linkType {color:#178fff;font-size:1rem;letter-spacing: -0.025em;text-decoration: underline;}
+.infoDetail .infoCont .subjectList {margin-top:10px}
+.infoDetail .infoCont .subjectList>ul {font-size:0}
+.infoDetail .infoCont .subjectList>ul>li {display:inline-block;margin-bottom:4px}
+.infoDetail .infoCont .subjectList>ul>li:not(:last-child) {margin-right:4px}
+.infoDetail .infoCont .subjectList>ul>li>a {display:inline-block;padding:4px 6px;border:1px solid #b2b2b2;background:#fff;border-radius: 20px;color:#5d5d5d;font-size:1rem;}
+.infoDetail .btnBunch {margin-top:20px}
+.infoDetail .btnBunch ul {display: -webkit-box;display: -ms-flexbox;display: flex;}
+.infoDetail .btnBunch ul>li {position:relative;width:100%;padding:0 20px;text-align: center;box-sizing: border-box;}
+.infoDetail .btnBunch ul>li:not(:last-child)::after {content:"";display:block;position:absolute;top:13px;right:0;width:1px;height:26px;background:#d8d8d8}
+.infoDetail .btnBunch ul>li>a {display:inline-block;padding-top:32px;color:#181818;font-size:1.071rem;background-repeat: no-repeat;}
+.infoDetail .btnBunch ul>li>a.export {background-image: url(../../images/search/export.png);background-position:center top 2px;}
+.infoDetail .btnBunch ul>li>a.save {background-image: url(../../images/search/save.png);background-position:center top;}
+.infoDetail .btnBunch ul>li>a.share {background-image: url(../../images/search/share.png);background-position:center top 3px;}
+.infoDetail .btnBunch ul>li>a.recept{background-image: url(../../images/search/recept.png);background-position:center top 5px;}
+
+.infoDetailW .recommendCont {margin-top:12px;border:1px solid #dddfe3;border-radius: 15px;background:#e5e9f2;padding:20px 16px 20px 12px;}
+.infoDetailW .recommendCont .tit {position: relative;display:block;width:100%;color:#000;font-size:1.285rem;font-family: PretendardM,sans-serif;letter-spacing: -0.025em;}
+.infoDetailW .recommendCont .tit::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat;transition:.3s}
+.infoDetailW .recommendCont .tit.on:after {transform: translateY(-50%) rotate(180deg);}
+.infoDetailW .recommendCont .recommendArea {display:none}
+
+/* 관심학술지 추가 */
+.volBox .mark {margin-bottom:8px}
+.volBox .markCustom {display:none}
+.volBox .markCustom + label {display:block;padding-left:28px;background:url(../../images/search/mark.png) no-repeat left center;color:#727272;font-family: PretendardM,sans-serif;font-size:1.071rem;line-height: 22px;}
+.volBox .markCustom:checked + label {background:url(../../images/search/markOn.png) no-repeat left center}
+.volBox .infoDetail .bookTitle .volume {color:#ff7200;font-family: PretendardM,sans-serif;font-size:1.142rem;}
+.volBox .infoDetail .bookTitle {font-size:1.142rem;}
+
+
+/* additionalInfo */
+.additionalInfo .kakaoTrans img {display:block}
+.additionalInfo .detailInner {position:relative;padding-bottom:32px}
+.additionalInfo .title {margin-bottom:6px;color:#7c7c7c;font-family: PretendardM,sans-serif;font-size:1.071rem;letter-spacing: -0.025em}
+.additionalInfo .text {color:#7c7c7c;font-family: PretendardM,sans-serif;font-size:1.071rem;line-height:18px;letter-spacing: -0.025em;word-break: break-all;display: -webkit-box; -webkit-line-clamp: 4;  -webkit-box-orient: vertical;overflow: hidden;}
+.additionalInfo .text.on {-webkit-line-clamp:inherit}
+.addInfoMore {position:absolute;bottom:-8px;left:50%;transform: translateX(-50%);padding-right:18px;color:#000;font-size:1rem;}
+.addInfoMore::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat}
+.addInfoMore.on::after {transform: translateY(-50%) rotate(180deg);}
+
+.translate {display:none}
+
+
+/* relation */
+.relation .thesisMore img {width:12px;height:auto}
+
+.thesisList>li {margin-top:12px}
+.thesisList>li:not(:last-child) {padding-bottom:10px;border-bottom:1px solid #eaeaea}
+.thesisList>li .title {color:#444;font-family: PretendardM,sans-serif;font-size:1.071rem;line-height: 17px;letter-spacing: -0.025em;}
+.thesisList>li .info {margin-top:4px}
+.thesisList>li .info>li {display:inline-block;color:#7c7c7c;font-family: PretendardM,sans-serif;font-size:1rem;letter-spacing: -0.025em;}
+
+
+/* analysis */
+.analysisTab>ul {font-size:0}
+.analysisTab>ul>li {display:inline-block}
+.analysisTab>ul>li:not(:last-child) {margin-right:28px}
+.analysisTab>ul>li>a {color:#444;font-size:1.142rem;}
+.analysisTab>ul>li>a.on {color:#ff7200}
+
+.analysisTabCont {margin-top:20px}
+.analysis {display:none}
+.analysis.on {display:block}
+.analysisTabCont .usage .tit {margin-bottom:6px;font-size:1rem;color:#353535}
+.usageCont::after {content:"";display:block;clear:both}
+.usageCont .info {float:left;width:110px;margin-right:10px;box-shadow: 0 3px 5px 1px rgba(0,0,0,0.1);border-radius: 3px;}
+.usageCont .grape {float:left;width:calc(100% - 120px);height:88px}
+
+.usageCont .info .title {padding:2px 0;background:#ff4031;text-align: center;}
+.usageCont .info .title>p {display:inline-block;padding-left:16px;background:url(../../images/search/analysisView.png) no-repeat left top 3px;background-size:12px auto;color:#fff;font-size:0.857rem;}
+.usageCont .info .count {padding:16px 0;text-align: center}
+.usageCont .info .count p {color:#424141;font-size:1.285rem;}
+
+
+/* openVideo */
+.openVideo .videoList {overflow: hidden;}
+.openVideo .videoList .swiper-slide {width:124px;margin-right:20px}
+.openVideo .videoList .imgArea {display:block;border:1px solid #dedede;border-radius: 15px;overflow: hidden;}
+.openVideo .videoList .imgArea img {display:block;width:122px;height:80px}
+.openVideo .videoList .tit {margin-top:16px;color:#444;font-family: PretendardM,sans-serif;font-size:1rem;line-height: 17px;letter-spacing: -0.025em;display: -webkit-box; -webkit-line-clamp: 2;  -webkit-box-orient: vertical;overflow: hidden;}
+.openVideo .videoList .info {display:block;margin-top:4px;line-height: 1;}
+.openVideo .videoList .info span {color:#929292;font-size:0.928rem;font-family: PretendardM,sans-serif;letter-spacing: -0.025em;line-height: 1;}
+.openVideoMore img {width:12px;height:auto}
+
+/* detailBtns */
+.detailBtns {position:fixed;bottom:72px;width:100%;left:0;padding-bottom:8px;transition:.3s;z-index: 10;}
+.detailBtns>ul {display: -webkit-box;display: -ms-flexbox;display: flex;}
+.detailBtns>ul>li {width:100%;padding:0 4px;text-align: center;box-sizing: border-box;}
+.detailBtns>ul>li>a {display:block;padding: 0 12px;height: 50px;line-height: 50px;min-width:90px;background:#323231;border-radius: 10px;color:#fff;font-size:1.071rem;font-family: PretendardM,sans-serif;box-sizing: border-box;}
+
+
+
+@media screen and (max-width:470px) {
+    .infoDetail .btnBunch ul>li {padding: 0 2px}
+    .infoDetail .btnBunch ul>li:not(:last-child)::after {display:none}
+}
+
+@media screen and (max-width:390px) {
+    .detailBtns>ul>li>a {min-width: 0;padding:0 10px}   
+}
+
