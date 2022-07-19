@@ -95,6 +95,7 @@
 .floating .floatLogo {margin-top:-24px}
 
 @media screen and (max-width:767px) {
+    .floating .menu>li.foreign a {margin-top:-10px}
     .floating .floatLogo {width:90px;height:90px}
     .floating .menu>li.foreign .txt {top:10px}
 }
