@@ -95,4 +95,10 @@ $(document).ready(function(){
 	});
 
 
+  // $('.resultList>ul>li').each(function(index){
+  //   $(this).attr('class', 'item' + (index + 1))
+  // });
+  // var total = $('.resultList>ul>li').length;
+  // $('.total').text(total)
+
 });    

@@ -33,7 +33,7 @@
 
 /* swipeTab */
 .swipeTab.type1 {position:relative;padding:18px 0 0 18px;z-index: 5;background: #fff;}
-.swipeTab.type1 .inner{margin-right: 48px;overflow: hidden;}
+.swipeTab.type1 .inner{margin-right: 36px;overflow: hidden;}
 .swipeTab.type1 .tab {display:inline-block;width:auto;}
 .swipeTab.type1 .tab:not(:last-child) {margin-right: 16px;}
 .swipeTab.type1 .tab a {position:relative;display:block;padding-bottom: 6px;color:#000;font-family: PretendardB,sans-serif;font-size: 1.285rem;letter-spacing: -0.025em;}
@@ -50,6 +50,34 @@
 .swipeTab.type1.all .tab.on a::after {display:none}
 .swipeTab.type1.all .toggleBtn {height:16px;background:url(../images/search/moreBtn1.png) no-repeat;background-size:16px auto;transform: rotate(45deg);}
 
+
+/* divFooter */
+#divFooter {padding:28px 8px 48px 8px;background:#f5f6f8;text-align: center;}
+#divFooter .sns {margin-bottom:20px}
+#divFooter .sns ul {font-size:0}
+#divFooter .sns ul>li {display:inline-block;}
+#divFooter .sns ul>li:not(:last-child) {margin-right:12px}
+#divFooter .sns ul>li>a {display:block;width:30px;height:30px;background-repeat: no-repeat;text-indent: -9999px;}
+#divFooter .sns ul>li.insta>a {background-image:url(../images/commons/insta.png)}
+#divFooter .sns ul>li.facebook>a {background-image:url(../images/commons/facebook.png)}
+#divFooter .sns ul>li.youtube>a {background-image:url(../images/commons/youtube.png)}
+
+#divFooter .footerInfo {line-height:21px}
+#divFooter .footerInfo address {color:#5d5d5d;font-size:1rem;}
+#divFooter .footerInfo .call {color:#5d5d5d;font-size:1rem;}
+#divFooter .footerInfo .call>span {display:block;color:#2a2a2a;font-size:1rem;}
+#divFooter .footerInfo .copy {margin-top:24px;color:#5d5d5d;font-size:1rem;}
+#divFooter .footerMenu {margin-top:40px}
+#divFooter .footerMenu>ul {font-size:0}
+#divFooter .footerMenu>ul>li {display:inline-block;position:relative}
+#divFooter .footerMenu>ul>li:not(:last-child) {margin-right:8px;padding-right: 8px;}
+#divFooter .footerMenu>ul>li:not(:last-child)::after {content:"";display:block;position:absolute;top:6px;right:0;width:1px;height:12px;background:#bbbcbc}
+#divFooter .footerMenu>ul>li>a {color:#5d5d5d;font-size:0.928rem;font-family: PretendardB,sans-serif;}
+
+@media screen and (max-width:350px) {
+    #divFooter .footerMenu>ul>li:not(:last-child) {margin-right:6px;padding-right:6px}
+}
+
 /* 하단 플로팅 메뉴 */
 .floating {position:fixed;bottom:0;left:0;width:100%;height: 72px;background:#fff;text-align: center;transition:.3s;box-sizing: border-box;box-shadow: 0 0 8px rgba(0,0,0,0.25);z-index: 10;}
 .floating.on {box-shadow: none;}
@@ -65,6 +93,11 @@
 .floating .menu>li.foreign .txt {color:#fff;position:absolute;top: 23px;left: 48.5%;transform: translateX(-50%);font-family: GmarketM,sans-serif;font-size: 0.857rem;line-height:1.1;word-break: keep-all;}
 .floating .menu>li.foreign .txt strong {display:block;font-family: GmarketB,sans-serif;font-size: 0.857rem;}
 .floating .floatLogo {margin-top:-24px}
+
+@media screen and (max-width:767px) {
+    .floating .floatLogo {width:90px;height:90px}
+    .floating .menu>li.foreign .txt {top:10px}
+}
 
 @media screen and (max-width:500px) {
     .floating .menu>li:not(:last-child) a {font-size: 0.857rem}
@@ -98,10 +131,3 @@
 .floatLogo .c1 {animation: move1 9s infinite;}
 .floatLogo .c2 {animation: move2 9s 1s infinite;}
 .floatLogo .c3 {animation: move3 9s .5s infinite;}
-
-/* sub.css 웹폰트 */
-/* .searchInput {font-weight: 500;font-family: Pretendard}
-.swipeTab.type1 .tab a  {font-weight:700;font-family: Pretendard}
-.swipeTab.type1.all .tab a {font-weight: normal;font-family: Pretendard}
-.swipeTab.type1.all .tab.on a {font-weight:700;font-family: Pretendard}
-.floating .menu>li:not(:last-child) a {font-weight: 500;font-family: Pretendard} */

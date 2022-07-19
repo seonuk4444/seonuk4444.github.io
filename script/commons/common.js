@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
+  var winWidth = window.innerWidth || document.documentElement.clientWidth;
   var lastScrollTop = 0;
   var btnH = $('.detailBtns').height();
   var floatingH = $('.floating').height();
-  $('.detailBtns').css('bottom', floatingH)
+  
+  $('.detailBtns').css('bottom', floatingH);
   $(window).on('scroll',function(event){
+    winWidth = window.innerWidth || document.documentElement.clientWidth;
     var scroll = $(this).scrollTop();
     floatingH = $('.floating').height();
     if(scroll > 0){
@@ -19,7 +22,7 @@ $(document).ready(function(){
       }
     }
 
-
+    
     if (scroll > lastScrollTop){
         // downscroll code
         $('.floating').addClass('on')
@@ -31,9 +34,23 @@ $(document).ready(function(){
       $('.detailBtns').css('bottom', floatingH)
       $('.floating').css('bottom',0)
       $('.floating').removeClass('on')
-      $('.floating .menu>li.foreign a').css('margin-top',-32)
+      if(winWidth > 767){
+        $('.floating .menu>li.foreign a').css('margin-top',-32)
+      }else{
+        $('.floating .menu>li.foreign a').css('margin-top',-10)
+      }
+      
     }
     lastScrollTop = scroll;
+  });
+
+  $(window).on('resize',function(){
+    winWidth = window.innerWidth || document.documentElement.clientWidth;
+    if(winWidth > 767){
+      $('.floating .menu>li.foreign a').css('margin-top',-32)
+    }else{
+      $('.floating .menu>li.foreign a').css('margin-top',-10)
+    }
   });
 
 
