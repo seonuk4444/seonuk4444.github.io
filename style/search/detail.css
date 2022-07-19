@@ -117,5 +117,5 @@
 }
 
 @media screen and (max-width:390px) {
-    .detailBtns>ul>li>a {min-width: 0;padding:6px 10px}   
+    .detailBtns>ul>li>a {min-width: 0;padding:0 10px}   
 }
