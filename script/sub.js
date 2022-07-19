@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   var searhCnt = $('.topSearch').length;
-  console.log(searhCnt)
   if(searhCnt > 0){
     $('#divContents').addClass('up');
   }else{
@@ -17,7 +16,7 @@ $(document).ready(function(){
     freeMode: true,
   });
 
-  $('.swipeTab').click(function(){
+  $('.swipeTab .toggleBtn').click(function(){
     if($(this).hasClass('on')){
       $(this).removeClass('on');
       $('.swipeTabBg').hide();
