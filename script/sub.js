@@ -22,7 +22,6 @@ $(document).ready(function(){
 
   $(window).on('load',function(){
     var chk = $('.swipeTab .tab.on').index();
-    console.log(chk)
     tabSlide.slideTo(chk)
   });
 
