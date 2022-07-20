@@ -205,17 +205,18 @@
 .infoDetail .btnBunch ul>li {position:relative;width:100%;padding:0 20px;text-align: center;box-sizing: border-box;}
 .infoDetail .btnBunch ul>li:not(:last-child)::after {content:"";display:block;position:absolute;top:13px;right:0;width:1px;height:26px;background:#d8d8d8}
 .infoDetail .btnBunch ul>li>a {display:inline-block;padding-top:32px;color:#181818;font-size:1.071rem;background-repeat: no-repeat;}
-.infoDetail .btnBunch ul>li>a.export {background-image: url(../../images/search/export.png);background-position:center top 2px;}
-.infoDetail .btnBunch ul>li>a.save {background-image: url(../../images/search/save.png);background-position:center top;}
-.infoDetail .btnBunch ul>li>a.share {background-image: url(../../images/search/share.png);background-position:center top 3px;}
-.infoDetail .btnBunch ul>li>a.recept{background-image: url(../../images/search/recept.png);background-position:center top 5px;}
+.infoDetail .btnBunch ul>li>a.export {background-image: url(../../images/search/export.png);background-position:center top 2px;background-size:22px 22px}
+.infoDetail .btnBunch ul>li>a.save {background-image: url(../../images/search/save.png);background-position:center top;background-size:22px 22px}
+.infoDetail .btnBunch ul>li>a.share {background-image: url(../../images/search/share.png);background-position:center top 3px;background-size:22px 22px}
+.infoDetail .btnBunch ul>li>a.recept{background-image: url(../../images/search/recept.png);background-position:center top 5px;background-size:22px 22px}
 
 .infoDetailW .recommendCont {margin-top:12px;border:1px solid #dddfe3;border-radius: 15px;background:#e5e9f2;padding:20px 16px 20px 12px;}
 .infoDetailW .recommendCont .tit {position: relative;display:block;width:100%;color:#000;font-size:1.285rem;font-family: PretendardM,sans-serif;letter-spacing: -0.025em;}
 .infoDetailW .recommendCont .tit::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat;transition:.3s}
 .infoDetailW .recommendCont .tit.on:after {transform: translateY(-50%) rotate(180deg);}
-.infoDetailW .recommendCont .recommendArea {display:none}
-
+.infoDetailW .recommendCont .recommendArea {display:none;margin-top:12px}
+.infoDetailW .recommendCont .recommendArea>ul>li>a {position:relative;display:inline-block;color:#333;padding-left:8px;font-size:1.071rem}
+.infoDetailW .recommendCont .recommendArea>ul>li>a::before {content:"";display:block;position:absolute;top:9px;left:0;width:3px;height:3px;background:#333}
 /* 관심학술지 추가 */
 .volBox .mark {margin-bottom:8px}
 .volBox .markCustom {display:none}
