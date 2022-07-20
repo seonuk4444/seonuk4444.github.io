@@ -274,6 +274,7 @@ $(document).ready(function(){
       $('.translateCont').hide();
       $('.selectLang').removeClass('on');
       $('.langContent>div').removeClass('on');
+      $('.translateCont .transResult').removeClass('on');
     }else{
       $(this).addClass('on');
       $(this).prev().addClass('on');
