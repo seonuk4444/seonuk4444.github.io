@@ -269,6 +269,11 @@ $(document).ready(function(){
       $(this).prev().removeClass('on')
       $(this).text('더보기')
       $(this).attr('title','더보기');
+      $('.kakaoTrans').removeClass('on')
+      $('.translate').hide();
+      $('.translateCont').hide();
+      $('.selectLang').removeClass('on');
+      $('.langContent>div').removeClass('on');
     }else{
       $(this).addClass('on');
       $(this).prev().addClass('on');
@@ -283,13 +288,43 @@ $(document).ready(function(){
     if($(this).hasClass('on')){
       $(this).removeClass('on');
       $(this).parents('.additionalInfo').find('.translate').slideUp();
-      $(this).parents('.additionalInfo').find('.abstract').show();
+      //$(this).parents('.additionalInfo').find('.abstract').show();
     }else{
       $(this).addClass('on');
       $(this).parents('.additionalInfo').find('.translate').slideDown();
-      $(this).parents('.additionalInfo').find('.abstract').hide();
+      //$(this).parents('.additionalInfo').find('.abstract').hide();
     }
     return false;
+  });
+
+  $('.selectLang').click(function(){
+    $('.selectLang').removeClass('on');
+    $(this).addClass('on');
+    $('.langContent>div').removeClass('on')
+    $('.langContent>div').eq($(this).parent().index()).addClass('on')
+    return false
+  });
+
+  $('.langSelectW .translateBtn').click(function(e){
+    e.preventDefault();
+    $('.addInfoMore').addClass('on');
+    $('.addInfoMore').prev().addClass('on');
+    $('.addInfoMore').text('접기')
+    $('.addInfoMore').attr('title','접기');
+
+    $('.translateCont').show();
+    $('.translateCont .transResult').addClass('on');
+  });
+
+  $('.translateCont .transResult').click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next().slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next().slideDown();
+    }
+    return false
   });
 
   //analysisTab
@@ -299,6 +334,23 @@ $(document).ready(function(){
     $('.analysisTabCont>div').hide();
     $('.analysisTabCont>div').eq($(this).parent().index()).show();
     return false;
+  });
+
+  //usageAnalysisMore
+  $('.usageAnalysisMore').click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).text('더보기');
+      $(this).attr('title','더보기');
+      $('.usageAnalysis .analysis').removeClass('on');
+      $('.usageAnalysis .analysis').eq(0).addClass('on');
+    }else{
+      $(this).addClass('on');
+      $(this).text('접기');
+      $(this).attr('title','접기');
+      $('.usageAnalysis .analysis').addClass('on');
+    }
+    return false
   });
 
 
