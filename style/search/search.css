@@ -305,6 +305,40 @@
 
 .analysisInfo .thesis>.title {margin-bottom:8px;color:#000;font-size:1.142rem}
 
+.thesisSubjectTab>ul {font-size:0}
+.thesisSubjectTab>ul>li{display:inline-block;margin-right:12px}
+.thesisSubjectTab>ul>li>a {display:block;position:relative;padding-left:8px;color:#000;font-size:1rem}
+.thesisSubjectTab>ul>li>a::before {content:"";display:block;position:absolute;top:10px;left:0;width:3px;height:3px;background:#000}
+.thesisSubjectTab>ul>li.on>a {color:#178fff}
+.thesisSubjectTab>ul>li.on>a::before {background:#178fff}
+.thesisSubject .topicGrapeW {margin:12px 0;width:100%}
+.thesisSubject .topicGrapeW::after {content:"";display:block;clear:both}
+.thesisSubject .topicGrapeW .year1 {float:left;width:calc(50% - 6px)}
+.thesisSubject .topicGrapeW .year2 {float:right;width:calc(50% - 6px)}
+.thesisSubject .topicGrapeW .tit {color:#555;font-size:0.928rem;margin-bottom:4px}
+.thesisSubject .topicGrape {border:1px solid #dadada;height:150px}
+
+.researcher .title {color:#555;font-size:0.928rem;margin-bottom:4px}
+.researcherList {margin-bottom:4px}
+.researcherList>li:not(:last-child) {margin-bottom:12px}
+.researcherList>li>p {color:#000;font-size:1.142rem}
+.researcherList>li>p .count {color:#000;font-size:1.142rem}
+.researcherList>li>p .standard {color:#6e6e6e;font-size:1rem;margin-left:4px}
+.researcherList>li>ul {font-size:0;margin-left:4px}
+.researcherList>li>ul>li {display:inline-block;position:relative;padding-left:8px;color:#5b5b5b;margin-right:12px;font-size:1.071rem}
+.researcherList>li>ul>li::before {content:"";display:block;position:absolute;top:10px;left:0;width:4px;height:1px;background:#5b5b5b}
+.researcherList>li>ul>li .count {font-size:1.071rem}
+.researcherGrape {height:150px;border:1px solid #dadada}
+
+.researcherThesis {margin-top:24px}
+.rhThTab {margin-bottom:12px}
+.rhThTab>ul {font-size:0}
+.rhThTab>ul>li {display:inline-block}
+.rhThTab>ul>li:not(:last-child) {margin-right:8px}
+.rhThTab>ul>li>a {display:block;padding:6px 16px;background:#eee;color:#666;border-radius: 20px;font-size:1rem}
+.rhThTab>ul>li.on>a {color:#fff;background:#ff7200}
+
+.rhThResult .rhThGrape {height:100px;border:1px solid #dadada;margin-bottom:8px}
 
 /* openVideo */
 .openVideo .videoList {overflow: hidden;}
@@ -330,6 +364,11 @@
 }
 
 @media screen and (max-width:390px) {
-    .detailBtns>ul>li>a {min-width: 0;padding:0 10px}   
+    .detailBtns>ul>li>a {min-width: 0;padding:0 10px}
+}
+
+@media screen and (max-width:365px) {
+    .analysisTab>ul>li:not(:last-child) {margin-right:12px}
+    .analysisTab>ul>li>a {font-size:1.071rem;}
 }
 
