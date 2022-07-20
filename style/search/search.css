@@ -215,6 +215,7 @@
 .infoDetailW .recommendCont .tit::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat;transition:.3s}
 .infoDetailW .recommendCont .tit.on:after {transform: translateY(-50%) rotate(180deg);}
 .infoDetailW .recommendCont .recommendArea {display:none;margin-top:12px}
+.infoDetailW .recommendCont .recommendArea>ul>li:not(:last-child) {margin-bottom: 4px;}
 .infoDetailW .recommendCont .recommendArea>ul>li>a {position:relative;display:inline-block;color:#333;padding-left:8px;font-size:1.071rem}
 .infoDetailW .recommendCont .recommendArea>ul>li>a::before {content:"";display:block;position:absolute;top:9px;left:0;width:3px;height:3px;background:#333}
 /* 관심학술지 추가 */
@@ -319,9 +320,9 @@
 .thesisSubject .topicGrape {border:1px solid #dadada;height:150px}
 
 .researcher .title {color:#555;font-size:0.928rem;margin-bottom:4px}
-.researcherList {margin-bottom:4px}
+.researcherList {margin-bottom:12px}
 .researcherList>li:not(:last-child) {margin-bottom:12px}
-.researcherList>li>p {color:#000;font-size:1.142rem}
+.researcherList>li>p {margin-bottom:4px;color:#000;font-size:1.142rem}
 .researcherList>li>p .count {color:#000;font-size:1.142rem}
 .researcherList>li>p .standard {color:#6e6e6e;font-size:1rem;margin-left:4px}
 .researcherList>li>ul {font-size:0;margin-left:4px}
