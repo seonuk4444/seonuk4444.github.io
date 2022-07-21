@@ -109,7 +109,7 @@
 .resultList>ul>li .info>li {display:inline-block;position:relative;color:#828282;font-size: 1rem;word-break: break-all;font-family: Pretendard,sans-serif;}
 .resultList>ul>li .info a {color:#828282;font-size: 1rem;font-family: Pretendard,sans-serif;}
 .resultList>ul>li .info>li:not(:last-child) {padding-right: 8px;margin-right: 6px;}
-.resultList>ul>li .info>li:not(:last-child)::after {content:"";display:block;position:absolute;top: 2px;right:0;width:1px;height: 12px;background:#828282}
+.resultList>ul>li .info>li:not(:last-child)::after {content:"";display:block;position:absolute;top: 4px;right:0;width:1px;height: 12px;background:#828282}
 
 .resultList>ul>li .btns>ul {font-size:0}
 .resultList>ul>li .btns>ul>li {display:inline-block;position:relative}
