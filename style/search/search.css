@@ -7,9 +7,14 @@
 
 .topFunction>ul {font-size:0}
 .topFunction>ul>li {display:inline-block}
-.topFunction>ul>li:not(:last-child) {margin-right:16px}
+.topFunction>ul>li:not(:last-child) {margin-right:12px}
 .topFunction>ul>li .searchSetting {display:block;padding-left:22px;background:url(../../images/search/setting.png) no-repeat left top 2px;background-size:18px auto;font-size:1.071rem;}
-.topFunction>ul>li .facetBtn {display:block;padding-left:22px;background:url(../../images/search/filter.png) no-repeat left top 3px;background-size:16px auto;font-size:1.071rem;}
+.topFunction>ul>li .facetBtn {display:block;padding-right:22px;background:url(../../images/search/filter.png) no-repeat right top 3px;background-size:16px auto;font-size:1.071rem;}
+
+.topFunction>ul>li .setArrow1 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:none;padding-right:22px;background:url(../../images/search/setArrow1.png) no-repeat right center;color:#000;font-size:1rem}
+.topFunction>ul>li .setArrow2 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:none;padding-right:16px;background:url(../../images/search/setArrow2.png) no-repeat right center;color:#000;font-size:1rem}
+
+
 
 /* facet */
 .facet {position: fixed;width: 100%;top:0;left:0; z-index: 20;visibility: hidden;}
