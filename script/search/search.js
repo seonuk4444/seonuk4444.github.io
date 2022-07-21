@@ -2,20 +2,17 @@ $(document).ready(function(){
 
   //검색목록 시작
 
-  // $('.resultList>ul>li').each(function(index, element){
-  //   var pt = $(this).position().top;
-  //   //console.log($(this).position().top)
-  //   $('.memo').text(pt)
-  //   console.log(pt)
+  //검색 셀렉트박스 말줄임표시
+  // $('.setArrow1 option').each(function(){
+  //   var length = 4; //표시할 글자 수 정하기
+  
+  // $(this).each(function(){
+  //   if($(this).text().length > length){
+  //     $(this).text($(this).text().substr(0, length) + '...'); //지정한 글자수 이후 표시할 텍스트 '...'
+  //     }
+  //   });
   // });
-  // //console.log(pt)
-  // $(window).scroll(function(){
 
-    
-
-
-
-  // });
 
   //원문보기 여러개
   $('.viewOriginBtn').click(function(){
