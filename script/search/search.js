@@ -2,20 +2,20 @@ $(document).ready(function(){
 
   //검색목록 시작
 
-  $('.resultList>ul>li').each(function(index, element){
-    var pt = $(this).position().top;
-    //console.log($(this).position().top)
-    $('.memo').text(pt)
-    console.log(pt)
-  });
-  //console.log(pt)
-  $(window).scroll(function(){
+  // $('.resultList>ul>li').each(function(index, element){
+  //   var pt = $(this).position().top;
+  //   //console.log($(this).position().top)
+  //   $('.memo').text(pt)
+  //   console.log(pt)
+  // });
+  // //console.log(pt)
+  // $(window).scroll(function(){
 
     
 
 
 
-  });
+  // });
 
   //원문보기 여러개
   $('.viewOriginBtn').click(function(){
