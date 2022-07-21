@@ -39,6 +39,8 @@
 .facetCont .facetListW .titArea .tit {color:#1e1e1e;font-size:1.142rem;font-family: PretendardB,sans-serif;}
 
 .facetCont .facetList>li {position:relative;padding:16px 0 16px 0;border:1px solid #dedede;background:#fff;border-radius: 10px;box-shadow: 0 0 5px rgba(0,0,0,0.1);}
+.facetCont .facetList>li.todayHistory {border:1px solid #999;background:#f2f2f2}
+
 .facetCont .facetList>li:not(:last-child) {margin-bottom:7px}
 .facetCont .facetList>li.on {border:1px solid #999;padding-bottom:44px}
 .facetCont .facetList>li>a.title {display:block;position:relative;padding:0 8px 0 16px;color:#1e1e1e;font-family: PretendardB,sans-serif;font-size:1.214rem;}
@@ -360,7 +362,7 @@
 .detailBtns {position:fixed;bottom:72px;width:100%;left:0;padding-bottom:8px;transition:.3s;z-index: 10;}
 .detailBtns>ul {display: -webkit-box;display: -ms-flexbox;display: flex;}
 .detailBtns>ul>li {width:100%;padding:0 4px;text-align: center;box-sizing: border-box;}
-.detailBtns>ul>li>a {display:block;padding: 0 12px;height: 50px;line-height: 50px;min-width:90px;background:#323231;border-radius: 10px;color:#fff;font-size:1.071rem;font-family: PretendardM,sans-serif;box-sizing: border-box;}
+.detailBtns>ul>li>a {display:block;padding: 0 12px;height: 43px;line-height: 43px;min-width:90px;background:#323231;border-radius: 10px;color:#fff;font-size:1.071rem;font-family: PretendardM,sans-serif;box-sizing: border-box;}
 
 
 
