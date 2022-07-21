@@ -62,7 +62,7 @@ $(document).ready(function(){
 
   //서지상세 탭 이벤트
   var scroll = $(this).scrollTop();
-  //var detailNavTop = $('.detailNav').offset().top;
+  var detailNavTop = $('.detailNav').offset().top;
  
   $(window).scroll(function () {
     scroll = $(this).scrollTop();
