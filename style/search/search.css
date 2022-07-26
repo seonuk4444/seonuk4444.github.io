@@ -367,7 +367,7 @@
 .detailBtns {position:fixed;bottom:72px;width:100%;left:0;padding-bottom:8px;transition:.3s;z-index: 10;}
 .detailBtns>ul {display: -webkit-box;display: -ms-flexbox;display: flex;}
 .detailBtns>ul>li {width:100%;padding:0 4px;text-align: center;box-sizing: border-box;}
-.detailBtns>ul>li>a {display:block;padding: 0 12px;height: 43px;line-height: 45px;min-width:90px;background:#323231;border-radius: 10px;color:#fff;font-size:1.071rem;font-family: PretendardM,sans-serif;box-sizing: border-box;}
+.detailBtns>ul>li>a {display:block;padding: 0 12px;height: 43px;line-height: 43px;min-width:90px;background:#323231;border-radius: 10px;color:#fff;font-size:1.071rem;font-family: PretendardM,sans-serif;box-sizing: border-box;}
 
 
 

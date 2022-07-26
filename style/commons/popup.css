@@ -3,9 +3,9 @@
 .divPopup {background:#fff;position:fixed;bottom:-100%;left:0;width:100%;height:100%;overflow-y: auto;z-index: 20;opacity: 0;transition: bottom .3s;box-sizing: border-box;}
 .divPopup.on {bottom:0;opacity: 1;}
 .divPopup .popHeader {margin:16px 0;padding:0 16px 0 12px}
-.divPopup .popHeader>div.titArea {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
-.divPopup p.tit {color:#1a1a1a;font-size:1.714rem;font-family:PretendardM,sans-serif;}
-.divPopupClose {display:block;width:20px;height:20px;background:url(../../images/commons/close1.png) no-repeat center top;background-size:20px 20px;text-indent: -9999px;}
+.divPopup .popHeader>div.titArea {position:relative}
+.divPopup p.tit {width:calc(100% - 30px);color:#1a1a1a;font-size:1.714rem;font-family:PretendardM,sans-serif;}
+.divPopupClose {display:block;position:absolute;top:9px;right:0;width:20px;height:20px;background:url(../../images/commons/close1.png) no-repeat center top;background-size:20px 20px;text-indent: -9999px;}
 .divPopup .btnW {margin-top:6px}
 .adobe img {height:22px;width:auto}
 .divPopup .popCont{padding: 25px 12px 20px 12px;background:#f5f6f8}
