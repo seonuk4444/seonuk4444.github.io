@@ -49,15 +49,14 @@ a:hover{color: inherit;}
 form, fieldset, blockquote{margin:0;padding:0;border:0}
 legend, hr{position:absolute;width:1px;height:1px;border:none;text-indent:-9999px;overflow:hidden}
 caption{width:0px;height:0px;text-indent:-9999px;overflow:hidden}
-textarea{overflow:auto;-webkit-appearance:none;border-radius:0;font-family:Pretendard, sans-serif;}
+textarea{overflow:auto;-webkit-appearance:none;font-family:Pretendard, sans-serif;}
 input{font-family: Pretendard, sans-serif;}
-input[type="image"]{-webkit-appearance:none;border-radius:0}
-input[type="submit"]{-webkit-appearance:none;border-radius:0;cursor:pointer}
-input[type="text"]{-webkit-appearance:none;border-radius:0}
-input[type="password"]{-webkit-appearance:none;border-radius:0}
-input[type="checkbox"]{border-radius:0}
-input[type="reset"]{-webkit-appearance:none;border-radius:0}
-input[type="button"]{-webkit-appearance:none;border-radius:0}
+input[type="image"]{-webkit-appearance:none;}
+input[type="submit"]{-webkit-appearance:none;;cursor:pointer}
+input[type="text"]{-webkit-appearance:none;}
+input[type="password"]{-webkit-appearance:none;}
+input[type="reset"]{-webkit-appearance:none;}
+input[type="button"]{-webkit-appearance:none;}
 input[type="text"]:disabled{background: #eaedf1;}
 input[type="text"]:disabled::placeholder{color:#b2b7c6;}
 label{cursor: pointer;}
