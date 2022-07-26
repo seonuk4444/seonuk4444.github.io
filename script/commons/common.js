@@ -236,7 +236,6 @@ let wholeMenuNav = new Swiper('.wholeMenuNav .inner',{
 
 $('.wholeMenuNav .tab>a').click(function(){
   let i1 = $(this).parent().index();
-  //$(this).click();
   $('.wholeMenuNav .tab').removeClass('on');
   $('.wholeMenuNav .tab').addClass('strong');
   $(this).parent().addClass('on');

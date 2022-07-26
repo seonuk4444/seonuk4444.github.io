@@ -166,6 +166,13 @@ html, body {overflow-x: hidden;}
 .radioType1[type="radio"]:checked + label:after {opacity: 1;-webkit-transform: scale(1);transform: scale(1);}
 
 
+@media screen and (min-width:1024px) {
+    .radioType1.small[type="radio"]:checked + label:before {top:6px}
+    .radioType1.small[type="radio"]:not(:checked) + label:before {top:6px}
+    .radioType1.small[type="radio"]:checked + label:after, .radioType1.small[type="radio"]:not(:checked) + label:after {top:10px}
+}
+
+
 /* inputType */
 .inputType1 {height:28px;padding:0 12px;border:1px solid #c4c4c4;color:#6f6f6f;border-radius: 5px;width:100%;box-sizing: border-box;font-size:1rem}
 .inputType2 {height:45px;width:100%;box-sizing: border-box;padding:0 12px;color:#6f6f6f}

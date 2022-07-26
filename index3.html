@@ -94,10 +94,10 @@
                         }catch(Exception){}
                     } */
                 } else {
-                    document.f.submit();
+                    document.fs.submit();
                 }
             } else {
-                document.f.submit();
+                document.fs.submit();
             }
         }
         var db=""; //임시로 입력값을 저장할 변수
@@ -1675,12 +1675,8 @@
                     </div>
                     <div class="popCont">
                         <form name="f" action="http://www.riss.kr/ExportApply.do" method="post">
-                        
                             <input type="hidden" name="p_mat_type" value="1a0202e37d52c72d">
-                        
-                        
                             <input type="hidden" name="control_no" value="a264d49a9cf86b5dffe0bdc3ef48d419">
-                        
                             <input type="hidden" name="gubun" value="">
                             <div class="popInnerCont">
                                 <h3 class="tit">내보내기 형태를 선택하세요</h3>
@@ -1724,7 +1720,7 @@
                                         </ul>
                                     </div>
                         
-                                    <div class="txtW">
+                                    <div class="txtW block">
                                         <span class="txt">참고문헌양식</span>
                                         <span class="btn"><a href="http://www.riss.kr/customer/svchelp/HelpView.do?help_id=1463" target="_blank"
                                                 class="innerBtnType1">참고문헌양식안내</a></span>
@@ -1865,7 +1861,6 @@
                                 </div>
                             </div>
                         </form>
-                    
                     </div>
                     <a href="" class="divPopupClose exportPopClose" title="닫기">닫기</a>
                 </div>
@@ -2561,13 +2556,13 @@
                                 </div>
                                 <div class="categoryResult">
                                     <div class="category">
-                                        <form name="f" method="post" action="/mylibrary/CategorySearch.do">
+                                        <form name="fs" method="post" action="/mylibrary/CategorySearch.do">
                                             <input type="hidden" name="type" value="SEARCH">
                                             <div class="categorySrchW">
                                                 <div class="srchW">
                                                     <p><input type="text" id="keyword" name="keyword" value="" placeholder="예) 교육" title="검색"></p>
                                                     <input type="image" class="btn" src="images/commons/categorySrchBtn.png" alt="검색" title="검색"
-                                                        onclick="javascript:document.f.submit();">
+                                                        onclick="javascript:document.fs.submit();">
                                                 </div>
                                             </div>
                                             <div class="divPopTable mt05 categorySearchResult">

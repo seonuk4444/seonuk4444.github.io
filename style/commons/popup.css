@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.divPopup {background:#fff;position:fixed;bottom:-100%;left:0;width:100%;height:100vh;padding-bottom:12px;overflow-y: auto;z-index: 20;opacity: 0;transition: bottom .3s;box-sizing: border-box;}
+.divPopup {background:#fff;position:fixed;bottom:-100%;left:0;width:100%;height:100%;padding-bottom:12px;overflow-y: auto;z-index: 20;opacity: 0;transition: bottom .3s;box-sizing: border-box;}
 .divPopup.on {bottom:0;opacity: 1;}
 .divPopup .popHeader{position:relative;margin:36px 8px 0 8px;padding:0 4px 12px;border-bottom:2px solid #1a1a1a;}
 .divPopup .popHeader::after {content:"";display:block;clear:both}
@@ -22,7 +22,7 @@
 .divPopup .txtW{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-top:12px;}
 .divPopup .txtW .txt{color:#6f6f6f;font-size:1rem;}
 .divPopup .innerBtnType1{display:inline-block;margin-left:4px;padding:2px 4px;background-color:#f26522;color:#fff;font-size:0.857rem;border-radius:3px}
-.divPopup .txtW .radioBtnList {margin-left: 8px}
+.divPopup .txtW .radioBtnList {margin-left: 8px;vertical-align: middle;}
 
 /* 내보내기 테이블 */
 .divPopTable {margin-top:12px;}

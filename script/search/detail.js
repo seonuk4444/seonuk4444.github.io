@@ -95,7 +95,7 @@ $(document).ready(function(){
     let result = height1 + height2;
     let position1= target.offset().top - result - 10;
     let position2= target.offset().top - result - 52;
-    let i = $(this).parent().index();
+    var i = $(this).parent().index();
 
     $('.detailNav .tab').removeClass('on');
     $(this).parent().addClass('on')
