@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   //검색 셀렉트박스 말줄임표시
   // $('.setArrow1 option').each(function(){
-  //   var length = 4; //표시할 글자 수 정하기
+  //   let length = 4; //표시할 글자 수 정하기
   
   // $(this).each(function(){
   //   if($(this).text().length > length){
@@ -26,6 +26,22 @@ $(document).ready(function(){
     return false;
   });
 
+  //원문보기 팝업
+  $('.viewOrigin').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').show();
+    $('.viewOriginPop').addClass('on');
+    
+  });
+
+  $('.viewOriginPopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.viewOriginPop').removeClass('on');
+    
+  });
+
+
   //목차보기 버튼
   $('.divViewListBtn').click(function(){
     if($(this).hasClass('on')){
@@ -34,6 +50,18 @@ $(document).ready(function(){
     }else{
       $(this).addClass('on')
       $(this).parents('.btns').find('.divViewList').stop().slideDown();
+    }
+    return false;
+  });
+
+  //강의보기 버튼
+  $('.videoListPopBtn').click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).parents('.btns').find('.videoListPop').stop().slideUp();
+    }else{
+      $(this).addClass('on')
+      $(this).parents('.btns').find('.videoListPop').stop().slideDown();
     }
     return false;
   });
@@ -55,12 +83,7 @@ $(document).ready(function(){
     $('.facet').removeClass('on');
     return false;
   });
-  $('body').click(function(e){
-    if(!$('.facet').has(e.target).length){
-        $('.facet').removeClass('on');
-        $('.facetBtn').removeClass('on');
-    }
-});
+
   $('.facetList>li>a').click(function(){
     if($(this).parent().hasClass('on')){
       $(this).parent().removeClass('on');

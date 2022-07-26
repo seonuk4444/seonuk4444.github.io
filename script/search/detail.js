@@ -1,5 +1,5 @@
 //서지상세 스크롤시 바 이동관련 js
-var util = {
+let util = {
   init: function () {
       this.bind();
   },
@@ -32,16 +32,16 @@ var util = {
 
   checkVisible: function (elm, eval) {
       eval = eval || 'object visible';
-      var viewportHeight = $(window).height(); // Viewport Height
-      var scrolltop = $(window).scrollTop(); // Scroll Top
-      var y;
+      let viewportHeight = $(window).height(); // Viewport Height
+      let scrolltop = $(window).scrollTop(); // Scroll Top
+      let y;
       try {
           y = $(elm).offset().top;
       } catch (e) {
           y = $(window).height();
       }
 
-      var elementHeight = $(elm).height();
+      let elementHeight = $(elm).height();
 
       if (eval == 'object visible') return y < viewportHeight + scrolltop  && y > scrolltop - elementHeight + 110;
       if (eval == 'above') return y < viewportHeight + scrolltop;
@@ -61,12 +61,12 @@ $(document).ready(function(){
   });
 
   //서지상세 탭 이벤트
-  var scroll = $(this).scrollTop();
-  var detailNavTop = $('.detailNav').offset().top;
+  let scroll = $(this).scrollTop();
+  let detailNavTop = $('.detailNav').offset().top;
  
   $(window).scroll(function () {
     scroll = $(this).scrollTop();
-    detailH1 = $('.topSearch').outerHeight();
+    detailH1 = $('#divHeader').outerHeight();
     detailH2 = $('.swipeTab.type1').outerHeight();
     //console.log(scroll)
     if(scroll > detailNavTop){
@@ -78,7 +78,7 @@ $(document).ready(function(){
 
 
 
-  var detailNav = new Swiper('.detailNav .inner',{
+  let detailNav = new Swiper('.detailNav .inner',{
     slidesPerView: "auto",
     spaceBetween: 0,
     freeMode: true,
@@ -88,14 +88,14 @@ $(document).ready(function(){
   
   $(document).on('click','.detailNav .tab>a',function(e){
     e.preventDefault()
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? "body" : href);
-    var height1 = $('.topSearch').outerHeight();
-    var height2 = $('.detailNav').outerHeight();
-    var result = height1 + height2;
-    var position1= target.offset().top - result - 10;
-    var position2= target.offset().top - result - 52;
-    var i = $(this).parent().index();
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "body" : href);
+    let height1 = $('#divHeader').outerHeight();
+    let height2 = $('.detailNav').outerHeight();
+    let result = height1 + height2;
+    let position1= target.offset().top - result - 10;
+    let position2= target.offset().top - result - 52;
+    let i = $(this).parent().index();
 
     $('.detailNav .tab').removeClass('on');
     $(this).parent().addClass('on')
@@ -123,7 +123,6 @@ $(document).ready(function(){
       }
     }
     
-    var i = $(this).parent().index();
     detailNav.slideTo(i)
 
   });
@@ -236,7 +235,7 @@ $(document).ready(function(){
 
 
   //공개강의
-  var videoList = new Swiper('.videoList .inner',{
+  let videoList = new Swiper('.videoList .inner',{
     slidesPerView: "auto",
     spaceBetween: 0,
     freeMode: true,
@@ -264,6 +263,64 @@ $(document).ready(function(){
     }
     return false;
   });
+
+  //내보내기
+  $('.export').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').show();
+    $('.exportPop').addClass('on');
+  });
+  $('.exportPopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.exportPop').removeClass('on');
+  });
+
+  //내책장담기
+  $('.save').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').show();
+    $('.savePop').addClass('on');
+  });
+  $('.savePopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.savePop').removeClass('on');
+  });
+
+  //카테고리 열기
+  $('#interestCodeName1').click(function(){
+    $('.blackBg1').show();
+    $('.categoryPop').addClass('on');
+  });
+  $('.categoryPopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.categoryPop').removeClass('on');
+  });
+
+  //카테고리 폴더
+  $('.folderList>li>a').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next().slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next().slideDown();
+    }
+  }); 
+  
+  $('.folderList>li>ul>li>a').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next().slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next().slideDown();
+    }
+  }); 
 
   util.init();
 });    

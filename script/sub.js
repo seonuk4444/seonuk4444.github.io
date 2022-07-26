@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var searhCnt = $('.topSearch').length;
+  let searhCnt = $('#divHeader').length;
   if(searhCnt > 0){
     $('#divContents').addClass('up');
   }else{
@@ -10,7 +10,7 @@ $(document).ready(function(){
   }
 
 
-  var tabSlide = new Swiper('.swipeTab .inner',{
+  let tabSlide = new Swiper('.swipeTab .inner',{
     slidesPerView:'auto',
     spaceBetween: 0,
     freeMode: true,
@@ -21,7 +21,7 @@ $(document).ready(function(){
   });
 
   $(window).on('load',function(){
-    var chk = $('.swipeTab .tab.on').index();
+    let chk = $('.swipeTab .tab.on').index();
     tabSlide.slideTo(chk)
   });
 
