@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/commons/reset.css">
     <link rel="stylesheet" href="style/commons/font.css">
     <link rel="stylesheet" href="style/commons/common.css">
+    <link rel="stylesheet" href="style/commons/popup.css">
     <link rel="stylesheet" href="ui/swiper/swiper.min.css">
     <link rel="stylesheet" href="style/sub.css">
     <link rel="stylesheet" href="style/search/search.css">
@@ -47,8 +48,8 @@
         <span class="blackBg1"></span>
         <!-- blackBg -->
 
-        <!-- topSearch -->
-        <div class="topSearch">
+        <!-- divHeader -->
+        <div id="divHeader">
             <div class="searchBorder">
                 <div class="searchInputW">
                     <img src="images/commons/rLogo.png" alt="RISS 서브로고" class="rLogo">
@@ -58,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <!-- //topSearch -->
+        <!-- //divHeader -->
 
         <!-- divSearch -->
         <div id="divSearch">
@@ -76,6 +77,595 @@
                 <a href="" class="detailSearchBtn">상세검색</a>
             </div>
             <!-- //searchTop -->
+            
+            <!-- detailSearch -->
+            <div class="detailSearch">
+                <div class="detailShTop">
+                    <p class="tit">상세검색</p>
+                    <a href="" title="검색도움말">검색도움말</a>
+                </div>
+                <div class="detailShCont">
+                    <div class="detailShTab">
+                        <div class="inner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide tab on">
+                                    <a href="" title="국내학술논문">국내학술논문</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="학위논문">학위논문</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="해외학술논문">해외학술논문</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="학술지">학술지</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="단행본">단행본</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="연구보고서">연구보고서</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="공개강의">공개강의</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="toggleBtn" title="전체보기">버튼</a>
+                    </div>
+                    <div class="detailShTabContent">
+                        <div class="detailShInput">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option selected="selected">논문명</option>
+                                            <option>저자</option>
+                                            <option>주제어</option>
+                                            <option>발행기관</option>
+                                            <option>초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                        <select class="selType3">
+                                            <option selected="selected">AND</option>
+                                            <option>OR</option>
+                                            <option>NOT</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option>논문명</option>
+                                            <option selected="selected">저자</option>
+                                            <option>주제어</option>
+                                            <option>발행기관</option>
+                                            <option>초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                        <select class="selType3">
+                                            <option selected="selected">AND</option>
+                                            <option>OR</option>
+                                            <option>NOT</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option>논문명</option>
+                                            <option>저자</option>
+                                            <option selected="selected">주제어</option>
+                                            <option>발행기관</option>
+                                            <option>초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                        <select class="selType3">
+                                            <option selected="selected">AND</option>
+                                            <option>OR</option>
+                                            <option>NOT</option>
+                                        </select>
+                                        <a href="" class="addInput">추가</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option>논문명</option>
+                                            <option>저자</option>
+                                            <option>주제어</option>
+                                            <option selected="selected">발행기관</option>
+                                            <option>초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                        <select class="selType3">
+                                            <option selected="selected">AND</option>
+                                            <option>OR</option>
+                                            <option>NOT</option>
+                                        </select>
+                                        <a href="" class="addInput">추가</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option>논문명</option>
+                                            <option>저자</option>
+                                            <option>주제어</option>
+                                            <option>발행기관</option>
+                                            <option selected="selected">초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detailShTabContW">
+                            <!-- 국내학술논문 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">발행연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">작성언어</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>한국어</option>
+                                                <option>영어</option>
+                                                <option>중국어</option>
+                                                <option>일본어</option>
+                                                <option>독일어</option>
+                                                <option>프랑스어</option>
+                                                <option>스페인어</option>
+                                                <option>러시아어</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">주제분류</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>인문학</option>
+                                                <option>사회과학</option>
+                                                <option>자연과학</option>
+                                                <option>공학</option>
+                                                <option>의약학</option>
+                                                <option>농수해양</option>
+                                                <option>예술체육</option>
+                                                <option>교육</option>
+                                                <option>복합학</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">등재여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test1">
+                                                    <label for="test1"><span class="type">SCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test2">
+                                                    <label for="test2"><span class="type">SCIE</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test3">
+                                                    <label for="test3"><span class="type">AHCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test4">
+                                                    <label for="test4"><span class="type">SSCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test5">
+                                                    <label for="test5"><span class="type">SCOPUS</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">원문유무료</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test6">
+                                                    <label for="test6"><span class="type">전체</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test7">
+                                                    <label for="test7"><span class="type">유료</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test8">
+                                                    <label for="test8"><span class="type">무료</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //국내학술논문 -->
+                            <!-- 학위논문 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">학위수여연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">학위유형</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test9">
+                                                    <label for="test9"><span class="type">전체</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test10">
+                                                    <label for="test10"><span class="type">국내박사</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test11">
+                                                    <label for="test11"><span class="type">해외박사</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //학위논문 -->
+                            <!-- 해외학술논문 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">발행연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">작성언어</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>한국어</option>
+                                                <option>영어</option>
+                                                <option>중국어</option>
+                                                <option>일본어</option>
+                                                <option>독일어</option>
+                                                <option>프랑스어</option>
+                                                <option>스페인어</option>
+                                                <option>러시아어</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">등재여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test12">
+                                                    <label for="test12"><span class="type">SCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test13">
+                                                    <label for="test13"><span class="type">SCIE</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test14">
+                                                    <label for="test14"><span class="type">AHCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test15">
+                                                    <label for="test15"><span class="type">SSCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test16">
+                                                    <label for="test16"><span class="type">SCOPUS</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">원문유무</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test17">
+                                                    <label for="test17"><span class="type">원문있음</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test18">
+                                                    <label for="test18"><span class="type">원문없음</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">원문복사여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test19">
+                                                    <label for="test19"><span class="type">무료(FRIC)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test20">
+                                                    <label for="test20"><span class="type">유료</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>        
+                            <!-- //해외학술논문 -->
+                            <!-- 학술지 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">자료형태</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test6">
+                                                    <label for="test6"><span class="type">국내학술지</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test7">
+                                                    <label for="test7"><span class="type">해외학술지</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">등재여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test21">
+                                                    <label for="test21"><span class="type">SCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test22">
+                                                    <label for="test22"><span class="type">SCIE</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test23">
+                                                    <label for="test23"><span class="type">AHCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test24">
+                                                    <label for="test24"><span class="type">SSCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test25">
+                                                    <label for="test25"><span class="type">SCOPUS</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">원문복사여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test26">
+                                                    <label for="test26"><span class="type">무료</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test27">
+                                                    <label for="test27"><span class="type">유료</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //학술지 -->
+                            <!-- 단행본 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">발행연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">자료형태</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test28">
+                                                    <label for="test28"><span class="type">단행본</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test29">
+                                                    <label for="test29"><span class="type">비도서</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test30">
+                                                    <label for="test30"><span class="type">해외eBook</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test31">
+                                                    <label for="test31"><span class="type">국내eBook</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">작성언어</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>한국어</option>
+                                                <option>영어</option>
+                                                <option>중국어</option>
+                                                <option>일본어</option>
+                                                <option>독일어</option>
+                                                <option>프랑스어</option>
+                                                <option>스페인어</option>
+                                                <option>러시아어</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //단행본 -->
+                            <!-- 연구보고서 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">발행연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">자료형태</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test32">
+                                                    <label for="test32"><span class="type">한국연구재단(NRF)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test33">
+                                                    <label for="test33"><span class="type">dCollection</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test34">
+                                                    <label for="test34"><span class="type">국가정책연구포털(NKIS)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test35">
+                                                    <label for="test35"><span class="type">국립의과학지식센터(NCMIK)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test36">
+                                                    <label for="test36"><span class="type">교육유관기관지식나눔(Look)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test37">
+                                                    <label for="test37"><span class="type">한국건설기술연구원</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test38">
+                                                    <label for="test38"><span class="type">기타기관</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //연구보고서 -->
+                            <!-- 공개강의 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">자료형태</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test39">
+                                                    <label for="test39"><span class="type">전체</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test40">
+                                                    <label for="test40"><span class="type">국내자료</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test41">
+                                                    <label for="test41"><span class="type">해외자료</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test42">
+                                                    <label for="test42"><span class="type">OAI-PHM(OER)자료</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">작성언어</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>한국어</option>
+                                                <option>영어</option>
+                                                <option>중국어</option>
+                                                <option>일본어</option>
+                                                <option>독일어</option>
+                                                <option>프랑스어</option>
+                                                <option>스페인어</option>
+                                                <option>러시아어</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">CCL 유형</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>저작자표시</option>
+                                                <option>저작자표시-비영리</option>
+                                                <option>저작자표시-변경금지</option>
+                                                <option>저작자표시-동일조건변경허락</option>
+                                                <option>저작자표시-비영리-변경금지</option>
+                                                <option>저작자표시-비영리-동일조건변경허락</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //공개강의 -->
+                        </div>
+                        <div class="detailShBtns">
+                            <input type="reset" class="detailReset" value="초기화">
+                            <input type="submit" class="detailShBtn" value="검색">
+                        </div>
+                    </div>
+                </div>
+                <div class="detailSearchCloseW">
+                    <a href="" class="detailSearchClose" title="상세검색닫기">상세검색닫기</a>
+                </div>
+                
+            </div>
+            <!-- //detailSearch -->
+
             <!-- searchHistory -->
             <div class="searchHistory">
                 <div class="titArea">
@@ -235,10 +825,10 @@
             <div class="swipeTab type1">
                 <div class="inner">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide tab on">
+                        <div class="swiper-slide tab">
                             <a href="" title="통합검색">통합검색</a>
                         </div>
-                        <div class="swiper-slide tab">
+                        <div class="swiper-slide tab on">
                             <a href="" title="국내학술논문">국내학술논문</a>
                         </div>
                         <div class="swiper-slide tab">
@@ -325,37 +915,32 @@
                                                         <div class="listCont">
                                                             <ul>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test1">
-                                                                    <label for="test1"></label>
-                                                                    <span class="type">원문 (Fulltest)</span>
-                                                                    <span class="total">(448,411)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-1">
+                                                                    <label for="test-1"> <span class="type">원문 (Fulltest)</span>
+                                                                        <span class="total">(448,411)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test2">
-                                                                    <label for="test2"></label>
-                                                                    <span class="type">Peer Reviewed Journal</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-2">
+                                                                    <label for="test-2"><span class="type">Peer Reviewed Journal</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test3">
-                                                                    <label for="test3"></label>
-                                                                    <span class="type">발행년도</span>
-                                                                    <span class="inputTxt">
-                                                                        <input type="text"> ~ <input type="text">
-                                                                    </span>
+                                                                    <input type="checkbox" class="customChk1" id="test-3">
+                                                                    <label for="test-3"> <span class="type">발행년도</span>
+                                                                        <span class="inputTxt">
+                                                                            <input type="text"> ~ <input type="text">
+                                                                        </span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test4">
-                                                                    <label for="test4"></label>
-                                                                    <span class="type">내무료DB</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-4">
+                                                                    <label for="test-4"><span class="type">내무료DB</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test5">
-                                                                    <label for="test5"></label>
-                                                                    <span class="type">FRIC(무료복사신청)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-5">
+                                                                    <label for="test-5"><span class="type">FRIC(무료복사신청)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                             </ul>
@@ -367,59 +952,51 @@
                                                         <div class="listCont">
                                                             <ul>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test6">
-                                                                    <label for="test6"></label>
-                                                                    <span class="type">BSC</span>
-                                                                    <span class="total">(518)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-6">
+                                                                    <label for="test-6"><span class="type">BSC</span>
+                                                                        <span class="total">(518)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test7">
-                                                                    <label for="test7"></label>
-                                                                    <span class="type">CiNii</span>
-                                                                    <span class="total">(256)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-7">
+                                                                    <label for="test-7"><span class="type">CiNii</span>
+                                                                        <span class="total">(256)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test8">
-                                                                    <label for="test8"></label>
-                                                                    <span class="type">ASC</span>
-                                                                    <span class="total">(196)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-8">
+                                                                    <label for="test-8"><span class="type">ASC</span>
+                                                                        <span class="total">(196)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test9">
-                                                                    <label for="test9"></label>
-                                                                    <span class="type">CINAHL</span>
-                                                                    <span class="total">(135)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-9">
+                                                                    <label for="test-9"><span class="type">CINAHL</span>
+                                                                        <span class="total">(135)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test10">
-                                                                    <label for="test10"></label>
-                                                                    <span class="type">SocINDEX with FullText</span>
-                                                                    <span class="total">(88)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-10">
+                                                                    <label for="test-10"><span class="type">SocINDEX with FullText</span>
+                                                                        <span class="total">(88)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test11">
-                                                                    <label for="test11"></label>
-                                                                    <span class="type">Education Source</span>
-                                                                    <span class="total">(19)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-11">
+                                                                    <label for="test-11"><span class="type">Education Source</span>
+                                                                        <span class="total">(19)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test12">
-                                                                    <label for="test12"></label>
-                                                                    <span class="type">DOAJ</span>
-                                                                    <span class="total">(17)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-12">
+                                                                    <label for="test-12"><span class="type">DOAJ</span>
+                                                                        <span class="total">(17)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                                 <li>
-                                                                    <input type="checkbox" class="customChk1" id="test13">
-                                                                    <label for="test13"></label>
-                                                                    <span class="type">MLA</span>
-                                                                    <span class="total">(11)</span>
+                                                                    <input type="checkbox" class="customChk1" id="test-13">
+                                                                    <label for="test-13"><span class="type">MLA</span>
+                                                                        <span class="total">(11)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                             </ul>
@@ -432,9 +1009,8 @@
                                                             <ul>
                                                                 <li>
                                                                     <input type="checkbox" class="customChk1" id="test14">
-                                                                    <label for="test14"></label>
-                                                                    <span class="type">BSC</span>
-                                                                    <span class="total">(518)</span>
+                                                                    <label for="test14"><span class="type">BSC</span>
+                                                                        <span class="total">(518)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                             </ul>
@@ -447,9 +1023,8 @@
                                                             <ul>
                                                                 <li>
                                                                     <input type="checkbox" class="customChk1" id="test15">
-                                                                    <label for="test15"></label>
-                                                                    <span class="type">BSC</span>
-                                                                    <span class="total">(518)</span>
+                                                                    <label for="test15"><span class="type">BSC</span>
+                                                                        <span class="total">(518)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                             </ul>
@@ -462,9 +1037,8 @@
                                                             <ul>
                                                                 <li>
                                                                     <input type="checkbox" class="customChk1" id="test16">
-                                                                    <label for="test16"></label>
-                                                                    <span class="type">BSC</span>
-                                                                    <span class="total">(518)</span>
+                                                                    <label for="test16"><span class="type">BSC</span>
+                                                                        <span class="total">(518)</span></label>
                                                                     <a href="" class="btnAction"></a>
                                                                 </li>
                                                             </ul>
@@ -789,16 +1363,33 @@
                                     </div>
                                 </li>
                             </ul>
+                            <!-- 검색결과리스트 더보기 -->
+                            <div class="resultListMoreW">
+                                <a href="" class="resultListMore">더보기</a>
+                            </div>
+                            <!-- //검색결과리스트 더보기 -->
                         </div>
                         <!-- //resultList -->
                     </div>
                     <!-- resultContent -->
-                    <!-- <span class="resultCount">
-                        <span class="current">1</span>
-                        <span class="total">10</span>
-                    </span> -->
                 </div>
                 <!-- //totalSearchResult -->
+                <!-- 팝 업 -->
+                <div class="divPopup viewOriginPop">
+                    <div class="popHeader">
+                        <p class="tit">고등학교 공통사회(하)한국지리 교육과정 및 교과서 분석</p>
+                        <div class="btnW">
+                            <a href="#redirect" onclick="" class="btnOrigin" title="오류접수"><img src="images/search/btnOrigin1.png" alt="오류접수"></a>
+                            <a href="#redirect" onclick="" class="btnOrigin" title="전체화면"><img id="viewBtn" src="images/search/btnOrigin2.png" alt="전체화면" title="전체화면"></a>
+                            <a href="" target="_blank" class="adobe"><img src="images/search/AdobeReader.gif" alt="이 논문을 보기 위한 필수 소프트웨어(Adobe Reader)" title="이 논문을 보기 위한 필수 소프트웨어(Adobe Reader)"></a>
+                        </div>
+                    </div>
+                    <div class="popCont">
+                        뷰어 컨텐츠가 들어옵니다
+                    </div>
+                    <a href="" class="divPopupClose viewOriginPopClose" title="닫기">닫기</a>
+                </div>
+                <!-- //팝 업 -->
             </div>
             <!-- //divContent -->
         </div>
@@ -877,6 +1468,390 @@
                 </li>
             </ul>
         </div>
+        <!-- wholeMenu -->
+        <div class="wholeMenu">
+            <div class="wholeMenuTop">
+                <div class="wholeBtns">
+                    <a href="" class="setting" title="설정"></a>
+                    <a href="" title="닫기" class="wholeMenuClose"></a>
+                </div>
+                <div class="loginW">
+                    <div class="userInfo">
+                        <p class="user"><span>퓨쳐누리</span> 님</p>
+                    </div>
+                    <div class="loginBtns">
+                        <!-- <a href="" title="로그인" class="login">로그인</a> -->
+                        <a href="" title="로그아웃" class="logout">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wholeMenuCont">
+                <!-- wholeMenuNav -->
+                <div class="wholeMenuNav">
+                    <div class="inner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab on">
+                                <a href="#wm1" title="학술연구정보서비스 검색">학술연구정보서비스 검색</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm2" title="MYRISS">MYRISS</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm3" title="회원서비스">회원서비스</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm4" title="회원서비스">설정</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm5" title="About RISS">About RISS</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm6" title="RISS 처음 방문 이세요?">RISS 처음 방문 이세요?</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm7" title="고객센터">고객센터</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm8" title="RISS 활용도 분석">RISS 활용도 분석</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm9" title="최신/인기 학술자료">최신/인기 학술자료</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm10" title="해외자료신청(E-DDS)">해외자료신청(E-DDS)</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm11" title="공지사항">공지사항</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm12" title="해외전자정보서비스 검색">해외전자정보서비스 검색</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm13" title="Databases & Journals">Databases & Journals</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm14" title="해외전자자료 이용안내">해외전자자료 이용안내</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //wholeMenuNav -->
+                <div class="wholeMenuList">
+                    <ul>
+                        <!-- 학술연구정보서비스 검색 -->
+                        <li id="wm1" class="fixEdit">
+                            <a href="" title="학술연구정보서비스 검색" class="tit">학술연구정보서비스 검색</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="통합검색">통합검색</a>
+                                </li>
+                                <li>
+                                    <a href="" title="학위논문">학위논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="국내학술논문">국내학술논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외학술논문">해외학술논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="학술지">학술지</a>
+                                </li>
+                                <li>
+                                    <a href="" title="단행본">단행본</a>
+                                </li>
+                                <li>
+                                    <a href="" title="연구보고서">연구보고서</a>
+                                </li>
+                                <li>
+                                    <a href="" title="공개강의">공개강의</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //학술연구정보서비스 검색 -->
+                        <!-- MyRISS -->
+                        <li id="wm2" class="fixEdit">
+                            <a href="" title="MyRISS" class="tit">MyRISS</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="내 추천논문">내 추천논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 책장">내 책장</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 최근 본 논문">내 최근 본 논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 저작물관리">내 저작물관리</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 구매·신청 현황">내 구매·신청 현황</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 서비스 사용권한">내 서비스 사용권한</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 관심 DB">내 관심 DB</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //MyRISS -->
+                        <!-- 회원서비스 -->
+                        <li id="wm3" class="fixEdit">
+                            <a href="" title="회원서비스" class="tit">회원서비스</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="회원가입">회원가입</a>
+                                </li>
+                                <li>
+                                    <a href="" title="로그인">로그인</a>
+                                </li>
+                                <li>
+                                    <a href="" title="아이디 찾기">아이디 찾기</a>
+                                </li>
+                                <li>
+                                    <a href="" title="비밀번호 찾기">비밀번호 찾기</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //회원서비스 -->
+                        <!-- 설정 -->
+                        <li id="wm4" class="fixEdit">
+                            <a href="" title="설정" class="tit">설정</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="내 정보">내 정보</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //설정 -->
+                        <!-- About RISS -->
+                        <li id="wm5" class="fixEdit">
+                            <a href="" title="About RISS" class="tit">About RISS</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="RISS 홍보관">RISS 홍보관</a>
+                                </li>
+                                <li>
+                                    <a href="" title="DB연계 현황">DB연계 현황</a>
+                                </li>
+                                <li>
+                                    <a href="" title="이용안내">이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="" title="소식지">소식지</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //About RISS -->
+                        <!-- RISS 처음 방문 이세요? -->
+                        <li id="wm6" class="fixEdit">
+                            <a href="" title="RISS 처음 방문 이세요?" class="tit">RISS 처음 방문 이세요?</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="RISS란?">RISS란?</a>
+                                </li>
+                                <li>
+                                    <a href="" title="RISS 이용권한">RISS 이용권한</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 관심논문 등록방법">내 관심논문 등록방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="RISS 자료 유형별 이용방법">RISS 자료 유형별 이용방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="복사/대출 이용방법">복사/대출 이용방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외전자자료 이용방법">해외전자자료 이용방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="RISS 정보취약계층 서비스 이용방법">RISS 정보취약계층 서비스 이용방법</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //RISS 처음 방문 이세요? -->
+                        <!-- 고객센터 -->
+                        <li id="wm7" class="fixEdit">
+                            <a href="" title="고객센터" class="tit">고객센터</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="자주 찾는 질문">자주 찾는 질문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="상담 신청">상담 신청</a>
+                                </li>
+                                <li>
+                                    <a href="" title="상담 내역 확인">상담 내역 확인</a>
+                                </li>
+                                <li>
+                                    <a href="" title="RISS 자료 유형별 이용방법">RISS 자료 유형별 이용방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="복사/대출 이용방법">복사/대출 이용방법</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //고객센터 -->
+                        <!-- RISS 활용도 분석 -->
+                        <li id="wm8" class="fixEdit">
+                            <a href="" title="RISS 활용도 분석" class="tit">RISS 활용도 분석</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="자료 현황 통계">자료 현황 통계</a>
+                                </li>
+                                <li>
+                                    <a href="" title="주제별 활용통계 분석">주제별 활용통계 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="학술지 활용도 분석">학술지 활용도 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="원문다운로드 분석">원문다운로드 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="복사/대출제공 기관 분석">복사/대출제공 기관 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="복사/대출신청 기관 분석">복사/대출신청 기관 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="활용도 높은 주제">활용도 높은 주제</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //RISS 활용도 분석 -->
+                        <!-- 최신/인기 학술자료 -->
+                        <li id="wm9" class="fixEdit">
+                            <a href="" title="최신/인기 학술자료" class="tit">최신/인기 학술자료</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="최신자료">최신자료</a>
+                                </li>
+                                <li>
+                                    <a href="" title="인기자료">인기자료</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //최신/인기 학술자료 -->
+                        <!-- 해외자료신청(E-DDS) -->
+                        <li id="wm10" class="fixEdit">
+                            <a href="" title="해외자료신청(E-DDS)" class="tit">해외자료신청(E-DDS)</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="비용지원 서비스 안내">비용지원 서비스 안내</a>
+                                </li>
+                                <li>
+                                    <a href="" title="도움말">도움말</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외자료신청(E-DDS) 신청">해외자료신청(E-DDS) 신청</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //해외자료신청(E-DDS) -->
+                        <!-- 공지사항 -->
+                        <li id="wm11" class="fixEdit">
+                            <a href="" title="공지사항" class="tit">공지사항</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="공지사항">공지사항</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //공지사항 -->
+                        <!-- 해외전자정보서비스 검색 -->
+                        <li id="wm12" class="fixEdit">
+                            <a href="" title="해외전자정보서비스 검색" class="tit">해외전자정보서비스 검색</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="Academic Journals">Academic Journals</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Ebooks">Ebooks</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Dissertations">Dissertations</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Conference Materials">Conference Materials</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Reviews">Reviews</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Reports">Reports</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //해외전자정보서비스 검색 -->
+                        <!-- Databases & Journals -->
+                        <li id="wm13" class="fixEdit">
+                            <a href="" title="Databases & Journals" class="tit">Databases & Journals</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="전자저널 리스트">전자저널 리스트</a>
+                                </li>
+                                <li>
+                                    <a href="" title="학술DB 리스트">학술DB 리스트</a>
+                                </li>
+                                <li>
+                                    <a href="" title="주제별 리스트">주제별 리스트</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //Databases & Journals -->
+                        <!-- 해외전자자료 이용안내 -->
+                        <li id="wm14" class="fixEdit">
+                            <a href="" title="해외전자자료 이용안내" class="tit">해외전자자료 이용안내</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="해외전자자료 이용안내">해외전자자료 이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외DB 구독대학">해외DB 구독대학</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외DB 상세정보">해외DB 상세정보</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //해외전자자료 이용안내 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //wholeMenu -->
     </div>
     <!-- //divWrapper -->
 </body>
