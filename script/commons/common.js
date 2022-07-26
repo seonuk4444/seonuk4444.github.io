@@ -54,9 +54,9 @@ let wholeUtil = {
           y = $(window).height();
       }
 
-      let elementHeight = $(elm).height();
+      let elementHeight = $(elm).height() + 10;
 
-      if (eval == 'object visible') return y < viewportHeight + scrolltop  && y > scrolltop - elementHeight + 63;
+      if (eval == 'object visible') return y < viewportHeight + scrolltop && y > scrolltop - elementHeight;
       if (eval == 'above') return y < viewportHeight + scrolltop;
   },
 };
@@ -107,19 +107,6 @@ $(document).ready(function(){
     lastScrollTop = scroll;
 
     
-  });
-
-  $('.wholeMenu').on('scroll',function(){
-    scroll = $(this).scrollTop();
-    wholeTopH = $('.wholeMenuTop').outerHeight(true)
-    $('.wholeMenuNav .tab').removeClass('strong');
-    if(scroll > wholeTopH + 16){
-      $('.wholeMenuNav').addClass('fix');
-      $('.wholeMenuList').addClass('on');
-    }else{
-      $('.wholeMenuNav').removeClass('fix');
-      $('.wholeMenuList').removeClass('on');
-    }
   });
 
   $(window).on('resize',function(){
@@ -242,6 +229,61 @@ $('.wholeMenuNav .tab>a').click(function(){
   $(this).parent().removeClass('strong');
   wholeMenuNav.slideTo(i1);
 
+});
+let wm1 = $('#wm1').offset().top - 63;
+let wm2 = $('#wm2').offset().top - 63;
+let wm3 = $('#wm3').offset().top - 63;
+let wm4 = $('#wm4').offset().top - 63;
+let wm5 = $('#wm5').offset().top - 63;
+let wm6 = $('#wm6').offset().top - 63;
+let wm7 = $('#wm7').offset().top - 63;
+let wm8 = $('#wm8').offset().top - 63;
+let wm9 = $('#wm9').offset().top - 63;
+let wm10 = $('#wm10').offset().top - 63;
+let wm11 = $('#wm11').offset().top - 63;
+let wm12 = $('#wm12').offset().top - 63;
+let wm13 = $('#wm13').offset().top - 63;
+let wm14 = $('#wm14').offset().top - 63;
+$('.wholeMenu').on('scroll',function(){
+  scroll = $(this).scrollTop();
+  console.log(scroll)
+  wholeTopH = $('.wholeMenuTop').outerHeight(true);
+  $('.wholeMenuNav .tab').removeClass('strong');
+  if(scroll > wholeTopH + 16){
+    $('.wholeMenuNav').addClass('fix');
+    $('.wholeMenuList').addClass('on');
+  }else{
+    $('.wholeMenuNav').removeClass('fix');
+    $('.wholeMenuList').removeClass('on');
+  }
+
+  if(scroll > wm1 && scroll < wm2){
+    wholeMenuNav.slideTo(0);
+  } else if(scroll > wm2 && scroll < wm3){
+    wholeMenuNav.slideTo(1);
+  } else if(scroll > wm3 && scroll < wm4){
+    wholeMenuNav.slideTo(2);
+  } else if(scroll > wm4 && scroll < wm5){
+    wholeMenuNav.slideTo(3);
+  } else if(scroll > wm5 && scroll < wm6){
+    wholeMenuNav.slideTo(4);
+  } else if(scroll > wm6 && scroll < wm7){
+    wholeMenuNav.slideTo(5);
+  } else if(scroll > wm7 && scroll < wm8){
+    wholeMenuNav.slideTo(6);
+  } else if(scroll > wm8 && scroll < wm9){
+    wholeMenuNav.slideTo(7);
+  } else if(scroll > wm9 && scroll < wm10){
+    wholeMenuNav.slideTo(8);
+  } else if(scroll > wm10 && scroll < wm11){
+    wholeMenuNav.slideTo(9);
+  } else if(scroll > wm11 && scroll < wm12){
+    wholeMenuNav.slideTo(10);
+  } else if(scroll > wm12 && scroll < wm13){
+    wholeMenuNav.slideTo(11);
+  } else if(scroll > wm13 && scroll < wm14){
+    wholeMenuNav.slideTo(12);
+  }
 });
 
   wholeUtil.init();
