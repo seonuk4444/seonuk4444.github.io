@@ -11,15 +11,15 @@ var exportContent = {
 					//document.getElementById("templateSubImage1").style.display = "none";
 					//document.getElementById("templateSubTitle1").style.display = "none";
 					
-					document.getElementById("templateTitle1").style.display = "inline-block";
-					//document.getElementById("templateSubImage2").style.display = "inline-block";
+					document.getElementById("templateTitle1").style.display = "block";
+					//document.getElementById("templateSubImage2").style.display = "block";
 				} else {
 					document.getElementById("templateTitle1").style.display = "none";
 					//document.getElementById("templateSubImage2").style.display = "none";
 					//document.getElementById("templateSubTitle1").style.display = "none";
 					
-					document.getElementById("templateTitle2").style.display = "inline-block";
-					//document.getElementById("templateSubImage1").style.display = "inline-block";
+					document.getElementById("templateTitle2").style.display = "block";
+					//document.getElementById("templateSubImage1").style.display = "block";
 				}
 			} else {
 				document.getElementById("templateTitle1").style.display = "none";
@@ -27,7 +27,7 @@ var exportContent = {
 				//document.getElementById("templateSubImage2").style.display = "none";
 				//document.getElementById("templateSubTitle1").style.display = "none";
 				
-				//document.getElementById("templateSubImage1").style.display = "inline-block";
+				//document.getElementById("templateSubImage1").style.display = "block";
 			}
 		} else {
 			document.getElementById("export_item").style.display = "none";
@@ -36,8 +36,8 @@ var exportContent = {
 			//document.getElementById("templateSubImage2").style.display = "none";
 			//document.getElementById("templateSubTitle1").style.display = "none";
 			document.getElementById("excel_gubun").style.display = "none";
-			document.getElementById("riss_gubun").style.display = "inline-block";
-			//document.getElementById("templateSubImage1").style.display = "inline-block";
+			document.getElementById("riss_gubun").style.display = "block";
+			//document.getElementById("templateSubImage1").style.display = "block";
 
 			if (contentIdx == 0) {
 				seq = "01";
@@ -45,7 +45,7 @@ var exportContent = {
 			} else if (contentIdx == 1) {
 				seq = "02";
 				titleContent = "상세정보";
-				document.getElementById("excel_gubun").style.display = "inline-block";
+				document.getElementById("excel_gubun").style.display = "block";
 			} else if (contentIdx == 2 || contentIdx == 3 || contentIdx == 4) {
 				seq = "03";
 				titleContent = "참고문헌정보";
@@ -64,9 +64,9 @@ var exportContent = {
 			//document.getElementById("templateSubImage1").style.display = "none";
 			//document.getElementById("templateSubTitle1").style.display = "none";
 			
-			document.getElementById("export_item").style.display = "inline-block";
-			document.getElementById("templateTitle1").style.display = "inline-block";
-			//document.getElementById("templateSubImage2").style.display = "inline-block";
+			document.getElementById("export_item").style.display = "block";
+			document.getElementById("templateTitle1").style.display = "block";
+			//document.getElementById("templateSubImage2").style.display = "block";
 			
 			format = "EndNote";
 			titleFormat = "EndNote 및 Mendeley 이용화면 예시";
@@ -83,9 +83,9 @@ var exportContent = {
 			//document.getElementById("templateSubImage2").style.display = "none";
 			//document.getElementById("templateSubTitle1").style.display = "none";
 			
-			document.getElementById("export_item").style.display = "inline-block";
-			document.getElementById("templateTitle2").style.display = "inline-block";
-			//document.getElementById("templateSubImage1").style.display = "inline-block";
+			document.getElementById("export_item").style.display = "block";
+			document.getElementById("templateTitle2").style.display = "block";
+			//document.getElementById("templateSubImage1").style.display = "block";
 			
 			format = "refWorks";
 			titleFormat = "RefWorks 이용화면 예시";
@@ -106,7 +106,7 @@ var exportContent = {
 			if (formatIdx == 0) {
 				format = "mail";
 				titleFormat = "메일전송 예시";
-				document.getElementById("mailFrm").style.display = "inline-block";
+				document.getElementById("mailFrm").style.display = "block";
 			} else if (formatIdx == 1) {
 				format = "print";
 				titleFormat = "인쇄 예시";
@@ -114,15 +114,15 @@ var exportContent = {
 				format = "excel";
 				titleFormat = "엑셀저장 예시(세로)";
 				if (seq == '02') {
-					//document.getElementById("templateSubTitle1").style.display = "inline-block";
-					document.getElementById("excel_gubun").style.display = "inline-block";
+					//document.getElementById("templateSubTitle1").style.display = "block";
+					document.getElementById("excel_gubun").style.display = "block";
 				}
 			} else if (formatIdx == 3) {
 				format = "text";
 				titleFormat = "Text저장 예시";
 			}
 
-			//document.getElementById("templateSubImage1").style.display = "inline-block";
+			//document.getElementById("templateSubImage1").style.display = "block";
 		}
 
 		// 예시 1의 제목, 이미지

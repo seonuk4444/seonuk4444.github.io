@@ -1517,16 +1517,15 @@
                 <!-- exportPop -->
                 <div class="divPopup exportPop">
                     <div class="popHeader">
-                        <p class="tit">서지정보 내보내기(Export)</p>
+                        <div class="titArea">
+                            <p class="tit">서지정보 내보내기(Export)</p>
+                            <a href="" class="divPopupClose exportPopClose" title="닫기">닫기</a>
+                        </div>
                     </div>
                     <div class="popCont">
                         <form name="f" action="http://www.riss.kr/ExportApply.do" method="post">
-                        
                             <input type="hidden" name="p_mat_type" value="1a0202e37d52c72d">
-                        
-                        
                             <input type="hidden" name="control_no" value="a264d49a9cf86b5dffe0bdc3ef48d419">
-                        
                             <input type="hidden" name="gubun" value="">
                             <div class="popInnerCont">
                                 <h3 class="tit">내보내기 형태를 선택하세요</h3>
@@ -1549,7 +1548,7 @@
                             </div>
                             <div class="popInnerCont">
                                 <h3 class="tit">서지정보의 형식을 선택하세요</h3>
-                                <div class="inner" id="riss_gubun" style="display: inline-block;">
+                                <div class="inner" id="riss_gubun">
                                     <ul class="radioBtnList">
                                         <li>
                                             <input class="radioType1 small" type="radio" id="radio-7" name="riss_gubun" value="simple"
@@ -1584,50 +1583,34 @@
                                         </ul>
                                     </div>
                         
-                        
-                                    <div class="divPopTable" id="mailFrm" style="display: inline-block;">
-                                        <table>
-                                            <caption>메일보내기 입력</caption>
-                                            <colgroup>
-                                                <col style="width:30%">
-                                                <col style="width:70%">
-                                            </colgroup>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">수신자 이메일</th>
-                                                    <td><input type="text" class="inputType1" id="mailto" name="mailto" title="수신자 이메일">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">발신자 이메일</th>
-                                                    <td>
-                        
-                        
-                                                        <input type="text" class="inputType1" id="mailfrom" name="mailfrom" title="발신자 이메일"
-                                                            value="">
-                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">제목</th>
-                                                    <td>
-                        
-                                                        <input type="text" class="inputType1" id="subject" name="subject" title="제목"
+                                    <div class="popListForm" id="mailFrm">
+                                        <ul>
+                                            <li>
+                                                <label class="tit" for="mailto">수신자 이메일</label>
+                                                <div>
+                                                    <input type="text" class="inputType1" id="mailto" name="mailto" title="수신자 이메일">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label class="tit" for="mailfrom">발신자 이메일</label>
+                                                <div>
+                                                    <input type="text" class="inputType1" id="mailfrom" name="mailfrom" title="발신자 이메일" value="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label class="tit" for="subject">제목</label>
+                                                <div>
+                                                    <input type="text" class="inputType1" id="subject" name="subject" title="제목"
                                                             value="중국의 위험한 민족수난사 교육 : 근현대교과서의 전쟁사관을 중심으로, 以近現代戰爭史敎育爲中心 = 危險的中國&quot;民族受難史&quot;敎育">
-                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">메모</th>
-                                                    <td><textarea id="memo" name="memo" cols="1" rows="1" class="ttArea" title="메모"></textarea>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="btnBunch">
-                                        <a href="#redirect" onclick="javascript:f_submit();" class="btnType1">내보내기</a>
-                                        <a href="#redirect" onclick="javascript:window.self.close();" class="btnType2">취소</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label class="tit" for="memo">메모</label>
+                                                <div>
+                                                    <textarea id="memo" name="memo" cols="1" rows="1" class="ttArea" title="메모"></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                         
@@ -1685,10 +1668,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="btnBunch">
-                                    <a href="#redirect" onclick="javascript:f_submit();" class="btnType1">내보내기</a>
-                                    <a href="#redirect" onclick="javascript:window.self.close();" class="btnType2">취소</a>
-                                </div>
                             </div>
                         
                             <div class="popInnerCont" id="templateTitle2" style="display:none">
@@ -1705,117 +1684,96 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="btnBunch">
-                                    <a href="#redirect" onclick="javascript:f_submit();" class="btnType1">내보내기</a>
-                                    <a href="#redirect" onclick="javascript:window.self.close();" class="btnType2">취소</a>
-                                </div>
+                            </div>
+                            <div class="btnBunch">
+                                <a href="#redirect" onclick="javascript:window.self.close();" class="btnType2">취소</a>
+                                <a href="#redirect" onclick="javascript:f_submit();" class="btnType1">내보내기</a>
                             </div>
                         </form>
-                    
+
                     </div>
-                    <a href="" class="divPopupClose exportPopClose" title="닫기">닫기</a>
                 </div>
                 <!-- //exportPop -->
                 <!-- savePop -->
                 <div class="divPopup savePop" id="newCabinet_div">
                     <div class="popHeader">
-                        <p class="tit">내책장담기</p>
+                        <div class="titArea">
+                            <p class="tit">내책장담기</p>
+                            <a href="" class="divPopupClose savePopClose" title="닫기">닫기</a>
+                        </div>
                     </div>
                     <div class="popCont">
                         <div class="popInnerCont">
                             <p class="essential"><span class="essentialM"><img src="images/commons/essential.png" alt="필수"></span>표가 있는 항목은
                                 반드시 기재해 주셔야 합니다.</p>
                             <p class="txt">동일자료를 같은 책장에 담을 경우 담은 시점만 최신으로 수정됩니다.</p>
-                            <div class="divPopTable">
-                                <table>
-                                    <caption>내책장담기</caption>
-                                    <colgroup>
-                                        <col style="width:100px">
-                                        <col>
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">책장선택<span class="essentialM"><img src="images/commons/essentialS.png"
-                                                        alt="필수"></span></th>
-                                            <td>
-                                                <!-- selectBox -->
-                                                <div class="boardSelect type2 inlineB">
-                                                    <div class="selectBoxW">
-                    
-                                                        <label for="dirId" class="skip">기본책장</label>
-                                                        <select id="dirId" class="selType1" name="dirId" title="기본책장">
-                    
-                                                            <option value="">기본책장</option>
-                    
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <!--// selectBox -->
-                                                <a class="btnType1" id="togle" href="#redirect" onclick="javascript:togleNewCabinetForm();">새 책장 만들어 자료 담기</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">선택한 자료</th>
-                                            <td>
-                                                <div class="txtarea">
-                                                    <ul>
-                    
-                                                        <li>
-                                                            중국의 위험한 민족수난사 교육
-                                                        </li>
-                    
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="btnBunch">
-                                <a href="#redirect" class="btnType1" onclick="javascript:formSubmit();">내책장에 담기</a>
-                                <a href="#redirect" class="btnType2" onclick="javascript:closeWindow();">취소</a>
+                            <div class="popListForm">
+                                <ul>
+                                    <li>
+                                        <label class="tit" for="dirId">책장선택<span class="essentialM"><img src="images/commons/essentialS.png"
+                                            alt="필수"></span></label>
+                                        <div>
+                                            <select id="dirId" class="selType1" name="dirId" title="기본책장">
+                                                <option value="">기본책장</option>
+                                            </select>
+                                            <a class="btnType1" id="togle" href="#redirect" onclick="javascript:togleNewCabinetForm();">새 책장 만들어 자료 담기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label class="tit">선택한 자료</label>
+                                        <div>
+                                            중국의 위험한 민족수난사 교육
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                        <div class="btnBunch">
+                            <a href="#redirect" class="btnType2" onclick="javascript:closeWindow();">취소</a>
+                            <a href="#redirect" class="btnType1" onclick="javascript:formSubmit();">내책장에 담기</a>
+                        </div>
                     </div>
-                    <a href="" class="divPopupClose savePopClose" title="닫기">닫기</a>
+                    
                 </div>
                 <!-- //savePop -->
                 <!-- myPop -->
                 <div class="divPopup myPop" id="newCabinet_div2">
                     <div class="popHeader">
-                        <p class="tit">새책장 만들기</p>
+                        <div class="titArea">
+                            <p class="tit">새책장 만들기</p>
+                            <a href="#redirect" class="divPopupClose" onclick="javascript:togleNewCabinetForm();">닫기</a>
+                        </div>
                     </div>
                     <div class="popCont">
                         <div class="popInnerCont">
-                            <p class="essential"><span class="essentialM"><img src="images/commons/essential.png" alt="필수"></span>표가 있는 항목은 반드시 기재해 주셔야 합니다.</p>
-                            <div class="divPopTable">
-                                <table>
-                                    <caption>새책장 만들기</caption>
-                                    <colgroup>
-                                        <col style="width:100px">
-                                        <col>
-                                    </colgroup>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">새책장 명<span class="essentialM"><img src="images/commons/essentialS.png" alt="필수"></span></th>
-                                        <td class="inputTit">
+                            <p class="essential"><span class="essentialM"><img src="images/commons/essential.png" alt="필수"></span>표가 있는
+                                항목은 반드시 기재해 주셔야 합니다.</p>
+                            <div class="popListForm">
+                                <ul>
+                                    <li>
+                                        <label class="tit" for="dirName">새책장 명<span class="essentialM"><img src="images/commons/essentialS.png"
+                                            alt="필수"></span></label>
+                                        <div>
                                             <input type="text" class="inputType1" id="dirName" name="dirName" title="새책장명">
-                                        </td>
-                                    </tr>
-                                    <tr> 
-                                        <th scope="row">새책장 설명</th>
-                                        <td> 
-                                            <textarea style="width:100%" name="memo" id="memo" class="ttArea" title="새책장설명" onkeypress="javascript:checkLength('');"></textarea>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label class="tit" for="memo">새책장 설명</label>
+                                        <div>
+                                            <textarea name="memo" id="memo" class="ttArea" title="새책장설명"
+                                            onkeypress="javascript:checkLength('');"></textarea>
                                             <p class="caution">책장설명은 [내 책장/책장목록]에서 수정할 수 있습니다.</p>
-                                        </td>
-                                    </tr>
-                                     <tr> 
-                                        <th scope="row">새책장 카테고리</th>
-                                        <td> 
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label class="tit" for="memo">새책장 카테고리</label>
+                                        <div>
                                             <ul class="inputList">
                                                 <li>
-                                                    <p><span class="txt">카테고리</span><span class="essentialM"><img src="images/commons/essentialS.png" alt="필수"></span></p>
-                                                    <input type="text" class="inputType1 withBtn" name="interestCodeName1" id="interestCodeName1" readonly="readonly" title="카테고리1">
+                                                    <p><span class="txt">카테고리</span><span class="essentialM"><img
+                                                                src="images/commons/essentialS.png" alt="필수"></span></p>
+                                                    <input type="text" class="inputType1 withBtn" name="interestCodeName1"
+                                                        id="interestCodeName1" readonly="readonly" title="카테고리1">
                                                     <input type="hidden" id="interestCode1" name="interestCode1">
                                                     <input type="hidden" id="interestCode2" name="interestCode2">
                                                     <input type="hidden" id="interestCode3" name="interestCode3">
@@ -1823,61 +1781,56 @@
                                                 </li>
                                                 <li>
                                                     <p><span class="txt">카테고리</span></p>
-                                                    <input type="text" class="inputType1 withBtn" name="interestCodeName2" id="interestCodeName2" readonly="readonly" title="카테고리2">
+                                                    <input type="text" class="inputType1 withBtn" name="interestCodeName2"
+                                                        id="interestCodeName2" readonly="readonly" title="카테고리2">
                                                     <a href="#redirect" id="reset2" class="btnType1">취소</a>
                                                 </li>
                                                 <li>
                                                     <p><span class="txt">카테고리</span></p>
-                                                    <input type="text" class="inputType1 withBtn" name="interestCodeName3" id="interestCodeName3" readonly="readonly" title="카테고리3">
+                                                    <input type="text" class="inputType1 withBtn" name="interestCodeName3"
+                                                        id="interestCodeName3" readonly="readonly" title="카테고리3">
                                                     <a href="#redirect" id="reset3" class="btnType1">취소</a>
                                                 </li>
                                             </ul>
                                             <p class="caution">책장카테고리 설정은 최소1개 ~ 최대3개까지 가능합니다.</p>
-                                        </td>
-                                    </tr>
-                                    <!-- <tr> 
-                                        <th scope="row">공개여부<span class="essentialM"><img src="images/commons/essentialS.png" alt="필수"></span></th>
-                                        <td>
-                                             <input class="radioType1 small" type="radio" id="ck01" name="bOpen" value="Y"><label for="ck01">공개</label>
-                                             <input class="radioType1 small" type="radio" id="ck02" name="bOpen" value="N"><label for="ck02">비공개</label>
-                                        </td>
-                                    </tr> -->
-                                    <tr> 
-                                        <th scope="row">Default 설정</th>
-                                        <td> 
-                                            <input class="radioType1 small" type="radio" id="ck03" name="defaultYn" value="Y"><label for="ck03">메일전송</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><label>선택한 자료</label></th>
-                                        <td>
-                                            <div class="txtarea">
-                                                <ul>
-                                                    
-                                                        <li>
-                                                            중국의 위험한 민족수난사 교육
-                                                        </li>
-                                                    
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </div>    
-                            
+                                        </div>
+                                    </li>
+                                    <!-- <li>
+                                        <label class="tit">공개여부<span class="essentialM"><img src="images/commons/essentialS.png" alt="필수"></span></label>
+                                        <div>
+                                            <input class="radioType1 small" type="radio" id="ck01" name="bOpen" value="Y"><label for="ck01">공개</label>
+                                                             <input class="radioType1 small" type="radio" id="ck02" name="bOpen" value="N"><label for="ck02">비공개</label>
+                                        </div>
+                                    </li> -->
+                                    <li>
+                                        <label class="tit" for="ck03">Default 설정</label>
+                                        <div>
+                                            <input class="radioType1 small" type="radio" id="ck03" name="defaultYn" value="Y"><label
+                                            for="ck03">메일전송</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label class="tit">선택한 자료</label>
+                                        <div>
+                                            중국의 위험한 민족수난사 교육
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="btnBunch">
+                            <a href="#redirect" class="btnType2" onclick="javascript:closeWindow();">취소</a>
+                            <a href="#redirect" class="btnType1" onclick="javascript:formSubmit();">새 책장 만들어 자료 담기</a>
+                        </div>
                     </div>
-                    </div>
-                    <div class="btnBunch">
-                        <a href="#redirect" class="btnType1" onclick="javascript:formSubmit();">새 책장 만들어 자료 담기</a>
-                        <a href="#redirect" class="btnType2" onclick="javascript:closeWindow();">취소</a>
-                    </div>
-                    <a href="#redirect" class="divPopupClose" onclick="javascript:togleNewCabinetForm();">닫기</a>
                 </div>
                 <!-- //myPop -->
                 <div class="divPopup categoryPop">
                     <div class="popHeader">
-                        <p class="tit">관심분야 검색</p>
+                        <div class="titArea">
+                            <p class="tit">관심분야 검색</p>
+                            <a href="" class="divPopupClose categoryPopClose" title="닫기">닫기</a>
+                        </div>
                     </div>
                     <div class="popCont">
                         <div class="popInnerCont">
@@ -2589,8 +2542,10 @@
                              </div>
                          </div>
                         </div>
+                        <div class="btnBunch">
+                            <a id="ok" href="javascript:void(0);" onclick="javascript:onOk();" class="btnType1">등록</a>
+                        </div>
                     </div>
-                    <a href="" class="divPopupClose categoryPopClose" title="닫기">닫기</a>
                 </div>
                 <!-- //팝 업 -->
 
