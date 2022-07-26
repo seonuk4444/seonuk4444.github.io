@@ -136,8 +136,8 @@
 .viewOriginList>ul>li>a.type2 {background-image:url(../../images/search/viewType2.png)}
 .viewOriginList>ul>li>a.type3 {background-image:url(../../images/search/viewType3.png)}
 
-.divViewList {display:none;margin-top:8px;padding:8px 12px;background:#fafafa;height:80px;overflow-y: auto;box-sizing: border-box;}
-.divViewList>ul>li>a {color:#464646;font-size: 0.928rem;}
+.divPopList {display:none;margin-top:8px;padding:8px 12px;background:#fafafa;height:80px;overflow-y: auto;box-sizing: border-box;}
+.divPopList>ul>li>a {color:#464646;font-size: 0.928rem;}
 
 @media screen and (max-width:1024px) {
     .resultList>ul>li .btns>ul>li>a.viewOrigin1 {background-position:left 6px top 9px}
