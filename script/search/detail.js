@@ -337,6 +337,17 @@ $(document).ready(function(){
     
   });
 
+  $('.viewOriginBtn').click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next('.viewOriginList').stop().slideUp();
+    }else{
+      $(this).addClass('on')
+      $(this).next('.viewOriginList').stop().slideDown();
+    }
+    return false;
+  });
+
   util.init();
 });    
 
