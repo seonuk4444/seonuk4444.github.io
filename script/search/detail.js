@@ -322,6 +322,21 @@ $(document).ready(function(){
     }
   }); 
 
+  //원문보기 팝업
+  $('.viewOrigin').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').show();
+    $('.viewOriginPop').addClass('on');
+    
+  });
+
+  $('.viewOriginPopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.viewOriginPop').removeClass('on');
+    
+  });
+
   util.init();
 });    
 
