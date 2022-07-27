@@ -130,11 +130,6 @@
                 this.checked = false;
             }); */
         }
-        function closeWindow() {
-            if(confirm("내서재 담기 창을 닫으시겠습니까?")) {
-                window.close();
-            }
-        }
     </script>
 </head>
 
@@ -1693,7 +1688,7 @@
                                 </div>
                             </div>
                             <div class="btnBunch">
-                                <a href="#redirect" onclick="javascript:window.self.close();" class="btnType2">취소</a>
+                                <a href="#redirect" class="btnType2 exportPopClose">취소</a>
                                 <a href="#redirect" onclick="javascript:f_submit();" class="btnType1">내보내기</a>
                             </div>
                         </form>
@@ -1736,7 +1731,7 @@
                             </div>
                         </div>
                         <div class="btnBunch">
-                            <a href="#redirect" class="btnType2" onclick="javascript:closeWindow();">취소</a>
+                            <a href="#redirect" class="btnType2 savePopClose">취소</a>
                             <a href="#redirect" class="btnType1" onclick="javascript:formSubmit();">내책장에 담기</a>
                         </div>
                     </div>
@@ -1826,7 +1821,7 @@
                             </div>
                         </div>
                         <div class="btnBunch">
-                            <a href="#redirect" class="btnType2" onclick="javascript:closeWindow();">취소</a>
+                            <a href="#redirect" class="btnType2" onclick="javascript:togleNewCabinetForm()">취소</a>
                             <a href="#redirect" class="btnType1" onclick="javascript:formSubmit();">새 책장 만들어 자료 담기</a>
                         </div>
                     </div>
