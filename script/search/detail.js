@@ -295,7 +295,6 @@ $(document).ready(function(){
   });
   $('.categoryPopClose').click(function(e){
     e.preventDefault();
-    $('.blackBg1').hide();
     $('.categoryPop').removeClass('on');
   });
 

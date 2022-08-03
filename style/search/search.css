@@ -130,7 +130,7 @@
 .resultList>ul>li .btns .caution {margin-top:8px;padding-left:18px;background:url(../../images/commons/alert.png) no-repeat left top 2px;font-size:0.928rem;font-family: Pretendard,sans-serif;}
 
 /* 버튼 클릭시 펼쳐지는 부분 */
-.viewOriginList {display:none;position:absolute;top:36px;left:0;width:120px;padding:8px 12px;background:#fff;box-shadow: 0px 7px 7px 2px rgba(0,0,0,0.1);box-sizing: border-box;z-index: 5;}
+.viewOriginList {display:none;position:absolute;top:36px;left:0;width:120px;padding:8px 12px;background:#fff;box-shadow: 0px 7px 7px 2px rgba(0,0,0,0.1);box-sizing: border-box;z-index: 2;}
 .viewOriginList>ul>li>a {padding-left:20px;background-repeat: no-repeat;background-position:left top;background-size:16px auto;font-size:0.928rem}
 .viewOriginList>ul>li>a.type1 {background-image:url(../../images/search/viewType1.png)}
 .viewOriginList>ul>li>a.type2 {background-image:url(../../images/search/viewType2.png)}
