@@ -354,7 +354,7 @@ $(document).ready(function(){
     return false
   });
 
-  $('.agencyInfopClose').click(function(e){
+  $('.agencyInfoClose').click(function(e){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.agencyInfo').removeClass('on');
