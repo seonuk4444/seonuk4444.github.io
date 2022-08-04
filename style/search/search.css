@@ -25,7 +25,7 @@
 /* 학술지경우 */
 .searchResultInfo .thesisTit {font-size:1.428rem;color:#000;font-family: PretendardSB,sans-serif;line-height: 1.2;}
 .searchResultInfo .thesisTit .volume {font-size:1.428rem;color:#ff7200;}
-.searchResultInfo .topFunction {float:none;text-align: right;}
+.searchResultInfo.thesisVolResult .topFunction {float:none;text-align: right;}
 .searchResultInfo .keepPlace {margin:4px 0}
 .searchResultInfo .keepPlace::after {content:"";display:block;clear:both}
 .searchResultInfo .keepPlace>.label {float:left;color:#353535;font-size:1.071rem}
