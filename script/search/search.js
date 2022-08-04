@@ -14,6 +14,18 @@ $(document).ready(function(){
   // });
 
 
+  //내보내기, 내서재담기 팝업
+  $('.chkOptionBtn').click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next('ul').stop().slideUp();
+    }else{
+      $(this).addClass('on')
+      $(this).next('ul').stop().slideDown();
+    }
+    return false;
+  });
+
   //원문보기 여러개
   $('.viewOriginBtn').click(function(){
     if($(this).hasClass('on')){
