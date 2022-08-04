@@ -260,16 +260,16 @@
 .recommendCont .recommendArea>ul>li>a {position:relative;display:inline-block;color:#333;padding-left:8px;font-size:1.071rem}
 .recommendCont .recommendArea>ul>li>a::before {content:"";display:block;position:absolute;top:9px;left:0;width:3px;height:3px;background:#333}
 /* 관심학술지 추가 */
-.volBox .mark {margin-bottom:8px}
-.volBox .markCustom {display:none}
-.volBox .markCustom + label {display:inline-block;padding-left:28px;background:url(../../images/search/mark.png) no-repeat left center;color:#727272;font-family: PretendardM,sans-serif;font-size:1.071rem;line-height: 22px;}
-.volBox .markCustom:checked + label {background:url(../../images/search/markOn.png) no-repeat left center}
+.mark {margin-bottom:8px}
+.mark .markCustom {display:none}
+.mark .markCustom + label {display:inline-block;padding-left:28px;background:url(../../images/search/mark.png) no-repeat left center;color:#727272;font-family: PretendardM,sans-serif;font-size:1.071rem;line-height: 22px;}
+.mark .markCustom:checked + label {background:url(../../images/search/markOn.png) no-repeat left center}
 .volBox .infoDetail .bookTitle .volume {color:#ff7200;font-family: PretendardM,sans-serif;font-size:1.142rem;}
 .volBox .infoDetail .bookTitle {font-size:1.142rem;}
 
-.volBox .typeW {display:inline-block;font-size:0;margin-left:8px}
-.volBox .type {display:inline-block;color:#809fb8;font-family: PretendardM,sans-serif;font-size: 0.857rem;}
-.volBox .type:not(:last-child) {margin-right: 8px;}
+.mark .typeW {display:inline-block;font-size:0;margin-left:8px}
+.mark .type {display:inline-block;color:#809fb8;font-family: PretendardM,sans-serif;font-size: 0.857rem;}
+.mark .type:not(:last-child) {margin-right: 8px;}
 
 .infoDetail .infoCont .institute {margin-left:90px}
 .infoDetail .infoCont .institute .txt {margin-left:0}
