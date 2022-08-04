@@ -103,6 +103,8 @@
 .viewIndexW>ul>li.viewIndex2 {background: url(../../images/search/viewType2.png) no-repeat left top 2px;background-size: 16px auto;}
 .viewIndexW>ul>li.viewIndex3 {background: url(../../images/search/viewType3.png) no-repeat left top 2px;background-size: 16px auto;}
 
+.allSearch .viewIndexW>ul {float:none}
+
 @media screen and (max-width:1024px) {
     .viewIndexW>ul>li.viewIndex1 {background-position:left top 3px}
     .viewIndexW>ul>li.viewIndex2 {background-position:left top 3px}
@@ -111,8 +113,8 @@
 
 /* 검색리스트 */
 .resultList {margin-top: 24px;}
-.resultList>ul>li {position:relative;padding-left:28px}
-.allSearch .resultList>ul>li {padding-left:0}
+.resultList>ul>li {position:relative;}
+.chkForm .resultList>ul>li {padding-left:28px}
 .resultList>ul>li:not(:last-child) {margin-bottom: 24px;}
 .resultList>ul>li .listChk {position:absolute;top:1px;left:0}
 .resultList>ul>li .typeW {font-size:0;margin-bottom:4px}
