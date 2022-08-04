@@ -347,6 +347,33 @@ $(document).ready(function(){
     return false;
   });
 
+  //소장기관
+  $('.infoDetail .infoCont .institute .instituteInfo1').click(function(){
+    $('.blackBg1').show();
+    $('.agencyInfo').addClass('on');
+    return false
+  });
+
+  $('.agencyInfopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.agencyInfo').removeClass('on');
+    
+  });
+
+  $('.infoDetail .infoCont .institute>li a.txt').click(function(){
+    $('.blackBg1').show();
+    $('.keepInfo').addClass('on');
+    return false
+  });
+
+  $('.keepInfoClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.keepInfo').removeClass('on');
+    
+  });
+
   util.init();
 });    
 

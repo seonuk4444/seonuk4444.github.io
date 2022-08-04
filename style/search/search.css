@@ -17,11 +17,22 @@
 .topFunction>ul>li .setArrow2 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:none;padding-right:16px;background:url(../../images/search/setArrow2.png) no-repeat right center;color:#000;font-size:1rem}
 .topFunction .chkOption {position:relative}
 .topFunction .chkOptionBtn {display:block;width:16px;height:4px;background:url(../../images/commons/toggleBtn1.png) no-repeat center;background-size:16px auto;transform: rotate(90deg);text-indent: -9999px;}
-.topFunction .chkOption ul {display:none;position:absolute;top:18px;right:0;width:100px;background:#fff;border:1px solid #b3b3b3;border-radius: 8px;text-align: center;}
+.topFunction .chkOption ul {display:none;position:absolute;top:18px;right:0;width:100px;background:#fff;border:1px solid #b3b3b3;border-radius: 8px;text-align: center;z-index: 1;}
 .topFunction .chkOption ul>li {padding:4px 0}
 .topFunction .chkOption ul>li:not(:last-child) {border-bottom:1px solid #b3b3b3}
 .topFunction .chkOption ul>li>a {color:#161616;font-size:1rem;}
 
+/* 학술지경우 */
+.searchResultInfo .thesisTit {font-size:1.428rem;color:#000;font-family: PretendardSB,sans-serif;line-height: 1.2;}
+.searchResultInfo .thesisTit .volume {font-size:1.428rem;color:#ff7200;}
+.searchResultInfo .topFunction {float:none;text-align: right;}
+.searchResultInfo .keepPlace {margin:4px 0}
+.searchResultInfo .keepPlace::after {content:"";display:block;clear:both}
+.searchResultInfo .keepPlace>.label {float:left;color:#353535;font-size:1.071rem}
+.searchResultInfo .keepPlace .institute {margin-left:68px}
+.searchResultInfo .keepPlace .institute>li {display:inline-block;}
+.searchResultInfo .keepPlace .institute>li:not(:last-child) {margin-right:12px}
+.searchResultInfo .keepPlace .institute>li a.txt {color:#178fff;font-size:1rem;letter-spacing: -0.025em;text-decoration: underline;}
 
 /* facet */
 .facet {position: fixed;width: 100%;top:0;left:0; z-index: 20;visibility: hidden;}
@@ -240,22 +251,34 @@
 .infoDetail .btnBunch ul>li>a.share {background-image: url(../../images/search/share.png);background-position:center top 3px;background-size:22px 22px}
 .infoDetail .btnBunch ul>li>a.recept{background-image: url(../../images/search/recept.png);background-position:center top 5px;background-size:22px 22px}
 
-.infoDetailW .recommendCont {margin-top:12px;border:1px solid #dddfe3;border-radius: 15px;background:#e5e9f2;padding:20px 16px 20px 12px;}
-.infoDetailW .recommendCont .tit {position: relative;display:block;width:100%;color:#000;font-size:1.285rem;font-family: PretendardM,sans-serif;letter-spacing: -0.025em;}
-.infoDetailW .recommendCont .tit::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat;transition:.3s}
-.infoDetailW .recommendCont .tit.on:after {transform: translateY(-50%) rotate(180deg);}
-.infoDetailW .recommendCont .recommendArea {display:none;margin-top:12px}
-.infoDetailW .recommendCont .recommendArea>ul>li:not(:last-child) {margin-bottom: 4px;}
-.infoDetailW .recommendCont .recommendArea>ul>li>a {position:relative;display:inline-block;color:#333;padding-left:8px;font-size:1.071rem}
-.infoDetailW .recommendCont .recommendArea>ul>li>a::before {content:"";display:block;position:absolute;top:9px;left:0;width:3px;height:3px;background:#333}
+.recommendCont {margin-top:12px;border:1px solid #dddfe3;border-radius: 15px;background:#e5e9f2;padding:20px 16px 20px 12px;}
+.recommendCont .tit {position: relative;display:block;width:100%;color:#000;font-size:1.285rem;font-family: PretendardM,sans-serif;letter-spacing: -0.025em;}
+.recommendCont .tit::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat;transition:.3s}
+.recommendCont .tit.on:after {transform: translateY(-50%) rotate(180deg);}
+.recommendCont .recommendArea {display:none;margin-top:12px}
+.recommendCont .recommendArea>ul>li:not(:last-child) {margin-bottom: 4px;}
+.recommendCont .recommendArea>ul>li>a {position:relative;display:inline-block;color:#333;padding-left:8px;font-size:1.071rem}
+.recommendCont .recommendArea>ul>li>a::before {content:"";display:block;position:absolute;top:9px;left:0;width:3px;height:3px;background:#333}
 /* 관심학술지 추가 */
 .volBox .mark {margin-bottom:8px}
 .volBox .markCustom {display:none}
-.volBox .markCustom + label {display:block;padding-left:28px;background:url(../../images/search/mark.png) no-repeat left center;color:#727272;font-family: PretendardM,sans-serif;font-size:1.071rem;line-height: 22px;}
+.volBox .markCustom + label {display:inline-block;padding-left:28px;background:url(../../images/search/mark.png) no-repeat left center;color:#727272;font-family: PretendardM,sans-serif;font-size:1.071rem;line-height: 22px;}
 .volBox .markCustom:checked + label {background:url(../../images/search/markOn.png) no-repeat left center}
 .volBox .infoDetail .bookTitle .volume {color:#ff7200;font-family: PretendardM,sans-serif;font-size:1.142rem;}
 .volBox .infoDetail .bookTitle {font-size:1.142rem;}
 
+.volBox .typeW {display:inline-block;font-size:0;margin-left:8px}
+.volBox .type {display:inline-block;color:#809fb8;font-family: PretendardM,sans-serif;font-size: 0.857rem;}
+.volBox .type:not(:last-child) {margin-right: 8px;}
+
+.infoDetail .infoCont .institute {margin-left:90px}
+.infoDetail .infoCont .institute .txt {margin-left:0}
+.infoDetail .infoCont .institute {font-size:0}
+.infoDetail .infoCont .institute>li {display:inline-block;}
+.infoDetail .infoCont .institute>li:not(:last-child) {margin-right:12px}
+.infoDetail .infoCont .institute>li a.txt {color:#178fff;font-size:1rem;letter-spacing: -0.025em;text-decoration: underline;}
+.infoDetail .infoCont .institute .instituteInfo1 {display:inline-block;width:17px;height:13px;background: url(../../images/search/instituteIco1.png) no-repeat;text-indent: -9999px;vertical-align: sub;}
+.infoDetail .infoCont .institute .instituteInfo2 {display:inline-block;width:12px;height:12px;background: url(../../images/search/instituteIco2.png) no-repeat;text-indent: -9999px;vertical-align: sub;}
 
 /* additionalInfo */
 .additionalInfo .kakaoTrans img {display:block}

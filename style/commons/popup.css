@@ -13,9 +13,9 @@
 
 
 .divPopup .popInnerCont:not(:last-child) {margin-bottom:20px}
-
+.divPopup .popInnerCont p.tit {font-size:1.142rem}
 .divPopup h3.tit {color:#000;font-size:1.071rem}
-.divPopup .inner {margin-top:2px;margin-right:10px;margin-left:10px;}
+.divPopup .inner {margin-top:2px;}
 .divPopup .radioBtnList {font-size:0}
 .divPopup .radioBtnList>li {display:inline-block}
 .divPopup .radioBtnList>li:not(:last-child) {margin-right:12px}
@@ -102,3 +102,8 @@
 .popCont .selCategoryList{margin-top:13px;padding:20px 13px 20px;border:1px solid #d9d9d9;}
 
 .categorySearchResult table thead {position:sticky;top:-1px}
+
+/* 소장기관 정보 */
+.agencyInfo .popListForm {margin-top:0}
+.agencyInfo .popListForm>ul>li .tit {margin-bottom:0}
+.agencyInfo .popInnerCont .txt {font-size:1rem}

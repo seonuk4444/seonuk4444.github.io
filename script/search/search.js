@@ -166,6 +166,31 @@ $(document).ready(function(){
     return false;
   });
 
+  //추천자료 열고닫기
+  $('.recommendCont .tit').click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).parent().next('.recommendArea').slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).parent().next('.recommendArea').slideDown();
+    }
+    return false;
+  });
+
+  //권호소장정보
+  $('.institute>li a.txt').click(function(){
+    $('.blackBg1').show();
+    $('.keepInfo').addClass('on');
+    return false
+  });
+
+  $('.keepInfoClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.keepInfo').removeClass('on');
+  });
+
 
 });    
 
