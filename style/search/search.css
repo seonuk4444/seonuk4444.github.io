@@ -6,7 +6,7 @@
 .searchResultInfo>.total {float:left;margin-top:1px;color:#000;font-size: 1.142rem;font-family: PretendardB,sans-serif;}
 .searchResultInfo>.total>span {color:#000;font-size: 1.142rem;font-family: PretendardB,sans-serif}
 
-.topFunction {float:right}
+.topFunction {float:right;min-height:22px}
 .topFunction>ul {font-size:0}
 .topFunction>ul>li {display:inline-block;vertical-align: middle;}
 .topFunction>ul>li:not(:last-child) {margin-right:12px}
@@ -33,6 +33,8 @@
 .searchResultInfo .keepPlace .institute>li {display:inline-block;}
 .searchResultInfo .keepPlace .institute>li:not(:last-child) {margin-right:12px}
 .searchResultInfo .keepPlace .institute>li a.txt {color:#178fff;font-size:1rem;letter-spacing: -0.025em;text-decoration: underline;}
+.searchResultInfo .keepPlace .applyBtn {margin:4px 0 0 68px}
+.searchResultInfo .keepPlace .btnType2 {width:100px;height:32px;line-height: 32px;font-size:1rem;}
 
 /* facet */
 .facet {position: fixed;width: 100%;top:0;left:0; z-index: 20;visibility: hidden;}

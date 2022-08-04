@@ -1,15 +1,15 @@
 @charset "utf-8";
 
-.divPopup {position:fixed;bottom:-100%;left:0;width:100%;height:45%;overflow-y: auto;z-index: 20;opacity: 0;transition: bottom .3s;box-sizing: border-box;background-image: linear-gradient(transparent calc(20% - 1px), #fff 20%);border-radius: 30px 30px 0 0;background:#fff}
+.divPopup {position:fixed;bottom:-100%;left:0;width:100%;height:45%;z-index: 20;opacity: 0;transition: bottom .3s;box-sizing: border-box;background-image: linear-gradient(transparent calc(20% - 1px), #fff 20%);border-radius: 30px 30px 0 0;background:#fff}
 .divPopup.on {bottom:0;opacity: 1;}
 .divPopup.exportPop {height:70%}
 .divPopup .popHeader {position: relative;padding:54px 24px 0 24px;}
 .divPopup .popHeader .titArea {padding-bottom:12px;border-bottom:1px solid #e2e2e2}
-.divPopup p.tit {color:#1a1a1a;font-size:1.214rem;font-family:PretendardB,sans-serif;}
+.divPopup p.tit {color:#1a1a1a;font-size:1.428rem;font-family:PretendardB,sans-serif;}
 .divPopupClose {display:block;position:absolute;top:16px;left:50%;transform: translateX(-50%);width:30px;height:12px;background:url(../../images/commons/close2.png) no-repeat center top;text-indent: -9999px;}
 .divPopup .btnW {margin-top:6px}
 .adobe img {height:22px;width:auto}
-.divPopup .popCont{padding: 28px 24px 20px 24px}
+.divPopup .popCont {padding: 28px 24px 20px 24px;overflow-y: auto;box-sizing: border-box;}
 
 
 .divPopup .popInnerCont:not(:last-child) {margin-bottom:20px}
@@ -51,8 +51,8 @@
 
 /* 팝업 버튼 */
 .divPopup .btnBunch {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-top:16px;}
-.divPopup .btnBunch a.btnType1{display:block;width:100%;height:41px;margin-left:4px;border:1px solid #323231;background:#323231;color:#fff;font-family: PretendardM,sans-serif;font-size:1.071rem;border-radius: 10px;;cursor: pointer;line-height: 40px;text-align: center;}
-.divPopup .btnBunch a.btnType2{display:block;width:100%;height:41px;margin-right:4px;border:1px solid #323231;background:#fff;color:#323231;font-family: PretendardM,sans-serif;font-size:1.071rem;border-radius: 10px;;cursor: pointer;line-height: 40px;text-align: center;}
+.divPopup .btnBunch a.btnType1{display:block;}
+.divPopup .btnBunch a.btnType2{display:block;}
 
 @media screen and (max-width:330px) {
     .divPopup .btnBunch a.btnType2, .divPopup .btnBunch a.btnType1 {font-size:1rem}
@@ -70,12 +70,12 @@
 .popInnerCont .essential>span {margin-right:2px;font-size:1.071rem;line-height: 20px;vertical-align: top;}
 .popInnerCont .essentialM {display:inline-block;margin:0 0 0 4px;vertical-align: top;}
 .popInnerCont .txt {color:#666;margin-bottom:8px;font-size:1.071rem}
-#togle.btnType1{display:inline-block;min-width:50px;padding:5px 8px;border-radius: 5px;margin-left:5px;text-align:center;background-color:#666;color:#fff;font-size:0.928rem;vertical-align:middle}
+#togle{display:inline-block;min-width:50px;padding:5px 8px;border-radius: 5px;margin-left:5px;text-align:center;background-color:#666;color:#fff;font-size:0.928rem;vertical-align:middle}
 
 /* 새책장 만들기 */
 .popCont .inputList li:not(:last-child) {margin-bottom:8px}
 .popCont .inputList li .inputType1.withBtn {width:calc(100% - 45px)}
-.popCont .inputList li .btnType1{display:inline-block;height:28px;line-height: 25px;border-radius: 5px;min-width:36px;text-align: center;color:#3c3c3c;font-size:0.928rem;border:1px solid #d1d1d1;background-color:#f1f4f5;vertical-align: top;box-sizing: border-box;}
+.popCont .inputList li .cancleBtn {display:inline-block;height:28px;line-height: 25px;border-radius: 5px;min-width:36px;text-align: center;color:#3c3c3c;font-size:0.928rem;border:1px solid #d1d1d1;background-color:#f1f4f5;vertical-align: top;box-sizing: border-box;}
 .popCont .caution {margin-top:8px;font-size:1rem}
 
 
