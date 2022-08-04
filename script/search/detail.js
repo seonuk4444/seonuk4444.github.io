@@ -267,6 +267,8 @@ $(document).ready(function(){
   //내보내기
   $('.export').click(function(e){
     e.preventDefault();
+    let ph = $('.exportPop .popHeader').outerHeight(true);
+    $('.exportPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
     $('.blackBg1').show();
     $('.exportPop').addClass('on');
   });
@@ -279,6 +281,8 @@ $(document).ready(function(){
   //내책장담기
   $('.save').click(function(e){
     e.preventDefault();
+    let ph = $('.savePop .popHeader').outerHeight(true);
+    $('.savePop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
     $('.blackBg1').show();
     $('.savePop').addClass('on');
   });
@@ -290,6 +294,8 @@ $(document).ready(function(){
 
   //카테고리 열기
   $('#interestCodeName1').click(function(){
+    let ph = $('.categoryPop .popHeader').outerHeight(true);
+    $('.categoryPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
     $('.blackBg1').show();
     $('.categoryPop').addClass('on');
   });
@@ -349,6 +355,8 @@ $(document).ready(function(){
 
   //소장기관
   $('.infoDetail .infoCont .institute .instituteInfo1').click(function(){
+    let ph = $('.agencyInfo .popHeader').outerHeight(true);
+    $('.agencyInfo .popCont').css({'height':'calc(100% - ' +ph+'px)'})
     $('.blackBg1').show();
     $('.agencyInfo').addClass('on');
     return false
@@ -362,6 +370,8 @@ $(document).ready(function(){
   });
 
   $('.infoDetail .infoCont .institute>li a.txt').click(function(){
+    let ph = $('.keepInfo .popHeader').outerHeight(true);
+    $('.keepInfo .popCont').css({'height':'calc(100% - ' +ph+'px)'})
     $('.blackBg1').show();
     $('.keepInfo').addClass('on');
     return false

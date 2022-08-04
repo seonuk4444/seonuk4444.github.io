@@ -180,6 +180,8 @@ $(document).ready(function(){
 
   //권호소장정보
   $('.institute>li a.txt').click(function(){
+    let ph = $('.keepInfo .popHeader').outerHeight(true);
+    $('.keepInfo .popCont').css({'height':'calc(100% - ' +ph+'px)'})
     $('.blackBg1').show();
     $('.keepInfo').addClass('on');
     return false
