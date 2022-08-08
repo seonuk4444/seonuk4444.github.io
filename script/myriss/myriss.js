@@ -76,6 +76,7 @@ $(document).ready(function(){
 
   $('.thesisPopClose').click(function(e){
     e.preventDefault();
+    $('.interKeyList .viewListBtns a').removeClass('on');
     $('.blackBg1').hide();
     $('.thesisPop').removeClass('on');
   });
