@@ -25,6 +25,14 @@ $(document).ready(function(){
         $('.myPop').addClass('on');
     });
 
+    $('.creatShelf').click(function(e){
+      e.preventDefault();
+      let ph = $('.myPop .popHeader').outerHeight(true);
+      $('.myPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
+      $('.blackBg1').show();
+      $('.myPop').addClass('on');
+  });
+
     $('.myPop .divPopupClose').click(function(e){
         e.preventDefault();
         $('.blackBg1').hide();
