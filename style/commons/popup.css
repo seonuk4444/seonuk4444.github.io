@@ -107,3 +107,11 @@
 .agencyInfo .popListForm {margin-top:0}
 .agencyInfo .popListForm>ul>li .tit {margin-bottom:0}
 .agencyInfo .popInnerCont .txt {font-size:1rem}
+
+/* 팝업 버튼 */
+.exportPop .btnBunch a.btnType2 {margin-right:4px}
+.exportPop .btnBunch a.btnType1 {margin-left:4px}
+.savePop .btnBunch a.btnType2 {margin-right:4px}
+.savePop .btnBunch a.btnType1 {margin-left:4px}
+.myPop .btnBunch a.btnType2 {margin-right:4px}
+.myPop .btnBunch a.btnType1 {margin-left:4px}
