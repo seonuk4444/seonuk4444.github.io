@@ -108,6 +108,15 @@
 .agencyInfo .popListForm>ul>li .tit {margin-bottom:0}
 .agencyInfo .popInnerCont .txt {font-size:1rem}
 
+/* thesisPop */
+.thesisPop .newThList>li:not(:last-child) {margin-bottom:24px}
+.thesisPop .newThList a.tit {display:inline-block;color:#181818;line-height: 20px;font-family: PretendardSB,sans-serif;font-size:1.142rem;}
+.thesisPop .newThList a.tit .highlight {position:relative;color:#181818;font-family: PretendardSB,sans-serif;font-size:1.142rem;;z-index: 1;}
+.thesisPop .newThList a.tit .highlight::after {content:"";display:block;position:absolute;bottom: 2px;left:0;width: 100%;height: 9px;background:#fff09c;z-index: -1;}
+.thesisPop .newThList .info {font-size:0;margin-top:4px}
+.thesisPop .newThList .info>li {display:inline-block;color:#737373;font-size:1rem} 
+.thesisPop .newThList .info>li:not(:last-child) {margin-right:8px}
+
 /* 팝업 버튼 */
 .exportPop .btnBunch a.btnType2 {margin-right:4px}
 .exportPop .btnBunch a.btnType1 {margin-left:4px}

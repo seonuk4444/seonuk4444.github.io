@@ -65,6 +65,20 @@ $(document).ready(function(){
     $('.exportPop').removeClass('on');
   });
 
+  //최신논문들 팝업
+  $('.interKeyList .viewListBtns a').click(function(e){
+    e.preventDefault();
+    $('.interKeyList .viewListBtns a').removeClass('on');
+    $(this).addClass('on');
+    $('.blackBg1').show();
+    $('.thesisPop').addClass('on')
+  });  
+
+  $('.thesisPopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.thesisPop').removeClass('on');
+  });
 
   //월간이용현황
   let graphTab = new Swiper('.graphTab .inner',{
