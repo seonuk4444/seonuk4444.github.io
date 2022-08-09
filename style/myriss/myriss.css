@@ -79,7 +79,8 @@
 .favornsbj>li {background:#1aa0b0;color:#fff}
 
 .useStat .perArea {text-align: center;}
-.useStat .perArea .rank {margin-top:4px;color:#000;font-family: PretendardB,sans-serif;font-size:1.214rem;}
+.useStat .perArea img {width:116px;height:116px}
+.useStat .perArea .rank {margin-top:-8px;color:#000;font-family: PretendardB,sans-serif;font-size:1.214rem;}
 .useStat .perArea .rank>span {color:#000;font-family: PretendardB,sans-serif;font-size:1.214rem;}
 .useStat .perArea .rankPer {color:#7e7d7d;font-size:1rem;}
 .useStat .perArea .rankPer>span {color:#7e7d7d;font-size:1rem;}
