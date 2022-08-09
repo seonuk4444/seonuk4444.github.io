@@ -13,13 +13,6 @@
 .topFunction>ul>li .searchSetting {display:block;padding-left:22px;background:url(../../images/search/setting.png) no-repeat left top 2px;background-size:18px auto;font-size:1.071rem;}
 .topFunction>ul>li .facetBtn {display:block;padding-right:22px;background:url(../../images/search/filter.png) no-repeat right top 4px;background-size:16px auto;font-size:1.071rem;}
 
-.topFunction .chkOption {position:relative}
-.topFunction .chkOptionBtn {display:block;width:16px;height:4px;background:url(../../images/commons/toggleBtn1.png) no-repeat center;background-size:16px auto;transform: rotate(90deg);text-indent: -9999px;}
-.topFunction .chkOption ul {display:none;position:absolute;top:18px;right:0;width:100px;background:#fff;border:1px solid #b3b3b3;border-radius: 8px;text-align: center;z-index: 1;}
-.topFunction .chkOption ul>li {padding:4px 0}
-.topFunction .chkOption ul>li:not(:last-child) {border-bottom:1px solid #b3b3b3}
-.topFunction .chkOption ul>li>a {color:#161616;font-size:1rem;}
-
 /* 학술지경우 */
 .searchResultInfo .thesisTit {font-size:1.428rem;color:#000;font-family: PretendardSB,sans-serif;line-height: 1.2;}
 .searchResultInfo .thesisTit .volume {font-size:1.428rem;color:#ff7200;}
@@ -103,23 +96,23 @@
 .resultContent .resultTitle .resultMore {display:block;position:absolute;top: 4px;right:0;width: 12px;height: 12px;background:url(../../images/search/moreBtn1.png) no-repeat center;background-size: 12px auto;text-indent: -9999px;}
 
 /* 원문 인덱스 전체선택 */
-.viewIndexW {margin-top: 12px;}
-.viewIndexW::after {content:"";display:block;clear: both;}
-.viewIndexW .listChk {float:left}
-.viewIndexW .customChk1 + label {padding-left:24px;color:#1e1e1e}
-.viewIndexW>ul {float:right;font-size:0}
-.viewIndexW>ul>li {display:inline-block;padding-left: 20px;color:#6b6b6b;font-size: 1rem;font-family: PretendardM,sans-serif;}
-.viewIndexW>ul>li:not(:last-child) {margin-right:8px}
-.viewIndexW>ul>li.viewIndex1 {background: url(../../images/search/viewType1.png) no-repeat left top 2px;background-size: 16px auto;}
-.viewIndexW>ul>li.viewIndex2 {background: url(../../images/search/viewType2.png) no-repeat left top 2px;background-size: 16px auto;}
-.viewIndexW>ul>li.viewIndex3 {background: url(../../images/search/viewType3.png) no-repeat left top 2px;background-size: 16px auto;}
+.listTopBox {margin-top: 12px;position:relative}
+.listTopBox::after {content:"";display:block;clear: both;}
+.listTopBox .listChk {float:left}
+.listTopBox .customChk1 + label {padding-left:24px;color:#1e1e1e}
+.listTopBox>ul {float:right;font-size:0}
+.listTopBox>ul>li {display:inline-block;padding-left: 20px;color:#6b6b6b;font-size: 1rem;font-family: PretendardM,sans-serif;}
+.listTopBox>ul>li:not(:last-child) {margin-right:8px}
+.listTopBox>ul>li.viewIndex1 {background: url(../../images/search/viewType1.png) no-repeat left top 2px;background-size: 16px auto;}
+.listTopBox>ul>li.viewIndex2 {background: url(../../images/search/viewType2.png) no-repeat left top 2px;background-size: 16px auto;}
+.listTopBox>ul>li.viewIndex3 {background: url(../../images/search/viewType3.png) no-repeat left top 2px;background-size: 16px auto;}
 
-.allSearch .viewIndexW>ul {float:none}
+.allSearch .listTopBox>ul {float:none}
 
 @media screen and (max-width:1024px) {
-    .viewIndexW>ul>li.viewIndex1 {background-position:left top 3px}
-    .viewIndexW>ul>li.viewIndex2 {background-position:left top 3px}
-    .viewIndexW>ul>li.viewIndex3 {background-position:left top 3px}
+    .listTopBox>ul>li.viewIndex1 {background-position:left top 3px}
+    .listTopBox>ul>li.viewIndex2 {background-position:left top 3px}
+    .listTopBox>ul>li.viewIndex3 {background-position:left top 3px}
 }
 
 /* 검색리스트 */

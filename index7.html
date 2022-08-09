@@ -888,10 +888,6 @@
                         <div class="shListFunction">
                             <ul>
                                 <li>
-                                    <input type="checkbox" class="customChk1" id="allChk">
-                                    <label for="allChk"></label>
-                                </li>
-                                <li>
                                     <select class="selType2">
                                         <option>나의책장</option>
                                         <option>기본책장</option>
@@ -914,22 +910,30 @@
                                     </select>
                                 </li>
                             </ul>
-                            <div class="optTypeW1">
-                                <a href="" class="optBtn1"></a>
-                                <ul class="optType1">
-                                    <li>
-                                        <a href="" title="내보내기" class="export">내보내기</a>
-                                    </li>
-                                    <li>
-                                        <a href="" title="삭제">삭제</a>
-                                    </li>
-                                    <li>
-                                        <a href="" title="한자변환">한자변환</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="innerContBox">
+                            <!-- listTopBox -->
+                            <div class="listTopBox">
+                                <span class="listChk">
+                                    <input type="checkbox" class="customChk1" id="allChk">
+                                    <label for="allChk">전체선택</label>
+                                </span>
+                                <div class="chkOption">
+                                    <a href="" title="드롭박스 버튼" class="chkOptionBtn"></a>
+                                    <ul>
+                                        <li>
+                                            <a href="" title="내보내기" class="export">내보내기</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="삭제">삭제</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="한자변환">한자변환</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <!-- //listTopBox -->
                             <ul class="myShList">
                                 <li>
                                     <div class="topArea">
@@ -1043,7 +1047,7 @@
                                         </ul>
                                     </div>
                         
-                                    <div class="popListForm" id="mailFrm">
+                                    <div class="popListForm1" id="mailFrm">
                                         <ul>
                                             <li>
                                                 <label class="tit" for="mailto">수신자 이메일</label>
@@ -1166,7 +1170,7 @@
                         <div class="popInnerCont">
                             <p class="essential"><span class="essentialM"><img src="images/commons/essential.png" alt="필수"></span>표가 있는
                                 항목은 반드시 기재해 주셔야 합니다.</p>
-                            <div class="popListForm">
+                            <div class="popListForm1">
                                 <ul>
                                     <li>
                                         <label class="tit" for="dirName">새책장 명<span class="essentialM"><img src="images/commons/essentialS.png"

@@ -6,10 +6,12 @@
 .divPopup .popHeader {position: relative;padding:54px 24px 0 24px;}
 .divPopup .popHeader .titArea {padding-bottom:12px;border-bottom:1px solid #e2e2e2}
 .divPopup p.tit {color:#1a1a1a;font-size:1.428rem;font-family:PretendardB,sans-serif;}
+.divPopup p.tit.mini {font-size:1.142rem}
+.divPopup p.contTit {margin-top:4px;font-size:1.428rem;font-family: PretendardB,sans-serif;}
 .divPopupClose {display:block;position:absolute;top:16px;left:50%;transform: translateX(-50%);width:30px;height:12px;background:url(../../images/commons/close2.png) no-repeat center top;text-indent: -9999px;}
 .divPopup .btnW {margin-top:6px}
 .adobe img {height:22px;width:auto}
-.divPopup .popCont {padding: 28px 24px 20px 24px;overflow-y: auto;box-sizing: border-box;}
+.divPopup .popCont {padding: 20px 24px 20px 24px;overflow-y: auto;box-sizing: border-box;}
 
 
 .divPopup .popInnerCont:not(:last-child) {margin-bottom:20px}
@@ -35,12 +37,6 @@
 .divPopTable table tbody tr:last-child td {border-bottom:none}
 .divPopTable table td {border:1px solid #ddd;border-top:none;border-right:none;background:#fff;padding:8px 12px;color:#6f6f6f}
 .divPopTable table td a {color:#6f6f6f}
-
-/* .popListForm  */
-.popListForm {margin-top:12px}
-.popListForm>ul>li:not(:last-child) {margin-bottom:12px}
-.popListForm>ul>li .tit {display:block;margin-bottom:8px;color:#000;font-family: PretendardM,sans-serif;font-size:1.071rem;letter-spacing: -0.025em;}
-.popListForm .ttArea {width:100%;height:100px;resize: none;border:1px solid #c4c4c4;color:#777;border-radius: 5px;box-sizing: border-box;}
 
 /* 내보내기 텍스트 박스 */
 .divPopup .txtBox .txtBox1:not(:last-child) {margin-bottom:8px}
@@ -104,9 +100,8 @@
 .categorySearchResult table thead {position:sticky;top:-1px}
 
 /* 소장기관 정보 */
-.agencyInfo .popListForm {margin-top:0}
-.agencyInfo .popListForm>ul>li .tit {margin-bottom:0}
-.agencyInfo .popInnerCont .txt {font-size:1rem}
+.cautionTxt {margin-top:24px;color:#828282;line-height: 24px;font-size:1.071rem;}
+
 
 /* thesisPop */
 .thesisPop .newThList>li:not(:last-child) {margin-bottom:24px}
@@ -116,6 +111,24 @@
 .thesisPop .newThList .info {font-size:0;margin-top:4px}
 .thesisPop .newThList .info>li {display:inline-block;color:#737373;font-size:1rem} 
 .thesisPop .newThList .info>li:not(:last-child) {margin-right:8px}
+
+
+/* .popListForm  */
+.popListForm1 {margin-top:12px}
+.popListForm1>ul>li:not(:last-child) {margin-bottom:12px}
+.popListForm1>ul>li .tit {display:block;margin-bottom:8px;color:#000;font-family: PretendardM,sans-serif;font-size:1.071rem;letter-spacing: -0.025em;}
+.popListForm1 .ttArea {width:100%;height:100px;resize: none;border:1px solid #c4c4c4;color:#777;border-radius: 5px;box-sizing: border-box;}
+
+.popListForm2 ul>li::after {content:"";display:block;clear:both}
+.popListForm2 ul>li:not(:last-child) {margin-bottom:4px}
+.popListForm2 ul>li .tit {float:left;width:60px;color:#828282;font-size:1.142rem;}
+.popListForm2 ul>li .txt {display:block;margin-left:70px;color:#1e1e1e;font-family: PretendardSB,sans-serif;font-size:1.142rem;}
+.popInnerCont .popListForm2 .txt {margin-bottom:0}
+
+
+/* 팝업높이 */
+.keepInfo {height:60%}
+.agencyInfo {height:70%}
 
 /* 팝업 버튼 */
 .exportPop .btnBunch a.btnType2 {margin-right:4px}

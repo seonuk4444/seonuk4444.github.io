@@ -355,3 +355,12 @@ a.addInput {border:1px solid #dadada;color:#fff;border-radius: 20px;width:80px;h
 .innerCont .titArea .subTit1>span {display:block;color:#5e5e5e;font-size:1.071rem;font-family: Pretendard,sans-serif;}
 .innerContBox {background:#fff;padding:20px 12px 20px 12px;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
 .innerCont .titArea .subTit2 {display:inline-block;margin-bottom:8px;color:#000;font-family: PretendardB,sans-serif;font-size: 1.285rem;}
+
+/* 목록 공통 체크 옵션 */
+.listTopBox {position:relative;margin-bottom:24px}
+.chkOption {position:absolute;top:9px;right:0}
+.chkOptionBtn {display:block;width:16px;height:4px;background:url(../../images/commons/toggleBtn1.png) no-repeat center;background-size:16px auto;transform: rotate(90deg);text-indent: -9999px;}
+.chkOption ul {display:none;position:absolute;top:18px;right:0;width:100px;background:#fff;border:1px solid #b3b3b3;border-radius: 8px;text-align: center;z-index: 1;}
+.chkOption ul>li {padding:4px 0}
+.chkOption ul>li:not(:last-child) {border-bottom:1px solid #b3b3b3}
+.chkOption ul>li>a {color:#161616;font-size:1rem;}
