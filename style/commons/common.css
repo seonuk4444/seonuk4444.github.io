@@ -97,6 +97,7 @@ html, body {overflow-x: hidden;}
 .pl0 {padding-left:0px !important;}
 .pl05 {padding-left:5px !important;}
 .pl10 {padding-left:10px !important;}
+.pl12 {padding-left:12px !important;}
 .pl15 {padding-left:15px !important;}
 .pl20 {padding-left:20px !important;}
 .pl30 {padding-left:30px !important;}
@@ -207,6 +208,19 @@ html, body {overflow-x: hidden;}
 
 /* blackBg */
 .blackBg1 {display:none;position:fixed;top:0;right:0;width:100%;height:100%;background:rgba(0,0,0,0.55);z-index: 11;}
+
+/* tableStyle */
+.tableStyle1 {margin-top:4px}
+.tableStyle1 table {table-layout: fixed;}
+.tableStyle1 table thead th {background:#f3f3f3;padding:6px 0;color:#1f1f1f;font-family: PretendardM,sans-serif;font-size:1.071rem;text-align: center;border:1px solid #d7d7d7;vertical-align: middle;}
+.tableStyle1 table thead th:first-child {border-left:none}
+.tableStyle1 table thead th:last-child {border-right:none}
+.tableStyle1 table tbody td {padding:8px;color:#1f1f1f;font-size:1rem;border:1px solid #d7d7d7;text-align: center;vertical-align: middle;}
+.tableStyle1 table tbody td:first-child {border-left:none}
+.tableStyle1 table tbody td:last-child {border-right:none}
+
+.tableScroll1 {overflow-x: auto;}
+.tableScroll1 table {min-width:900px}
 
 /* divSearch */
 #divSearch {position:fixed;bottom:-100%;right:0;width:100%;height:100%;padding:12px 0 24px 0;background:#fff;z-index: 20;box-sizing: border-box;overflow-y: auto;opacity: 0;visibility: hidden;transition:bottom .4s}
