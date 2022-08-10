@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style/commons/reset.css">
+    <link rel="stylesheet" href="style/commons/font.css">
+    <link rel="stylesheet" href="style/commons/common.css">
+    <link rel="stylesheet" href="style/commons/login.css">
+    <!-- //stylesheet -->
+
+	<!-- script -->
+	<script src="ui/jquery-cdn/jquery-3.5.1.min.js"></script>
+	<script src="script/commons/login.js"></script>
+	<!-- //script -->
+</head>
+<body>
+<div id="divWrapper">
+	<div class="loginW">
+		<h1 class="logo"><a href="/"><img src="images/commons/logo3.png" alt="RISS"></a></h1>
+		<form action=" ">
+			<div class="rissLogin"> 
+				<div class="divLogin"> 
+					<fieldset> 
+						<legend>아이디 로그인</legend>
+						<div class="login"> 
+							<ul> 
+								<li>
+									<div class="imgW">
+										<img class="off" src="images/commons/id.png" alt="아이디">
+										<img class="on" src="images/commons/idOn.png" alt="아이디">
+									</div>
+									<div class="inputW">
+										<input type="text" name="id" id="id" title="id">
+										<p class="placeholder off">아이디</p>
+										<p class="placeholder on">아이디</p>
+									</div>
+								</li>
+								<li>
+									<div class="imgW">
+										<img class="off" src="images/commons/pass.png" alt="비밀번호">
+										<img class="on" src="images/commons/passOn.png" alt="비밀번호">
+									</div>
+									<div class="inputW">
+										<input type="password" name="pw" id="pw" title="pw" autocomplete="off">
+										<p class="placeholder off">비밀번호</p>
+										<p class="placeholder on">비밀번호는 대소문자 구별을 합니다.</p>
+									</div>
+								</li>
+							</ul>
+							<p class="loginError">비밀번호는 10~16자 영대소문자, 숫자를 조합하여 입력해주세요.</p>
+							<div class="findW">
+								<div class="divkeepLogin">
+									<input id="keepLogin" type="checkbox" checked class="customChk1">
+									<label for="keepLogin">로그인 상태 유지</label>
+								</div>
+								<p class="find">
+									<a href="">아이디/비밀번호찾기</a>
+									<a href="">회원가입</a>
+								</p>
+							</div>
+							<p class="loginBtn"><input type="submit" value="로그인"></p>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</form>
+		<form action=" ">
+			<div class="snsLogin"> 
+				<h3 class="tit">SNS계정 로그인</h3>
+				<div class="divLogin"> 
+					<fieldset> 
+						<legend>SNS계정 로그인</legend>
+						<div class="login"> 
+							<ul>  
+								<li><a href="" title="네이버 아이디로 로그인"><img src="images/commons/snsLoginN.png" alt="네이버 아이디로 로그인"></a></li>
+								<li><a href="" title="카카오 아이디로 로그인"><img src="images/commons/snsLoginK.png" alt="카카오 아이디로 로그인"></a></li>
+								<li><a href="" title="페이스북 아이디로 로그인"><img src="images/commons/snsLoginF.png" alt="페이스북 아이디로 로그인"></a></li>
+								<li><a href="" title="구글 아이디로 로그인"><img src="images/commons/snsLoginG.png" alt="구글 아이디로 로그인"></a></li>
+							</ul>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</form>
+		<div class="loginHelp"> 
+			<div class="txt"> 
+				<p>인터넷 옵션에 쿠키 허용이 안될경우 로그인이 안될 수 있습니다.</p>
+				<p class="color">인터넷브라우저 > 도구 > 인터넷옵션 > 개인정보 > 고급 > 쿠키허용</p>
+			</div>
+		</div>
+		<div class="btmArea"> 
+			<p>41061 대구광역시 동구 동내로 64(동내동 1119) KERIS 빌딩</p>
+			<p>COPYRIGHT &copy; KERIS. ALL RIGHTS RESERVED</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
