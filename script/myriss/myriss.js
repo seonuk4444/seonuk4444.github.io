@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
-    $('.optBtn1').click(function(e){
+    $('.chkOptionBtn').click(function(e){
         e.preventDefault();
         if($(this).hasClass('on')){
           $(this).removeClass('on');
-          $(this).next('.optType1').slideUp();
+          $(this).next().slideUp();
         }else{
           $(this).addClass('on');
-          $(this).next('.optType1').slideDown();
+          $(this).next().slideDown();
         }
       });
 
@@ -87,4 +87,41 @@ $(document).ready(function(){
     spaceBetween: 0,
     freeMode: true,
   });
+
+  $('.myShList .memoBtn').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next().slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next().slideDown();
+    }
+  });
+
+  $('.memoInputW .memoInput').keyup(function (){
+		var content = $(this).val();
+		$(this).next().children('.count').html(""+content.length+"/1000");    //글자수 실시간 카운팅
+	
+		if (content.length > 1000){
+			alert("최대 1000자까지 입력 가능합니다.");
+			$(this).val(content.substring(0, 1000));
+			$(this).next().html("1000/1000");
+		}
+	});
+
+  //내 복사대출신청현황
+  $('.toggleList>ul>li .title').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).parent().find('.clickHidden').show();
+      $(this).parent().find('.clickShow').hide();
+    }else{
+      $(this).addClass('on');
+      $(this).parent().find('.clickHidden').hide();
+      $(this).parent().find('.clickShow').show();
+    }
+  });
+
 });    
