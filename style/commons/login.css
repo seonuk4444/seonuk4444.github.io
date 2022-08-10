@@ -4,6 +4,7 @@
 .loginW{position:relative;padding:40px 8px 0 8px;}
 .loginW a.goMain{position:absolute;left:10px;top:40px;width:22px;height:18px;}
 .loginW h1.logo{margin-bottom:30px;padding-top:40px;text-align:center;}
+.loginW h1.logo img {width:206px;height:auto}
 .loginW h3.tit{color:#2a2a2a;font-size:18px;line-height:20px;}
 .loginW .rissLogin .login ul li{margin-bottom: 11px; position: relative;}
 .loginW .rissLogin .login ul li:last-child{margin-bottom:0;}
