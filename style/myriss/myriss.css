@@ -31,7 +31,10 @@
 
 .urlCopy {position:absolute;top:16px;right:12px;width:18px;height:16px;background:url(../../images/myriss/share.png) no-repeat}
 
-.shListFunction {margin-bottom:12px;padding:0 12px;text-align: right;}
+.shListFunction {margin-bottom:8px;padding:0 12px;text-align: right;}
+.shListFunction::after {content:"";display:block;clear:both}
+.shListFunction .shFunc {float:left;margin-bottom:4px}
+.shListFunction .chkFunc {float:right;margin-bottom:4px}
 .shListFunction>ul {font-size:0}
 .shListFunction>ul>li {display:inline-block;}
 .shListFunction>ul>li:not(:last-child) {margin-right:12px}
