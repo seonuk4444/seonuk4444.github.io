@@ -43,7 +43,7 @@
 .shListFunction .shMove {padding-right:20px;color:#000;background:url(../../images/myriss/move.png) no-repeat right center;font-size:1rem;}
 .shListFunction .optTypeW1 {float:right;margin-top:4px}
 
-.myShList>li:not(:last-child) {margin-bottom:20px}
+.myShList>li {padding:12px 0 8px 0;border-top:1px solid #e6e6e6}
 .myShList>li>.topArea {margin-bottom:6px}
 .myShList>li>.topArea label {padding-left:18px;vertical-align: text-bottom;}
 .myShList>li>.topArea .type {margin-left:8px;font-size:1rem;font-family: PretendardB,sans-serif;color:#6b6b6b;}
