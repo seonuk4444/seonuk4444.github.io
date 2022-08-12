@@ -214,7 +214,7 @@ html, body {overflow-x: hidden;}
 
 /* tableStyle */
 .tableStyle1 {margin-top:4px}
-.tableStyle1 table {table-layout: fixed;}
+.tableStyle1 table {table-layout: fixed;border-top:2px solid #555}
 .tableStyle1 table thead th {background:#f3f3f3;padding:6px 0;color:#1f1f1f;font-family: PretendardM,sans-serif;font-size:1.071rem;text-align: center;border:1px solid #d7d7d7;vertical-align: middle;}
 .tableStyle1 table thead th:first-child {border-left:none}
 .tableStyle1 table thead th:last-child {border-right:none}
