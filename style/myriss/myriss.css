@@ -33,21 +33,22 @@
 
 .shListFunction {margin-bottom:8px;padding:0 12px;text-align: right;}
 .shListFunction::after {content:"";display:block;clear:both}
-.shListFunction .shFunc {float:left;margin-bottom:4px}
-.shListFunction .chkFunc {float:right;margin-bottom:4px}
+.shListFunction .shFunc {float:right;margin-bottom:4px}
+.shListFunction .chkFunction {margin:0 0 4px 0}
+.shListFunction .chkFunc .selType2 {padding:0 20px 0 0px;width:auto;height:auto;font-size:1rem}
+.shListFunction .shMove {padding:1px 8px;color:#000;border:1px solid #c1c1c1;border-radius: 5px;font-size:1.071rem;}
 .shListFunction>ul {font-size:0}
 .shListFunction>ul>li {display:inline-block;}
 .shListFunction>ul>li:not(:last-child) {margin-right:12px}
 .shListFunction>ul>li label {vertical-align: text-top;padding-left:18px}
 .shListFunction>ul>li .selType2 {padding:0 20px 0 0px;width:auto;height:auto;font-size:1rem}
-.shListFunction .shMove {padding-right:20px;color:#000;background:url(../../images/myriss/move.png) no-repeat right center;font-size:1rem;}
 .shListFunction .optTypeW1 {float:right;margin-top:4px}
 
-.myShList>li {padding:12px 0 8px 0;border-top:1px solid #e6e6e6}
+.myShList>li {padding:12px 0 16px 0;border-top:1px solid #e6e6e6}
 .myShList>li>.topArea {margin-bottom:6px}
 .myShList>li>.topArea label {padding-left:18px;vertical-align: text-bottom;}
 .myShList>li>.topArea .type {margin-left:8px;font-size:1rem;font-family: PretendardB,sans-serif;color:#6b6b6b;}
-.myShList>li .tit {display:inline-block;margin-bottom:4px;color:#000;font-size:1.214rem;font-family: PretendardM,sans-serif;line-height: 17px;}
+.myShList>li .tit {display:inline-block;margin-bottom:4px;color:#000;font-size:1.214rem;font-family: PretendardM,sans-serif;line-height: 17px;line-height: 1.2;}
 .myShList>li .info {margin-bottom:12px}
 .myShList>li .info li {color:#828282;font-size:1rem}
 
@@ -163,7 +164,7 @@
 /* 내 복사대출신청현황 */
 .totalPeriod {padding:0 12px;margin-bottom:8px}
 .totalPeriod::after {content:"";display:block;clear:both}
-.totalPeriod>.total {float:left;margin:7px 4px 0 0;color:#000;font-size: 1.071rem;font-family: PretendardB,sans-serif;}
+.totalPeriod>.total {float:left;margin:7px 4px 4px 0;color:#000;font-size: 1.071rem;font-family: PretendardB,sans-serif;}
 .totalPeriod>.total>span {color:#000;font-size: 1.071rem;font-family: PretendardB,sans-serif}
 .totalPeriod .period {float:right;}
 .totalPeriod .period .flexBox {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
@@ -184,6 +185,11 @@
 .toggleList .clickShow>ul>li::after {content:"";display:block;clear:both}
 .toggleList .clickShow>ul>li .tit {float:left;width:90px;color:#828282;font-size:1rem;font-family: PretendardM,sans-serif;}
 .toggleList .clickShow>ul>li .txt {margin-left:90px;color:#1e1e1e;font-size:1rem;font-family: PretendardM,sans-serif;}
+
+@media screen and (max-width:420px) {
+    .totalPeriod .period label {display:none}
+    .totalPeriod .period input {width:108px}
+}
 
 /* 내관심 DB */
 .dbTable .blueBg1 {background:#d1d1f1;border: none;border-bottom: 1px solid #cdcdcd;border-left: 1px solid #cdcdcd !important;}

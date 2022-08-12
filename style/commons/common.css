@@ -156,8 +156,8 @@ html, body {overflow-x: hidden;}
 .selType4 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:1px solid #dadada;border-radius: 10px;width:100%;height:45px;padding:0 14px 0 16px;background:url(../../images/commons/selectArrow2.png) no-repeat right 12px center;color:#000;font-family: PretendardM,sans-serif;font-size:1.071rem;box-sizing: border-box;}
 
 /* select function */
-.setArrow1 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:none;padding-right:22px;background:url(../../images/search/setArrow1.png) no-repeat right center;color:#000;font-size:1rem}
-.setArrow2 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:none;padding-right:16px;background:url(../../images/search/setArrow2.png) no-repeat right center;color:#000;font-size:1rem}
+.setArrow1 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:none;padding-right:22px;background:url(../../images/search/setArrow1.png) no-repeat right center;color:#000;font-size:1rem;background-size:18px auto}
+.setArrow2 {-webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;border:none;padding-right:16px;background:url(../../images/search/setArrow2.png) no-repeat right center;color:#000;font-size:1rem;background-size:14px auto}
 
 /* 3단 점 타입 */
 .optTypeW1 {position:relative}
@@ -386,14 +386,14 @@ a.addInput {border:1px solid #dadada;color:#fff;border-radius: 20px;width:80px;h
 
 
 /* myriss search  내보내기 내서재담기 삭제 등 공통영역 */
-.chkFunction {float:right;margin-bottom:4px}
-.chkFunction>ul {font-size:0;}
+.chkFunction {float:left;margin:3px 0 4px 0}
+.thesisChk .chkFunction {float:right;margin-top:0}
+.chkFunction>ul {font-size:0;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .chkFunction>ul>li {display:inline-block}
 .chkFunction>ul>li:not(:last-child) {margin-right:12px}
-.chkFunction>ul>li>a {display:block;}
-.chkFunction>ul>li>a.export {padding-right:16px;background:url(../../images/commons/exportIco.png) no-repeat right top 3px;background-size:11px 11px}
-.chkFunction>ul>li>a.save {padding-right:20px;background:url(../../images/commons/myList.png) no-repeat right top 2px;background-size:16px 13px}
-.chkFunction>ul>li>a.del {padding-right:20px;background:url(../../images/commons/delType4.png) no-repeat right top 2px}
+.chkFunction>ul>li>a.export {display:block;width:20px;height:20px;background:url(../../images/commons/exportIco.png) no-repeat center;background-size:20px 20px}
+.chkFunction>ul>li>a.save {display:block;width:20px;height:20px;background:url(../../images/commons/myList.png) no-repeat center;background-size:20px 20px}
+.chkFunction>ul>li>a.del {display:block;width:20px;height:20px;background:url(../../images/commons/delType4.png) no-repeat bottom}
 
 /* 페이징 */
 .paging{clear:both;margin:28px 0 0;text-align:center}

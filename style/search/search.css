@@ -4,12 +4,13 @@
 .searchResultInfo {margin: 0 6px 4px 6px;}
 .searchResultInfo::after {content:"";display:block;clear:both}
 
-.topFunction {float:left;margin:0 4px 4px 0;min-height:22px}
+.topFunction {float:right;margin:0 4px 4px 0;min-height:22px}
 .topFunction>ul {font-size:0}
 .topFunction>ul>li {display:inline-block;vertical-align: middle;}
 .topFunction>ul>li:not(:last-child) {margin-right:12px}
 .topFunction>ul>li .searchSetting {display:block;padding-left:22px;background:url(../../images/search/setting.png) no-repeat left top 2px;background-size:18px auto;font-size:1.071rem;}
-.topFunction>ul>li .facetBtn {display:block;padding-right:22px;background:url(../../images/search/filter.png) no-repeat right top 4px;background-size:16px auto;font-size:1.071rem;}
+.topFunction>ul>li .facetBtn {display:block;padding:1px 30px 1px 8px;background: url(../../images/search/filter.png) no-repeat right 7px top 4px;background-size:16px auto;font-size:1.071rem;border: 1px solid #c1c1c1;border-radius: 5px;}
+
 
 /* 학술지경우 */
 .thesisVolResult .thesisTit {font-size:1.428rem;color:#000;font-family: PretendardSB,sans-serif;line-height: 1.2;}
@@ -115,7 +116,7 @@
 /* 검색리스트 */
 .resultList {margin-top: 10px;}
 .resultList>ul>li {position:relative;}
-.chkForm .resultList>ul>li {padding:12px 0 8px 28px;border-top:1px solid #e6e6e6}
+.chkForm .resultList>ul>li {padding:12px 0 16px 28px;border-top:1px solid #e6e6e6}
 .resultList>ul>li .listChk {position:absolute;top:13px;left:0}
 .resultList>ul>li .typeW {font-size:0;margin-bottom:4px}
 .resultList>ul>li .type {display:inline-block;color:#809fb8;font-family: PretendardB,sans-serif;font-size: 0.857rem;}
@@ -218,7 +219,7 @@
 /* infoDetail */
 .detailCont.infoDetailW {padding:0;background:transparent;border-radius: 0px;box-shadow: none;}
 .infoDetail {background:#fff;border:1px solid #dddfe3;padding:20px 12px 20px 12px;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
-.infoDetail .bookTitle {margin-bottom:16px;color:#000;font-family: PretendardM,sans-serif;font-size:1.214rem;}
+.infoDetail .bookTitle {margin-bottom:16px;color:#000;font-family: PretendardSB,sans-serif;font-size:1.428rem;}
 .infoDetail .infoCont>ul>li {vertical-align: top;}
 .infoDetail .infoCont>ul>li:not(:last-child) {margin-bottom:4px}
 .infoDetail .infoCont>ul>li::after {content:"";display:block;clear:both}
@@ -254,7 +255,7 @@
 .mark .markCustom + label {display:inline-block;padding-left:28px;background:url(../../images/search/mark.png) no-repeat left center;color:#727272;font-family: PretendardM,sans-serif;font-size:1.071rem;line-height: 22px;}
 .mark .markCustom:checked + label {background:url(../../images/search/markOn.png) no-repeat left center}
 .volBox .infoDetail .bookTitle .volume {color:#ff7200;font-family: PretendardM,sans-serif;font-size:1.142rem;}
-.volBox .infoDetail .bookTitle {font-size:1.142rem;}
+.volBox .infoDetail .bookTitle {font-size:1.428rem;font-family: PretendardSB,sans-serif;line-height: 1.2;}
 
 .thesisVolResult .typeW, .volBox .typeW {font-size:0;}
 .thesisVolResult .type, .volBox .type {display:inline-block;color:#809fb8;font-family: PretendardM,sans-serif;font-size: 0.857rem;}
