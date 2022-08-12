@@ -257,9 +257,9 @@
 .volBox .infoDetail .bookTitle .volume {color:#ff7200;font-family: PretendardM,sans-serif;font-size:1.142rem;}
 .volBox .infoDetail .bookTitle {font-size:1.142rem;}
 
-.thesisVolResult .typeW {font-size:0;}
-.thesisVolResult .type {display:inline-block;color:#809fb8;font-family: PretendardM,sans-serif;font-size: 0.857rem;}
-.thesisVolResult .type:not(:last-child) {margin-right: 8px;}
+.thesisVolResult .typeW, .volBox .typeW {font-size:0;}
+.thesisVolResult .type, .volBox .type {display:inline-block;color:#809fb8;font-family: PretendardM,sans-serif;font-size: 0.857rem;}
+.thesisVolResult .type:not(:last-child), .volBox .type:not(:last-child) {margin-right: 8px;}
 
 .infoDetail .infoCont .institute {margin-left:90px}
 .infoDetail .infoCont .institute .txt {margin-left:0}
