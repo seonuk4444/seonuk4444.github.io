@@ -217,7 +217,7 @@
 
 /* infoDetail */
 .detailCont.infoDetailW {padding:0;background:transparent;border-radius: 0px;box-shadow: none;}
-.infoDetail {background:#fff;padding:20px 12px 20px 12px;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
+.infoDetail {background:#fff;border:1px solid #dddfe3;padding:20px 12px 20px 12px;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
 .infoDetail .bookTitle {margin-bottom:16px;color:#000;font-family: PretendardM,sans-serif;font-size:1.214rem;}
 .infoDetail .infoCont>ul>li {vertical-align: top;}
 .infoDetail .infoCont>ul>li:not(:last-child) {margin-bottom:4px}
