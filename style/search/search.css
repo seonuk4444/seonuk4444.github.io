@@ -115,7 +115,7 @@
 
 /* 검색리스트 */
 .resultList {margin-top: 10px;}
-.resultList>ul>li {position:relative;}
+.resultList>ul>li {position:relative;padding:12px 0 16px 0;border-top:1px solid #e6e6e6}
 .chkForm .resultList>ul>li {padding:12px 0 16px 28px;border-top:1px solid #e6e6e6}
 .resultList>ul>li .listChk {position:absolute;top:13px;left:0}
 .resultList>ul>li .typeW {font-size:0;margin-bottom:4px}
@@ -239,7 +239,7 @@
 .infoDetail .btnBunch ul>li>a.export {background-image: url(../../images/commons/export.png);background-position:center top;background-size: 20px 20px;}
 .infoDetail .btnBunch ul>li>a.save {background-image: url(../../images/commons/save.png);background-position:center top;background-size: 20px 20px;}
 .infoDetail .btnBunch ul>li>a.share {background-image: url(../../images/commons/share.png);background-position:center top;background-size: 19px 19px;}
-.infoDetail .btnBunch ul>li>a.recept{background-image: url(../../images/commons/recept.png);background-position:center top 3px;background-size: 19px 19px;}
+.infoDetail .btnBunch ul>li>a.recept{background-image: url(../../images/commons/recept.png);background-position: center top;background-size: 20px auto;}
 
 .recommendCont {margin-top:12px;border-radius: 15px;background:#fff;padding:20px 16px 20px 12px;}
 .recommendCont .tit {position: relative;display:block;width:100%;color:#000;font-size:1.285rem;font-family: PretendardM,sans-serif;letter-spacing: -0.025em;}
