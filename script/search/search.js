@@ -2,30 +2,6 @@ $(document).ready(function(){
 
   //검색목록 시작
 
-  //검색 셀렉트박스 말줄임표시
-  // $('.setArrow1 option').each(function(){
-  //   let length = 4; //표시할 글자 수 정하기
-  
-  // $(this).each(function(){
-  //   if($(this).text().length > length){
-  //     $(this).text($(this).text().substr(0, length) + '...'); //지정한 글자수 이후 표시할 텍스트 '...'
-  //     }
-  //   });
-  // });
-
-
-  //내보내기, 내서재담기 팝업
-  $('.chkOptionBtn').click(function(){
-    if($(this).hasClass('on')){
-      $(this).removeClass('on');
-      $(this).next('ul').stop().slideUp();
-    }else{
-      $(this).addClass('on')
-      $(this).next('ul').stop().slideDown();
-    }
-    return false;
-  });
-
   //원문보기 여러개
   $('.viewOriginBtn').click(function(){
     if($(this).hasClass('on')){
