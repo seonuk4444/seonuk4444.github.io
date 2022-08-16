@@ -391,7 +391,7 @@ a.addInput {border:1px solid #dadada;color:#fff;border-radius: 20px;width:80px;h
 .chkFunction>ul {font-size:0;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .chkFunction>ul>li {display:inline-block}
 .chkFunction>ul>li:not(:last-child) {margin-right:12px}
-.chkFunction>ul>li>a.export {display:block;width:20px;height:20px;background:url(../../images/commons/export.png) no-repeat center;background-size:19px 19px}
+.chkFunction>ul>li>a.export {display:block;width:20px;height:20px;background:url(../../images/commons/export.png) no-repeat center bottom;background-size:19px 19px}
 .chkFunction>ul>li>a.save {display:block;width:20px;height:20px;background:url(../../images/commons/save.png) no-repeat center;background-size:20px 20px}
 .chkFunction>ul>li>a.del {display:block;width:20px;height:20px;background:url(../../images/commons/delType4.png) no-repeat bottom}
 
