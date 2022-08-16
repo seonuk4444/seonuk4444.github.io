@@ -236,7 +236,7 @@
 .infoDetail .btnBunch ul>li {position:relative;width:100%;padding:0 20px;text-align: center;box-sizing: border-box;}
 .infoDetail .btnBunch ul>li:not(:last-child)::after {content:"";display:block;position:absolute;top:13px;right:0;width:1px;height:26px;background:#d8d8d8}
 .infoDetail .btnBunch ul>li>a {display:inline-block;padding-top:28px;color:#181818;font-size:1rem;background-repeat: no-repeat;}
-.infoDetail .btnBunch ul>li>a.export {background-image: url(../../images/commons/export.png);background-position:center top;background-size: 19px 19px;}
+.infoDetail .btnBunch ul>li>a.export {background-image: url(../../images/commons/export.png);background-position:center top;background-size: 20px 20px;}
 .infoDetail .btnBunch ul>li>a.save {background-image: url(../../images/commons/save.png);background-position:center top;background-size: 20px 20px;}
 .infoDetail .btnBunch ul>li>a.share {background-image: url(../../images/commons/share.png);background-position:center top;background-size: 19px 19px;}
 .infoDetail .btnBunch ul>li>a.recept{background-image: url(../../images/commons/recept.png);background-position:center top 3px;background-size: 19px 19px;}
