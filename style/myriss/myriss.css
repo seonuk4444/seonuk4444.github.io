@@ -36,7 +36,7 @@
 .shListFunction .shFunc {float:right;margin-bottom:4px}
 .shListFunction .chkFunction {margin:0 0 4px 0}
 .shListFunction .chkFunc .selType2 {padding:0 20px 0 0px;width:auto;height:auto;font-size:1rem}
-.shListFunction .shMove {padding:1px 8px;color:#000;border:1px solid #c1c1c1;border-radius: 5px;font-size:1.071rem;}
+.shListFunction .shMove {background:#fff;padding:1px 8px;color:#000;border:1px solid #c1c1c1;border-radius: 5px;font-size:1.071rem;}
 .shListFunction>ul {font-size:0}
 .shListFunction>ul>li {display:inline-block;}
 .shListFunction>ul>li:not(:last-child) {margin-right:12px}
