@@ -94,6 +94,11 @@ var ui = {
 
 $(document).ready(function(){
 	ui.checkLabel();
+	
+	//내부 스크롤감지
+	$.fn.hasScrollBar = function() {
+		return (this.prop("scrollHeight") == 0 && this.prop("clientHeight") == 0) || (this.prop("scrollHeight") > this.prop("clientHeight"));
+	};
 	//사이즈 변수 선언(공통 사용)
 	var winWidth = window.innerWidth || document.documentElement.clientWidth;//미디어쿼리 사이즈와 $(window).width()가 인식하는 px단위 사이즈가 달라서 선언한 변수 : clinentWidth 와 innerWidth의 사이즈는 동일하나 innerWidth는 익스플로러 9 미만 버전은 인식하지 못하므로 동시선언
 	
@@ -125,12 +130,18 @@ $(document).ready(function(){
 		$('.addBasketLayer').addClass('on');
 		$('.blackBg').addClass('mo');
 		$(this).addClass('this');
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			var ph = $('.addBasketLayer .popTitArea').outerHeight();
+			$('.addBasketLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
 	});
 	$('.addBasketLayer .layerClose').on('click',function(){
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
 		$('.addBasket.this').focus();
 		$('.addBasket').removeClass('this');
+		$('.addBasketLayer').removeClass('long');
 		return false;
 	});
 	// 바구니 담기 레이어 팝업
@@ -140,12 +151,18 @@ $(document).ready(function(){
 		$('.insertMyListLayer').addClass('on');
 		$('.blackBg').addClass('mo');
 		$(this).addClass('this');
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			var ph = $('.insertMyListLayer .popTitArea').outerHeight();
+			$('.insertMyListLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
 	});
 	$('.insertMyListLayer .layerClose').on('click',function(){
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
 		$('.insertMyList.this').focus();
 		$('.insertMyList').removeClass('this');
+		$('.insertMyListLayer').removeClass('long');
 		return false;
 	});
 	// 내서재 담기 레이어 팝업
@@ -156,12 +173,18 @@ $(document).ready(function(){
 		$('.exportLayer').addClass('on');
 		$('.blackBg').addClass('mo');
 		$(this).addClass('this');
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			var ph = $('.exportLayer .popTitArea').outerHeight();
+			$('.exportLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
 	});
 	$('.exportLayer .layerClose').on('click',function(){
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
 		$('.export.this').focus();
 		$('.export').removeClass('this');
+		$('.exportLayer').removeClass('long');
 		return false;
 	});
 	// 내보내기 레이어 팝업
@@ -170,13 +193,14 @@ $(document).ready(function(){
 	$('.blackBg').on('click',function(){
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
+		$('.layerPopup').removeClass('long');
 		return false;
 	});
-	$('.blackBg2').on('click',function(){
-		$('.resInfoTable').removeClass('on');
-		$('.blackBg2').removeClass('mo');
-		return false;
-	});
+	// $('.blackBg2').on('click',function(){
+	// 	$('.resInfoTable').removeClass('on');
+	// 	$('.blackBg2').removeClass('mo');
+	// 	return false;
+	// });
 	// 레이어 팝업 black BackGround
 		
 	/* 탭메뉴 */
@@ -312,6 +336,50 @@ $(document).ready(function(){
 	$('body').click(function(e){
 		if(!$('.autoComW').has(e.target).length){
 			$('.autoComW').removeClass('on');
+		}
+	});
+
+	//상세검색 레이어
+	$('.detailSearchBtn').on('click',function(){
+		$('.detailSearchLayer').addClass('on');
+		$('.blackBg').addClass('mo');
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			var ph = $('.detailSearchLayer .popTitArea').outerHeight();
+			$('.detailSearchLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
+	});
+
+	$('.detailSearchLayer .layerClose').on('click',function(){
+		$('.layerPopup').removeClass('on');
+		$('.blackBg').removeClass('mo');
+		$('.detailSearchBtn').focus();
+		$('.detailSearchLayer').removeClass('long');
+		return false;
+	});
+	let dsTab = new Swiper('.dsTab .inner',{
+		slidesPerView:'auto',
+		spaceBetween: 0,
+		freeMode: true,
+	});
+
+	$('.layerPopup .popupContent').on('scroll',function(){
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			if($(this).hasScrollBar()){
+				$(this).parents('.layerPopup').addClass('long');
+			}
+		}
+		
+	});
+
+	$(window).on('resize',function(){
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			if($('.layerPopup').hasClass('on')){
+				var ph = $('.layerPopup .popTitArea').outerHeight();
+				$('.layerPopup .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+			}
 		}
 	});
 
