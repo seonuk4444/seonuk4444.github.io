@@ -224,16 +224,19 @@ a.moreView:hover {color:#3459ba;text-decoration:underline;}
     .browsingSlide::before, .browsingSlide::after {width:32px}
     .browsingSlide .slick-slide.lt5 .browsingItem  a {transform: translateX(100px) scale(0.9);}
     .browsingSlide .slick-slide.gt4 .browsingItem  a {transform: translateX(-100px) scale(0.9);}
+    .searchInfo.on .browsingSlide::before, .searchInfo.on .browsingSlide::after {display:none}
 }
 @media screen and (max-width:1400px) {
     .browsingSlide .slick-list {padding-left:0 !important}
     .browsingSlide .slick-slide.lt4 .browsingItem  a, .browsingSlide .slick-slide.lt5 .browsingItem  a, .browsingSlide .slick-slide.gt3 .browsingItem a, .browsingSlide .slick-slide.gt4 .browsingItem a {transform: none;z-index:1;}
+    .searchInfo.on .browsingSlide::before, .searchInfo.on .browsingSlide::after {display:none}
 }
 
 /* 슬라이드 */
 .bookDataW {position:relative;padding:12px 0}
 .bookDataW .bookData {width:87%;margin:0 auto}
 .bookDataW .bookData div {height:auto;}
+.bookDataW .bookData .slick-slide {width:192px}
 .bookDataW .bookData div a {display:block;position:relative;width:175px;height:312px;padding:32px 12px 12px 12px;border-radius: 10px;background:#f6f6f6;margin:0 auto;text-align: center;box-sizing: border-box;}
 .bookDataW .bookData div a img {display:block;width:90px;height:130px;margin:0 auto 24px auto}
 .bookDataW .bookData div a .bookTitle {max-height:36px;margin-bottom:3px;color:#000;font-family: PretendardSB,sans-serif;font-size:16px;display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height: 18px;overflow: hidden;}
