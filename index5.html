@@ -43,6 +43,7 @@
         });
         var isNewCabinet_div_show = false;
         function togleNewCabinetForm() {
+            $('.divPopup').removeClass('long');
             if(isNewCabinet_div_show == false) {
                 let ph = $('.myPop .popHeader').outerHeight(true);
                 $('.myPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
