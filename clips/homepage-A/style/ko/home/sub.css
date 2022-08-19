@@ -260,8 +260,7 @@ option{font-family: Pretendard,sans-serif}
 #divLocation ul>li:not(:first-child) {margin-left:24px;padding-left:24px;background:url(../../../image/ko/locationArrow.png) no-repeat left center}
 
 @media screen and (max-width:767px){
-    #divTitle{text-align: center;}
-    #divLocation ul{display: none;}
+    
 }
 
 /* Tab */
@@ -279,13 +278,18 @@ option{font-family: Pretendard,sans-serif}
 @media screen and (max-width:1024px){
     .subCommon>div {width:auto;padding:0 24px}
     #divContent {width:auto;padding:0 24px}
-    .subCommon{padding-top: 10px;}
 }
 @media screen and (max-width:767px){
-    .subCommon>div {width:auto;padding:0 8px}
+    .subCommon {padding:12px 0}
+    .subCommon>div {display:block;width:auto;padding:0 8px}
+    #divTitle{font-size:24px;text-align: center;}
+    #divLocation {display: none;}
+
     #divContent {width:auto;padding:0 8px 80px 8px}
     #divTabMenu ul li a{padding: 0 35px}
     #divTabMenu ul li.selected a{padding: 0 40px;}
+
+    
 }
 /* divContentsW */
 
