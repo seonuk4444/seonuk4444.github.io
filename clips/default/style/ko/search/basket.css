@@ -7,8 +7,6 @@
 .popupContent .sentence{margin-bottom: 20px; line-height: 1;}
 .popupContent .sentence .essential{color: #384655;}
 
-.layerPopup .popupContent{max-height: 62vh; overflow-y: auto;}
-.exportLayer .popupContent {min-height:470px;max-height:none}
 .layerPopup .popupContent .selectBox1{width: 100%;}
 .layerPopup .popupContent ol li{margin-bottom: 15px; color: #384655;}
 .layerPopup .popupContent .dateSelect{margin-top: 15px; text-align: center;}
@@ -46,6 +44,9 @@
 .layerPopup .radioSelect .labelText{display: inline-block; margin-right: 20px;}
 .layerPopup .radioSelect label{display: inline-block; margin-left: 15px;}
 
+@media screen and (min-width:768px){
+    .exportLayer .popupContent {min-height:470px;max-height:none}
+}
 @media screen and (max-width:767px){
     .layerPopup .popupContent .dateSelect .reservationDate{margin: 0 10px 10px 0; display: inline-block;}
     .layerPopup .popupContent .range{padding: 20px;}
@@ -56,7 +57,6 @@
     .layerPopup .popupContent .exportType li:not(:last-of-type), .layerPopup .popupContent .range li:not(:last-of-type){margin-right: 0px;}
     .layerPopup .popupContent .receiveMail{width: 100%;}
     .layerPopup .radioSelect .labelText{display: block;}
-    .layerPopup .radioSelect label:first-of-type{margin-left: 0; margin-top: 10px;}
 }
 
 /* 서평쓰기 select Star */

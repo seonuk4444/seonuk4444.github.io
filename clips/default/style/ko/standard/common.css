@@ -200,8 +200,8 @@ a.ui-button:active,
 /* selectBox */
 select{-webkit-appearance: none; /* 네이티브 외형 감추기 */  -moz-appearance: none; appearance: none;  /* 화살표 모양의 이미지 */ cursor: pointer;}
 select::-ms-expand{display: none;} /* IE 10, 11의 네이티브 화살표 숨기기 */
-.selectBox1{border: 1px solid #e3e3e3; min-width: 155px; height: 40px; margin: 5px 0; padding: 0 30px 0 12px; color: #555;  background: #fff url(../../../image/ko/ico/selectArrow.png) no-repeat right 16px top 50%; border-radius: 3px;}
-.selectBox1_1{border: 1px solid #e3e3e3; min-width: 70px; height: 40px; margin: 5px 0; padding: 0 30px 0 12px; color: #555;  background: #fff url(../../../image/ko/ico/selectArrow.png) no-repeat right 16px top 50%; border-radius: 3px;}
+.selectBox1{border: 1px solid #e3e3e3; min-width: 155px; height: 40px; margin: 5px 0; padding: 0 30px 0 12px; color: #555;  background: #fff url(../../../image/ko/ico/selectArrow.png) no-repeat right 16px top 50%; border-radius: 10px;}
+.selectBox1_1{border: 1px solid #e3e3e3; min-width: 70px; height: 40px; margin: 5px 0; padding: 0 30px 0 12px; color: #555;  background: #fff url(../../../image/ko/ico/selectArrow.png) no-repeat right 16px top 50%; border-radius: 10px;}
 .selectBox2{border: none;padding: 0 24px 0 5px;color: rgba(31, 31, 31, 0.8);background: #fff url(../../../image/ko/ico/selectArrow2.png) no-repeat right 6px center}
 .selectBox3{border: 1px solid #e3e3e3; width: 100%; height: 55px; margin: 0; padding: 0 30px 0 17px; color: #555;  background: #fff url(../../../image/ko/ico/selectArrow3.png) no-repeat right 16px top 50%; border-radius: 3px;}
 .selectBox4 {height:36px;padding:0 33px 0 15px;color:#666;border:1px solid #d4d4d4;border-radius: 10px;background:url(../../../image/ko/ico/selectArrow5.png) no-repeat right 15px center;font-size:16px;}
@@ -209,8 +209,8 @@ select::-ms-expand{display: none;} /* IE 10, 11의 네이티브 화살표 숨기
 .listTitle1{margin-bottom: 15px; font-size: 20px;}
 
 /* input */
-.inputTextType1{padding-left: 8px; border: 1px solid #e3e3e3; height: 40px; border-radius: 3px;box-sizing: border-box;}
-.inputTextType2{width: 118px; padding: 0 35px 0 12px; border: 1px solid #e3e3e3; height: 40px; background: #fff url(../../../image/ko/ico/datepickerIcon.png) no-repeat right 15px center; border-radius: 3px;}
+.inputTextType1{padding-left: 8px; border: 1px solid #e3e3e3; height: 40px; border-radius: 10px;box-sizing: border-box;}
+.inputTextType2{width: 118px; padding: 0 35px 0 12px; border: 1px solid #e3e3e3; height: 40px; background: #fff url(../../../image/ko/ico/datepickerIcon.png) no-repeat right 15px center; border-radius: 10px;}
 .inputTextType3{display: block; margin: 10px 0; padding-left: 12px; border: 1px solid #d4d4d4; height: 55px; border-radius: 10px; width: 90%;box-sizing: border-box;color:#414141}
 
 @media screen and (max-width:1024px){
@@ -299,15 +299,17 @@ input[type="text"]:-moz-placeholder{color:#555;}
 .btnType1 {display:inline-block;margin:0 3px;padding:6px 15px;border:1px solid #d4d4d4;border-radius: 10px;background:#fff;color:#666;cursor: pointer;}
 .btnType2 {display:inline-block;padding:8px 23px;background:#f3f3f4;border:none;color:#0e0e0e;font-size:16px;border-radius: 10px;}
 .btnType3 {display:inline-block;width:100%;height:58px;border:1px solid #000;border-radius: 10px;background:#fff;color:#000;font-size:16px;line-height: 56px;text-align: center;box-sizing: border-box;}
-.btnType4 {display:inline-block;width:100%;height:58px;background:#000;color:#fff;border-radius: 10px;font-size:16px;line-height: 56px;text-align: center;box-sizing: border-box;}
+.btnType4 {display:inline-block;width:100%;height:58px;background:#000;color:#fff;border-radius: 10px;font-size:16px;line-height: 56px;text-align: center;box-sizing: border-box;border:none}
 .btnType5 {display:inline-block;padding:13px 35px;background:#000;color:#fff;border-radius: 10px;font-size:16px;text-align: center;box-sizing: border-box;font-family: PretendardB,sans-serif;font-size:16px;}
 
 /* btnBunchType1 */
 .btnBunchType1 {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;margin-top:40px}
 .btnBunchType1 a:nth-of-type(1) {margin-right:4px}
 .btnBunchType1 a:nth-of-type(2) {margin-left:4px}
+.btnBunchType1 input:nth-of-type(1) {margin-right:4px}
+.btnBunchType1 input:nth-of-type(2) {margin-left:4px}
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .btnType3, .btnType4 {height:40px;line-height: 40px;font-size:15px}
 }
 
@@ -363,11 +365,10 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #e3e3e3;resize:none;box
 }
 
 /* layerPopup */
-.layerPopup{ min-width: 340px;  position: fixed; display: none; z-index: 202; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 10px; box-shadow: 3px 4px 16px 0px rgba(0, 0, 0, 0.17);background:#fff;padding:0 20px;box-sizing: border-box;}
-.layerPopup.on{animation: popupOn .2s ease-out; display: block; }
-
+.layerPopup{ min-width: 340px;  position: fixed; display: none; z-index: 202;  border-radius: 10px; box-shadow: 3px 4px 16px 0px rgba(0, 0, 0, 0.17);background:#fff;padding:0 20px;box-sizing: border-box;}
 .layerPopup2{position: fixed; display: none; z-index: 201; width: 1240px; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 25px; box-shadow: 3px 4px 16px 0px rgba(0, 0, 0, 0.17);}
 .layerPopup2.on{animation: popupOn .2s ease-out; display: block; }
+
 @-moz-keyframes popupOn {
     0% { opacity: 0; -webkit-transform: translate(-50%, -50%) scale(0); transform: translate(-50%, -50%) scale(0);}
   100% { opacity: 1; -webkit-transform: translate(-50%, -50%) scale(1); transform: translate(-50%, -50%) scale(1); }
@@ -380,11 +381,18 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #e3e3e3;resize:none;box
     0% { opacity: 0; -webkit-transform: translate(-50%, -50%) scale(0); transform: translate(-50%, -50%) scale(0);}
   100% { opacity: 1; -webkit-transform: translate(-50%, -50%) scale(1); transform: translate(-50%, -50%) scale(1); }
 }
+
+@keyframes popupOnM {
+    0% { bottom: -100%}
+  100% { bottom:0}
+}
+
+
 .layerPopup .popTitArea {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;padding: 28px 0 16px 0;border-bottom:2px solid #000}
 .layerPopup .popTitArea h3.tit {display:inline-block;margin-right:16px;color: #050505; font-size: 22px; font-family:PretendardB,sans-serif;}
 .layerPopup .popTitArea h3.subTit {display:inline-block;color:#666;font-family: PretendardM,sans-serif;font-size:16px;}
 .layerPopup h3 span{color: #fff; font-size: 18px; font-family:NotoSansM,sans-serif; float: right;}
-.layerPopup .popupContent{padding: 30px 0 20px 0;}
+.layerPopup .popupContent{padding: 30px 0 20px 0; overflow-y: auto;}
 .layerPopup .popupBg{background: #f3f3f3; border-radius: 3px; padding: 20px;}
 .layerPopup .popupContent .notice{text-align: center; color: #333333; font-size: 16px; line-height: 30px;}
 .layerPopupButtons{text-align: center; margin-top: 35px;}
@@ -394,9 +402,17 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #e3e3e3;resize:none;box
 @media screen and (max-width:1280px){
     .layerPopup2{width: calc(100% - 180px); left: 48%;}
 }
+@media screen and (min-width:768px) {
+    .layerPopup {left: 50%; top: 50%; transform: translate(-50%, -50%);}
+    .layerPopup.on{animation: popupOn .2s ease-out; display: block; }
+    .layerPopup .popupContent{max-height: 62vh !important;}
+}
+
 @media screen and (max-width:767px){
-    .layerPopup{width: 95%; min-width: 0 !important;}
-    .layerPopup .popupContent{padding: 25px 0;}
+    .layerPopup{width: 100%;height:40%; min-width: 0 !important;bottom:0;left:0;border-radius: 10px 10px 0 0;transition:height .3s}
+    .layerPopup.long {height:80%}
+    .layerPopup.on {animation: popupOnM .2s ease-out;display:block}
+    .layerPopup .popupContent{padding: 25px 0;box-sizing: border-box;}
 
     .layerPopup2{top: 54%;  left: 50%;}
     .layerPopup2 .layerCloseBtn{right: calc(50% - 15px); top: -70px;}
@@ -465,6 +481,34 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #e3e3e3;resize:none;box
 .pagination li:last-of-type a{background: url(../../../image/ko/btn/lastPage.png) no-repeat;}
 .pagination li.active a{display: inline-block; width: 40px; height: 40px; color:#555; background: #f3f3f3; border-radius: 5px; box-sizing: border-box;}
 .pagination li a{line-height:40px;width: 40px;height: 40px;color: #555;display: inline-block;}
+
+/* 상세검색 */
+.detailSearchLayer {width:1400px}
+.detailSearchLayer .dsTab {margin-bottom:12px}
+.detailSearchLayer .advancedSearch .advanceTit{display: block; width: 160px; margin-bottom: 4px; color: #384655; font-size: 16px;}
+.detailSearchLayer .advancedSearch .searchKeyword{margin-bottom: 16px;}
+.detailSearchLayer .advancedSearchW .buttons{text-align: center;}
+.detailSearchLayer .item{position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
+.layerPopup.detailSearchLayer .popupContent .selectBox1 {width:auto}
+.detailSearchLayer .inputSearchKeyword{width: 100%; margin: 0 8px;}
+.detailSearchLayer .item .selectBoolean{min-width: 100px;}
+.detailSearchLayer .searchLimit{margin: 8px 0;}
+.detailSearchLayer .searchLimit ul li{display: inline-block; position: relative; margin-right: 28px; margin-bottom: 5px;}
+.detailSearchLayer .searchLimit ul li:last-of-type{margin-right: 0;}
+.detailSearchLayer .searchLimit .datePicker{width: 155px;}
+
+@media screen and (max-width:1420px) {
+    .detailSearchLayer {width:95%}
+}
+@media screen and (max-width:767px){
+    .detailSearchLayer {width:100%;}
+    .detailSearchLayer .item{display: block;}
+    .layerPopup.detailSearchLayer .popupContent .item .selectBox1.selectSearchItem {display: block; width: 100%;}
+    .detailSearchLayer .inputSearchKeyword, .layerPopup.detailSearchLayer .item .selectBoolean{display: inline-block;}
+    .layerPopup.detailSearchLayer .item .selectBoolean {min-width:0;width:calc(35% - 8px)}
+    .detailSearchLayer .inputSearchKeyword{width: 65%; margin-left: 0; margin-right: 4px;}
+    .detailSearchLayer .searchLimit .datePicker {width:calc(50% - 9px)}
+}
 
 /* swiper */
 .swipeType1 .inner{ overflow: hidden;}
