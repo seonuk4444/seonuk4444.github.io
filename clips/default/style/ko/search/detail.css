@@ -114,7 +114,9 @@
 .searchInfo.commontArea  .searchHeader {padding:0 24px}
 
 @media screen and (max-width:767px) {
-
+    .searchInfo {padding:20px 16px}
+    .searchInfo.slideCase {padding:20px 0}
+    .searchInfo.slideCase .searchHeader {padding:0 16px}
 }
 /* section */
 
