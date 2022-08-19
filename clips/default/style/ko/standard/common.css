@@ -337,7 +337,9 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #e3e3e3;resize:none;box
 .paging > span a{display: inline-block; width: 26px; height: 26px; color:#989898;line-height: 26px;}
 .paging > span * {margin: 0 9px}
 @media screen and (max-width:767px){
-
+    .paging > .page {margin:0 4px}
+    .paging > span {margin:0}
+    .paging > span * {margin: 0 3px;}
 }
 
 /* 필수사항 */
