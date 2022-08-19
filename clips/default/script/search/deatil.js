@@ -358,13 +358,19 @@ $(document).ready(function(){
 	$('.commentWriteBtn').on('click', function () {
 		$('.commentWriteLayer').addClass('on');
 		$('.blackBg').addClass('mo');
-		$(this).addClass('this')
+		$(this).addClass('this');
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			var ph = $('.commentWriteLayer .popTitArea').outerHeight();
+			$('.commentWriteLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
 	});
 	$('.commentWriteLayer .layerClose').on('click', function () {
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
 		$('.commentWriteBtn.this').focus();
 		$('.commentWriteBtn').removeClass('this');
+		$('.commentWriteLayer').removeClass('long')
 		return false;
 	});
 
