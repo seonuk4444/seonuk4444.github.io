@@ -10,7 +10,16 @@ $(document).ready(function(){
           $(this).next().slideDown();
         }
       });
-
+      $('.optBtn1').click(function(e){
+        e.preventDefault();
+        if($(this).hasClass('on')){
+          $(this).removeClass('on');
+          $(this).next().slideUp();
+        }else{
+          $(this).addClass('on');
+          $(this).next().slideDown();
+        }
+      });
     $(".shelf .favorRadio[name='shelf']:radio").change(function () {
         $('.shelf').removeClass('mainShelf')
        $(this).parents('.shelf').addClass('mainShelf');         
@@ -37,6 +46,7 @@ $(document).ready(function(){
         e.preventDefault();
         $('.blackBg1').hide();
         $('.myPop').removeClass('on');
+        $(this).parents('.divPopup').removeClass('long');
     });
 
     //카테고리 팝업
@@ -45,10 +55,12 @@ $(document).ready(function(){
         $('.categoryPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
         $('.blackBg1').show();
         $('.categoryPop').addClass('on');
+        $('#newCabinet_div2').removeClass('long')
     });
     $('.categoryPopClose').click(function(e){
         e.preventDefault();
         $('.categoryPop').removeClass('on');
+        $(this).parents('.divPopup').removeClass('long');
     });
 
     //내보내기
@@ -63,6 +75,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.exportPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
   });
 
   //최신논문들 팝업
@@ -79,6 +92,7 @@ $(document).ready(function(){
     $('.interKeyList .viewListBtns a').removeClass('on');
     $('.blackBg1').hide();
     $('.thesisPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
   });
 
   //월간이용현황

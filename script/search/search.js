@@ -26,7 +26,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.viewOriginPop').removeClass('on');
-    
+    $(this).parents('.divPopup').removeClass('long');
   });
 
 
@@ -167,6 +167,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.keepInfo').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
   });
 
 

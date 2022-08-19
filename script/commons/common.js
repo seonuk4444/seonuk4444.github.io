@@ -62,7 +62,9 @@ let wholeUtil = {
 };
 
 $(document).ready(function(){
-
+  $.fn.hasScrollBar = function() {
+    return (this.prop("scrollHeight") == 0 && this.prop("clientHeight") == 0) || (this.prop("scrollHeight") > this.prop("clientHeight"));
+  };
   let winWidth = window.innerWidth || document.documentElement.clientWidth;
   let lastScrollTop = 0;
   let btnH = $('.detailBtns').height();
@@ -201,6 +203,14 @@ $('.detailShInput>ul>li:nth-of-type(4) .addInput').click(function(e){
   $(this).prev('.selType3').show();
   $('.detailShInput>ul>li').eq(4).show();
 }); 
+
+
+//popCont scroll
+$('.divPopup .popCont').on('scroll',function(){
+  if($(this).hasScrollBar()){
+    $(this).parents('.divPopup').addClass('long');
+  }
+});
 
 
 //wholeMenu

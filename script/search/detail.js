@@ -149,6 +149,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.exportPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
   });
 
   //내책장담기
@@ -163,6 +164,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.savePop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
   });
 
   //카테고리 열기
@@ -171,10 +173,12 @@ $(document).ready(function(){
     $('.categoryPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
     $('.blackBg1').show();
     $('.categoryPop').addClass('on');
+    $('#newCabinet_div2').removeClass('long')
   });
   $('.categoryPopClose').click(function(e){
     e.preventDefault();
     $('.categoryPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
   });
 
   //카테고리 폴더
@@ -212,6 +216,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.viewOriginPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
     
   });
 
@@ -239,7 +244,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.agencyInfo').removeClass('on');
-    
+    $(this).parents('.divPopup').removeClass('long');
   });
 
   $('.infoDetail .infoCont .institute>li a.txt').click(function(){
@@ -254,7 +259,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('.blackBg1').hide();
     $('.keepInfo').removeClass('on');
-    
+    $(this).parents('.divPopup').removeClass('long');
   });
 
 });    
