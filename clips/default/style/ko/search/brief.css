@@ -41,39 +41,49 @@
     #divSearch {top:0;margin:24px 0 0 0}
     #divSearch form {width:100%}
     #divSearch .againSearch {padding-left:24px}
-    .relativeKeyword {width:auto;margin:16px 24px 0 24px}
+    .relativeKeyword {width:auto;margin:16px 8px 0 8px}
+    
 }
 
 @media screen and (max-width:767px) {
     #divSearch .searchSelect {margin-bottom:8px}
     #divSearch .searchInputArea::after {left:120px;top:16px;height:28px}
     #divSearch .searchInputArea select {width:120px;height:60px;padding-left:20px;font-size:17px}
-    #divSearch .searchInputArea .inputArea {width:calc(100% - 254px)}
+    #divSearch .searchInputArea .inputArea {width: calc(100% - 236px);}
     #divSearch .inputArea::before {top:22px}
     #divSearch .inputArea::after {top:22px}
     #divSearch .searchInputArea .inputArea input[type="text"] {height:60px;padding-right:48px}
 
-    #divSearch .refine {right:14px}
-    #divSearch .refine .customChk + label {text-indent:-9999px;}
+    #divSearch .refine {right:8px;top:55%}
+    #divSearch .refine .customChk + label {text-indent:-9999px;padding-left:20px}
     #divSearch .languageBtn {display:none}
 
-    #divSearch form input[type="image"] {width:20px;height:20px;margin-left:8px}
-    #divSearch a.detailSearchBtn {width:72px;height:32px;line-height:32px;font-size:13px;}
-    .relativeKeyword .tit {float:none}
-    .relativeKeyword>ul {margin-left:0}
+    #divSearch form input[type="image"] {width:20px;height:20px;margin-left: 4px;}
+    #divSearch a.detailSearchBtn {width:72px;height:32px;line-height:32px;font-size:13px;margin-left: 8px;}
+
+    #divSearch .refine .customChk + label::before {width:20px;height:20px;background:url(../../../image/ko/ico/refineOff.png);border-radius:0;background-size:20px 20px}
+    #divSearch .refine .customChk + label.on::before {width:20px;height:20px;background:url(../../../image/ko/ico/refineOn.png);border-radius:0;background-size:20px 20px}
+    #divSearch .refine .customChk:checked  + label::before {width:20px;height:20px;background:url(../../../image/ko/ico/refineOn.png);border-radius:0;background-size:20px 20px}
+    #divSearch .refine .customChk:focus + label.on::before {width:20px;height:20px;background:url(../../../image/ko/ico/refineOn.png);border-radius:0;background-size:20px 20px}
+
+    .relativeKeyword .tit {float:none;display:inline;width:auto;height:auto;padding:8px 12px;margin-right:8px;line-height:1;font-size:14px;}
+    .relativeKeyword>ul {display:inline;margin-left:0;padding:0;}
+    .relativeKeyword>ul>li {margin-top:8px;margin-bottom:-8px}
+    .relativeKeyword>ul>li:not(:last-child) {margin-right:16px}
+    .relativeKeyword>ul>li>a {font-size:15px}
+
 }
 @media screen and (max-width:500px) {
     #divSearch .searchInputArea::after {left:100px;top:16px;height:28px}
     #divSearch .searchInputArea select {width:100px;height:60px;padding-left:20px;padding-right:18px;background-position:right 8px center;}
-    #divSearch .searchInputArea .inputArea {width:calc(100% - 226px)}
+    #divSearch .searchInputArea .inputArea {width:calc(100% - 212px)}
     #divSearch .inputArea .textDel {display:none}
     #divSearch a.detailSearchBtn {margin-left:4px}
 }
 
 @media screen and (max-width:400px) {
     #divSearch .searchInputArea select {width:88px;padding-left:16px}
-    #divSearch .searchInputArea .inputArea {width:calc(100% - 214px);}
-    #divSearch .refine {right:4px}
+    #divSearch .searchInputArea .inputArea {width:calc(100% - 200px);}
     #divSearch .searchInputArea .inputArea input[type="text"] {padding-right:36px}
 }
 
@@ -150,7 +160,7 @@
     .result {width:100%; float:none;}
 }
 @media screen and (max-width:767px) {
-    .searchInfo {display:block;margin-bottom:12px;}
+    .searchInfo {display:block;margin-bottom:12px;padding-right:0}
     .searchInfo .searchWords .searchKeyword dt {margin-left:0;}
     .searchInfo .searchCnt {margin-top:10px;}
 }
@@ -180,9 +190,15 @@
 }
 
 @media screen and (max-width:767px) {
-    .briefHeader {display:block;padding:0px 8px;}
+    .briefHeader {display:block;padding:0;}
     .briefHeader .searchBtns>ul>li:nth-of-type(2) {margin-left:0}
     .briefHeader .sortOptions select {margin:3px 0;}
+}
+@media screen and (max-width:370px) {
+    .briefHeader .searchBtns>ul>li>a {min-width:78px;font-size:14px}
+    .briefHeader .sortOptions select {font-size:14px;background-position:right center;padding:0 15px 0 5px}
+    .briefHeader .sortOptions .sortSubmit {padding:6px 12px;font-size:14px}
+    .facetBtn {max-height:34px}
 }
 /* //briefHeader */
 
@@ -405,7 +421,7 @@
 
 
 @media screen and (max-width:767px) {
-    .resultList>li {padding:20px 16px 16px;}
+    .resultList>li {padding:12px 8px 8px;}
     .resultList>li .listInfoW {-webkit-box-lines:multiple;-ms-flex-wrap:wrap;flex-wrap:wrap;}
     .resultList>li .listInfoW .dataCheck {width:100%;margin-bottom:12px}
     .resultList>li .listInfoW .bookInfo {width:calc(100% - 72px);width:-webkit-calc(100% - 72px)}

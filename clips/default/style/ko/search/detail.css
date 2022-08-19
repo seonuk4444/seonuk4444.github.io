@@ -21,11 +21,7 @@
 .marcView .marcPopup ul li p {display:inline-block;color:#333333;width:80%;}
 /* Marc popup */
 @media screen and (max-width:767px) {
-    .searchLink .returnResult {float:none;}
-    .searchLink .searchLinkBtn {float:none;margin-top:10px;}
-    .searchLink .searchLinkBtn>li {padding-top:10px;margin-right:14px;}
-
-    .marcView .marcPopup {top:92px;width:100%;}
+    .marcView .marcPopup {width:100%;}
 }
 
 /* 서지정보 */
