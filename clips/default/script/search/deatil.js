@@ -112,6 +112,7 @@ $(document).ready(function(){
 				{
 					breakpoint: 1401, //화면 사이즈 1440px
 					settings: {
+						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
 						variableWidth: false,
@@ -121,6 +122,7 @@ $(document).ready(function(){
 				{
 					breakpoint: 1150, //화면 사이즈 1440px
 					settings: {
+						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
 						variableWidth: false,
@@ -130,6 +132,7 @@ $(document).ready(function(){
 				{
 					breakpoint: 1150, //화면 사이즈 1440px
 					settings: {
+						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
 						variableWidth: false,
@@ -139,18 +142,20 @@ $(document).ready(function(){
 				{
 					breakpoint: 767, //화면 사이즈 1440px
 					settings: {
+						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
-						variableWidth: false,
+						variableWidth: true,
 						slidesToShow: 2,
 					}
 				},
 				{
 					breakpoint: 499, //화면 사이즈 1440px
 					settings: {
+						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
-						variableWidth: false,
+						variableWidth: true,
 						slidesToShow: 1,
 					}
 				},
@@ -224,12 +229,14 @@ $(document).ready(function(){
 						breakpoint: 767, //화면 사이즈 1440px
 						settings: {
 							slidesToShow: 2,
+							variableWidth: true,
 						}
 					},
 					{
 						breakpoint: 499, //화면 사이즈 1440px
 						settings: {
 							slidesToShow: 1,
+							variableWidth: true,
 						}
 					},
 			]
