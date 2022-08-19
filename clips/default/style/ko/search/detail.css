@@ -22,6 +22,12 @@
 /* Marc popup */
 @media screen and (max-width:767px) {
     .marcView .marcPopup {width:100%;}
+    .searchLink {padding-bottom:12px}
+    .searchLink .returnBox>li:not(:last-child) {margin-right:12px}
+    .searchLink .returnResult {font-size:15px}
+    .searchLink .returnSearch {font-size:15px}
+    .searchLink .searchLinkBtn {padding-right:0}
+    .searchLink .searchLinkBtn>li.marcView>a {font-size:15px}
 }
 
 /* 서지정보 */
