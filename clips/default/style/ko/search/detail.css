@@ -12,7 +12,7 @@
 .searchLink .searchLinkBtn {float:right;padding-right:24px}
 .searchLink .searchLinkBtn>li.marcView>a {padding-right:16px;background:url(../../../image/ko/ico/selectArrow5.png) no-repeat right top 7px;color:#666;font-size:16px;font-family:PretendardSB,sans-serif;}
 /* Marc popup */
-.marcView .marcPopup {display:none;width:570px;position:absolute;left:auto;right:0;top:36px;transform:none;background:#fff;border:1px solid #e3e3e3;border-radius:3px;z-index:2;bottom: auto;height: auto;transition: none;}
+.marcView .marcPopup {display:none;width:570px;position:absolute;left:auto;right:0;top:36px;transform:none;background:#fff;border:1px solid #e3e3e3;border-radius:3px;z-index:201;bottom: auto;height: auto;transition: none;animation: none;}
 .marcView .marcPopup .popupTit {padding:24px 30px;background:#f3f3f3;color:#333333;font-size:20px;font-family:NotoSansM, sans-serif;position:relative;}
 .marcView .marcPopup a.close {text-indent:-9999px;width:14px;height:14px;background:url(../../../image/ko/ico/closeBtn3.png) no-repeat center;position:absolute;right:25px;top:33px;}
 .marcView .marcPopup ul {max-height:260px;overflow-y:auto;}
@@ -21,13 +21,17 @@
 .marcView .marcPopup ul li p {display:inline-block;color:#333333;width:80%;}
 /* Marc popup */
 @media screen and (max-width:767px) {
-    .marcView .marcPopup {width:100%;}
+    .marcView .marcPopup {display:none !important;position:fixed;top:auto;bottom:0;width:100%;height:0;border-radius: 10px 10px 0 0;transition:height .3s}
+    .marcView .marcPopup.on {display:block !important;height:40%;animation: popupOnM .2s ease-out;}
+    .marcView .marcPopup.long {height:80%}
+    .marcView .marcPopup ul {overflow: visible;max-height:none;}
     .searchLink {padding-bottom:12px}
     .searchLink .returnBox>li:not(:last-child) {margin-right:12px}
     .searchLink .returnResult {font-size:15px}
     .searchLink .returnSearch {font-size:15px}
     .searchLink .searchLinkBtn {padding-right:0}
     .searchLink .searchLinkBtn>li.marcView>a {font-size:15px}
+    .marcView .marcPopup a.close {position: absolute; left:50%; top: -45px;transform: translateX(-50%); display: block; width: 30px; height: 30px; background: url(../../../image/ko/ico/closeBtn4.png) no-repeat center; text-indent: -9999px;}
 }
 
 /* 서지정보 */
@@ -35,7 +39,9 @@
 .profileContent::after {content:"";display:block;clear:both}
 .profileContent {position:relative}
 .profileContent .briefInfo {float:left;width:156px}
-.profileContent .briefInfo .bookImg {display:inline-block;position:relative;border:1px solid #d9d9d9;box-shadow:0px 6px 18px 0px rgba(0, 0, 0, 0.18);}
+.book3D {perspective: 400px;}
+.profileContent .briefInfo .bookImg {display:inline-block;position:relative;width:154px;border:1px solid #d9d9d9;box-shadow:0px 6px 18px 0px rgba(0, 0, 0, 0.18);transform-style:preserve-3d;transition:.5s}
+.profileContent .briefInfo .bookImg:hover {transform: rotateY(-30deg) translate(-10%)}
 .profileContent .briefInfo .bookImg .bookBar {display:block;position:absolute;top:0;left:8px;width:5px;height:228px;background:url(../../../image/ko/bg/bookBar.png)}
 .profileContent .briefInfo .bookImg .bookSide {display:block;position:absolute;top:-1px;right:-10px;width:11px;height:231px;background:url(../../../image/ko/bg/bookSide.png)}
 .profileContent .briefInfo .bookImg img {width:154px;height:228px}
@@ -44,6 +50,7 @@
 .profileContent .briefInfo .bookInfo a.aladin {background:url(../../../image/ko/ico/aladin.png)}
 .profileContent .briefInfo .bookInfo a.naver {background:url(../../../image/ko/ico/naver.png)}
 .profileContent .briefInfo .bookInfo a.google {background:url(../../../image/ko/ico/google.png)}
+
 
 .briefInfoDetail  {margin-left:204px;}
 .briefInfoDetail .briefInfoTitle {margin-right:300px}
