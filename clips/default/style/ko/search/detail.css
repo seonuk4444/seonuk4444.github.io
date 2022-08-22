@@ -176,7 +176,10 @@
 }
 @media screen and (max-width:768px) {
     .holdingInfoW {margin:16px 0 0 0}
-    .holdingInfo .mobileTable>tbody>tr>td.expand {text-align:left;border-left:1px solid #dadada;border-bottom:none;background-color:#fff}
+    .holdingInfo .holdingTableW {padding:16px}
+    .holdingTable:not(:last-child) {margin-bottom:16px}
+    .holdingInfo .mobileTable>tbody>tr>td.expand {text-align:left;border-left:1px solid #dadada;background-color:#fff}
+    .holdingInfo .mobileTable>tbody>tr.footable-detail-show>td.expand {border-bottom:none}
     .holdingInfo .mobileTable>tbody>tr:last-child>td.expand {border-bottom:1px solid #dadada}
     .holdingInfo .mobileTable tbody>tr.footable-detail-show {background-color:#fcf9ce}
     .holdingInfo .mobileTable .footable-row-detail {border:1px solid #dadada;border-top:none;text-align:left;}
@@ -186,6 +189,10 @@
     .holdingInfo .mobileTable  .footable-row-detail-inner>div>strong {float:left;min-width:70px;margin-right:8px}
     .holdingInfo .mobileTable  .footable-row-detail-inner>div .child {margin-left:78px}
     .holdingInfo .mobileTable  .footable-row-detail-inner>div .serviceList {display:inline-block}
+
+    .holdingInfo>div .holdLegend>ul>li {font-size:14px}
+    .holdingInfo>div .holdLegend>ul>li:not(:last-child) {margin-right:8px}
+    .holdingInfo>div .holdLegend .charIcon {width:16px;height:16px;line-height: 16px;font-size:12px;margin-right:3px;vertical-align: text-bottom;}
 }
 /* //holdingInfo */
 

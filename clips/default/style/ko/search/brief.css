@@ -338,9 +338,11 @@
 }
 
 @media screen and (max-width:767px) {
-    .holdingInfo .holdingTableW {padding:16px}
     .holdingInfoW {margin:16px 0 0 0}
+    .holdingInfo .holdingTableW {padding:16px}
+    .holdingTable:not(:last-child) {margin-bottom:16px}
     .holdingInfo .mobileTable>tbody>tr>td.expand {text-align:left;border-left:1px solid #dadada;border-bottom:none;background-color:#fff}
+    .holdingInfo .mobileTable>tbody>tr.footable-detail-show>td.expand {border-bottom:none}
     .holdingInfo .mobileTable>tbody>tr:last-child>td.expand {border-bottom:1px solid #dadada}
     .holdingInfo .mobileTable tbody>tr.footable-detail-show {background-color:#fcf9ce}
     .holdingInfo .mobileTable .footable-row-detail {border:1px solid #dadada;border-top:none;text-align:left;}
