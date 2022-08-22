@@ -93,7 +93,6 @@
 @media screen and (max-width:767px) {
     .briefInfoDetail {width:100%;}
     .profileHeader {margin:0 0 40px 0}
-    .profileContent .briefInfo {position:relative;right:0;top:0;margin-bottom:40px;}
     .profileContent .briefInfo .bookImg  {margin:0 auto}
     .profileContent .briefInfo .bookInfoBtn  {margin:0 auto}
     .briefInfoDetail table tr td {padding-left:15px;}

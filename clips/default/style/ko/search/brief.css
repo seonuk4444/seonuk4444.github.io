@@ -337,7 +337,8 @@
     .holdingTable thead {display:table-header-group !important}
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
+    .holdingInfo .holdingTableW {padding:16px}
     .holdingInfoW {margin:16px 0 0 0}
     .holdingInfo .mobileTable>tbody>tr>td.expand {text-align:left;border-left:1px solid #dadada;border-bottom:none;background-color:#fff}
     .holdingInfo .mobileTable>tbody>tr:last-child>td.expand {border-bottom:1px solid #dadada}
@@ -349,6 +350,11 @@
     .holdingInfo .mobileTable  .footable-row-detail-inner>div>strong {float:left;min-width:70px;margin-right:8px}
     .holdingInfo .mobileTable  .footable-row-detail-inner>div .child {margin-left:78px}
     .holdingInfo .mobileTable  .footable-row-detail-inner>div .serviceList {display:inline-block}
+
+    .holdingInfo>div .holdLegend>ul>li {font-size:14px}
+    .holdingInfo>div .holdLegend>ul>li:not(:last-child) {margin-right:8px}
+    .holdingInfo>div .holdLegend .charIcon {width:16px;height:16px;line-height: 16px;font-size:12px;margin-right:3px;vertical-align: text-bottom;}
+    
 }
 
 @media screen and (max-width:500px) {
@@ -446,7 +452,7 @@
     .resultList .eachBtns {top:18px}
 }
 
-@media screen and (max-width:385px) {
+@media screen and (max-width:360px) {
     .resultList>li .listInfoW .bookInfo .dataInfo>ul>li:not(:last-child) {margin-right:7px}
 }
 
@@ -470,6 +476,10 @@
 }
 
 .result .paging {margin-top:112px}
+
+@media screen and (max-width:767px) {
+    .result .paging {margin-top:32px}
+}
 
 /* facet */
 .facet {position:relative;}
@@ -550,6 +560,8 @@
     .searchBtns2 {padding:20px 20px 0 0;}
     .retryBox {left:55%;transform:translateX(-50%);opacity:0 !important;visibility:hidden !important;}
     .facetContent.on .retryBox.on {opacity:0.85 !important;visibility:visible !important}
+
+    .facetList1>ul {padding:8px 12px 12px 12px}
     
 }
 /* //facet */
@@ -574,7 +586,9 @@
     .askRight>ul>li:not(:last-child) {margin-right:24px}
 }
 @media screen and (max-width:767px) {
-    .askLeft .title {padding-left:72px}
+    .askLib {margin-top:40px}
+    .askLeft .title {padding-left:72px;font-size:24px}
+    .askLeft .title>span {font-size:15px}
     .askLib>div.wrap {display:block}
     .askRight {margin-top:28px}
 }
