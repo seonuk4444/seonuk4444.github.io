@@ -91,11 +91,16 @@
     .briefInfoDetail .briefInfoTitle {margin:0}
 }
 @media screen and (max-width:767px) {
+    .profileContentW {margin-bottom:16px}
     .briefInfoDetail {width:100%;}
     .profileHeader {margin:0 0 40px 0}
     .profileContent .briefInfo .bookImg  {margin:0 auto}
     .profileContent .briefInfo .bookInfoBtn  {margin:0 auto}
-    .briefInfoDetail table tr td {padding-left:15px;}
+    .briefInfoDetail table {margin-top:20px}
+    .briefInfoDetail table tr th {padding-bottom:5px}
+    .briefInfoDetail table tr td {padding-left:15px;padding-bottom:5px}
+    .briefInfoDetail table tr td .tag>li:not(:last-child) {margin-right:4px}
+    .briefInfoDetail table tr td .tag>li>a {padding:4px 12px;font-size:15px}
 }
 /* 서지정보 */
 
