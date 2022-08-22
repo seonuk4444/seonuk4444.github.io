@@ -424,15 +424,50 @@ $(document).ready(function(){
 
 	// Marc View popup
 	$('.marcView .open').on('click', function () {
-		$('.marcPopup').fadeIn(300);
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
 		$('.marcView .marcPopup .close').focus();
+		if(winWidth > 767){
+			$('.marcPopup').fadeIn(300);
+			$('.marcPopup').addClass('on');
+		}else{
+			$('.marcPopup').addClass('on');
+			$('.blackBg').addClass('mo');
+			var ph = $('.marcPopup .popTitArea').outerHeight();
+			$('.marcPopup .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
 		return false;
 	});
 	$('.marcView .marcPopup .close').on('click', function () {
-		$('.marcPopup').fadeOut(300);
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
 		$('.marcView .open').focus();
+		$('.marcPopup').removeClass('long');
+		if(winWidth > 767){
+			$('.marcPopup').fadeOut(300);
+			$('.marcPopup').removeClass('on');
+		}else{
+			$('.marcPopup').removeClass('on');
+			$('.blackBg').removeClass('mo');
+		}
 		return false;
 	});
+
+	$(window).on('resize',function(){
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth > 767){
+			if($('.marcPopup').hasClass('on')){
+				$('.marcPopup').show();
+				$('.blackBg').removeClass('mo');
+			}else{
+				$('.marcPopup').hide();
+				$('.blackBg').removeClass('mo');
+			}
+		}else{
+			if($('.marcPopup').hasClass('on')){
+				$('.blackBg').addClass('mo');
+			}
+		}
+	});
+
 	// Marc View popup
 
 });
