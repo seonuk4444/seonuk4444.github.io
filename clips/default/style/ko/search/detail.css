@@ -12,7 +12,7 @@
 .searchLink .searchLinkBtn {float:right;padding-right:24px}
 .searchLink .searchLinkBtn>li.marcView>a {padding-right:16px;background:url(../../../image/ko/ico/selectArrow5.png) no-repeat right top 7px;color:#666;font-size:16px;font-family:PretendardSB,sans-serif;}
 /* Marc popup */
-.marcView .marcPopup {display:none;width:570px;position:absolute;left:auto;right:0;top:36px;transform:none;background:#fff;border:1px solid #e3e3e3;border-radius:3px;z-index:2;}
+.marcView .marcPopup {display:none;width:570px;position:absolute;left:auto;right:0;top:36px;transform:none;background:#fff;border:1px solid #e3e3e3;border-radius:3px;z-index:2;bottom: auto;height: auto;transition: none;}
 .marcView .marcPopup .popupTit {padding:24px 30px;background:#f3f3f3;color:#333333;font-size:20px;font-family:NotoSansM, sans-serif;position:relative;}
 .marcView .marcPopup a.close {text-indent:-9999px;width:14px;height:14px;background:url(../../../image/ko/ico/closeBtn3.png) no-repeat center;position:absolute;right:25px;top:33px;}
 .marcView .marcPopup ul {max-height:260px;overflow-y:auto;}

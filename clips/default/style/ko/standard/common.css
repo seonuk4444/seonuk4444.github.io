@@ -438,8 +438,6 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #e3e3e3;resize:none;box
 .languageInputW{position: relative;}
 .languageInput{margin-right: 0 !important; padding-right: 55px;}
 .btnLanguage{display: inline-block; height: 14px; width: 26px; position: absolute; right: 16px; top: 18px; text-indent: -9999px; background: url(../../../image/ko/ico/languageBtn.png) no-repeat center;}
-.btnLanguage:hover{background: url(../../../image/ko/ico/languageBtnOn.png) no-repeat center;}
-.btnLanguage.change{background: url(../../../image/ko/ico/languageBtnOn.png) no-repeat center;}
 .languageInputW .btnLanguage{position: relative; top: 5px; right: 40px;}
 .operatorItem .btnLanguage{right:120px;}
 @media screen and (max-width:767px){
@@ -484,30 +482,29 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #e3e3e3;resize:none;box
 
 /* 상세검색 */
 .detailSearchLayer {width:1400px}
-.detailSearchLayer .dsTab {margin-bottom:12px}
-.detailSearchLayer .advancedSearch .advanceTit{display: block; width: 160px; margin-bottom: 4px; color: #384655; font-size: 16px;}
-.detailSearchLayer .advancedSearch .searchKeyword{margin-bottom: 16px;}
-.detailSearchLayer .advancedSearchW .buttons{text-align: center;}
-.detailSearchLayer .item{position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
-.layerPopup.detailSearchLayer .popupContent .selectBox1 {width:auto}
-.detailSearchLayer .inputSearchKeyword{width: 100%; margin: 0 8px;}
-.detailSearchLayer .item .selectBoolean{min-width: 100px;}
-.detailSearchLayer .searchLimit{margin: 8px 0;}
-.detailSearchLayer .searchLimit ul li{display: inline-block; position: relative; margin-right: 28px; margin-bottom: 5px;}
-.detailSearchLayer .searchLimit ul li:last-of-type{margin-right: 0;}
-.detailSearchLayer .searchLimit .datePicker{width: 155px;}
+.dsTab {margin-bottom:12px}
+.advancedSearch .advanceTit{display: block; width: 160px; margin-bottom: 4px; color: #384655; font-size: 16px;}
+.advancedSearch .searchKeyword{margin-bottom: 16px;}
+.advancedSearch .item{position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
+.advancedSearch .selectBox1 {width:auto}
+.advancedSearch .inputSearchKeyword{width: 100%; margin: 0 8px;}
+.advancedSearch .item .selectBoolean{min-width: 100px;}
+.advancedSearch .searchLimit{margin: 8px 0;}
+.advancedSearch .searchLimit ul li{display: inline-block; position: relative; margin-right: 28px; margin-bottom: 5px;}
+.advancedSearch .searchLimit ul li:last-of-type{margin-right: 0;}
+.advancedSearch .searchLimit .datePicker{width: 155px;}
 
 @media screen and (max-width:1420px) {
     .detailSearchLayer {width:95%}
 }
 @media screen and (max-width:767px){
     .detailSearchLayer {width:100%;}
-    .detailSearchLayer .item{display: block;}
-    .layerPopup.detailSearchLayer .popupContent .item .selectBox1.selectSearchItem {display: block; width: 100%;}
-    .detailSearchLayer .inputSearchKeyword, .layerPopup.detailSearchLayer .item .selectBoolean{display: inline-block;}
-    .layerPopup.detailSearchLayer .item .selectBoolean {min-width:0;width:calc(35% - 8px)}
-    .detailSearchLayer .inputSearchKeyword{width: 65%; margin-left: 0; margin-right: 4px;}
-    .detailSearchLayer .searchLimit .datePicker {width:calc(50% - 9px)}
+    .advancedSearch .item{display: block;}
+    .advancedSearch .item .selectBox1.selectSearchItem {display: block; width: 100%;}
+    .advancedSearch .inputSearchKeyword, .advancedSearch .item .selectBoolean{display: inline-block;}
+    .advancedSearch .item .selectBoolean {min-width:0 !important;width:calc(35% - 8px) !important}
+    .advancedSearch .inputSearchKeyword{width: 65%; margin-left: 0; margin-right: 4px;}
+    .advancedSearch .searchLimit .datePicker {width:calc(50% - 9px)}
 }
 
 /* swiper */
