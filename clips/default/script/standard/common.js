@@ -361,6 +361,9 @@ $(document).ready(function(){
 		slidesPerView:'auto',
 		spaceBetween: 0,
 		freeMode: true,
+		observer: true,
+		observeParents: true,
+
 	});
 
 	$('.layerPopup .popupContent').on('scroll',function(){
