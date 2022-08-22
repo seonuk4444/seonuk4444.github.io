@@ -97,10 +97,14 @@ $(document).ready(function(){
 		$('.slick-slide[data-slick-index="2"]').addClass('gt2');
 		$('.slick-slide[data-slick-index="3"]').addClass('gt3');
 		$('.slick-slide[data-slick-index="4"]').addClass('gt4');
+		$('.slick-slide[data-slick-index="5"]').addClass('gt5');
+		$('.slick-slide[data-slick-index="6"]').addClass('gt6');
+		$('.slick-slide[data-slick-index="7"]').addClass('gt7');
+		$('.slick-slide[data-slick-index="8"]').addClass('gt8');
 	  });
 	  $('.browsingSlide').slick({
-		infinity: true,
-		centerMode: true,
+		infinite: true,
+		//centerMode: true,
 		centerPadding: 0,
 		slidesToShow: 8,
 		variableWidth: true,
@@ -112,7 +116,6 @@ $(document).ready(function(){
 				{
 					breakpoint: 1401, //화면 사이즈 1440px
 					settings: {
-						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
 						variableWidth: false,
@@ -122,17 +125,6 @@ $(document).ready(function(){
 				{
 					breakpoint: 1150, //화면 사이즈 1440px
 					settings: {
-						centerMode: false,
-						draggable: true,
-						swipeToSlide: true,
-						variableWidth: false,
-						slidesToShow: 4,
-					}
-				},
-				{
-					breakpoint: 1150, //화면 사이즈 1440px
-					settings: {
-						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
 						variableWidth: false,
@@ -142,7 +134,6 @@ $(document).ready(function(){
 				{
 					breakpoint: 767, //화면 사이즈 1440px
 					settings: {
-						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
 						variableWidth: true,
@@ -152,7 +143,6 @@ $(document).ready(function(){
 				{
 					breakpoint: 499, //화면 사이즈 1440px
 					settings: {
-						centerMode: false,
 						draggable: true,
 						swipeToSlide: true,
 						variableWidth: true,
@@ -162,6 +152,10 @@ $(document).ready(function(){
 		]
 	  });
 	  $('.browsingSlide').on('beforeChange', function(event, slick, current, next){
+		$('.slick-slide.gt8').removeClass('gt8');
+		$('.slick-slide.gt7').removeClass('gt7');
+		$('.slick-slide.gt6').removeClass('gt6');
+		$('.slick-slide.gt5').removeClass('gt5');
 		$('.slick-slide.gt4').removeClass('gt4');
 		$('.slick-slide.gt3').removeClass('gt3');
 		$('.slick-slide.gt2').removeClass('gt2');
@@ -181,6 +175,10 @@ $(document).ready(function(){
 		let gt2 = current < next || next === 0 ? next + 2 : current + 1;
 		let gt3 = current < next || next === 0 ? next + 3 : current + 2;
 		let gt4 = current < next || next === 0 ? next + 4 : current + 3;
+		let gt5 = current < next || next === 0 ? next + 5 : current + 4;
+		let gt6 = current < next || next === 0 ? next + 6 : current + 5;
+		let gt7 = current < next || next === 0 ? next + 7 : current + 6;
+		let gt8 = current < next || next === 0 ? next + 8 : current + 7;
 	  
 		$('.slick-slide[data-slick-index='+ lt5 +']').addClass('lt5');
 		$('.slick-slide[data-slick-index='+ lt4 +']').addClass('lt4');
@@ -191,6 +189,10 @@ $(document).ready(function(){
 		$('.slick-slide[data-slick-index='+ gt2 +']').addClass('gt2');
 		$('.slick-slide[data-slick-index='+ gt3 +']').addClass('gt3');
 		$('.slick-slide[data-slick-index='+ gt4 +']').addClass('gt4');
+		$('.slick-slide[data-slick-index='+ gt5 +']').addClass('gt5');
+		$('.slick-slide[data-slick-index='+ gt6 +']').addClass('gt6');
+		$('.slick-slide[data-slick-index='+ gt7 +']').addClass('gt7');
+		$('.slick-slide[data-slick-index='+ gt8 +']').addClass('gt8');
 	  
 	  });
 
@@ -211,12 +213,6 @@ $(document).ready(function(){
 						breakpoint: 1401, //화면 사이즈 1440px
 						settings: {
 							slidesToShow: 5,
-						}
-					},
-					{
-						breakpoint: 1150, //화면 사이즈 1440px
-						settings: {
-							slidesToShow: 4,
 						}
 					},
 					{
