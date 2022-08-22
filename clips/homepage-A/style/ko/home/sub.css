@@ -182,25 +182,25 @@ option{font-family: Pretendard,sans-serif}
 /* PC 전체메뉴 */
 
 @media screen and (min-width:1025px){
-    .wholeMenu{width: 100%; height: calc(100% - 143px); overflow-y: auto; position: fixed; top: 143px; left: 0; z-index: 200; opacity:0;visibility:hidden;transition: .3s;background:#006951}
+    .wholeMenu{width: 100%;height: calc(100% - 143px);overflow-y: auto;position: fixed;top: 143px;left: 0;z-index: 200; opacity:0;visibility:hidden;transition: .3s;background: #f3f3f4;}
     .wholeMenu.on{visibility:visible; opacity:1}
     .wholeMenu.fixed{top: 0;}
     .mobileWholeMenuTop p{display: none;}
-    .mobileWholeMenuTop a{position: absolute; top: 45px; right: 20px; display: block; width: 48px;height: 48px; border: 1px solid #cce1dc; text-indent: -9999px;}
-    .mobileWholeMenuTop a span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(45deg); height: 25px; width: 2px; background: #a8ccc3; display: block;}
+    .mobileWholeMenuTop a{position: absolute;top: 45px;right: 20px;display: block;width: 48px;height: 48px;border: 1px solid #555;text-indent: -9999px;}
+    .mobileWholeMenuTop a span{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%) rotate(45deg);height: 25px;width: 2px;background: #555;display: block;}
     .mobileWholeMenuTop a span:nth-of-type(2){ transform: translate(-50%, -50%) rotate(135deg); }
     .wholeMenuListW{width: auto; margin: 0 auto; padding: 135px 20px; position: relative;}
     .divMenuList > ul{display: flex; flex-wrap: wrap;}
     .divMenuList > ul > li{width: calc((100% - 210px)/4);}
     .divMenuList > ul > li{margin-right: 70px;}
     .divMenuList > ul > li:nth-of-type(4n){margin-right: 0;}
-    .divMenuList > ul > li > a{display: block; margin-bottom: 20px; padding: 20px 0; font-size: 20px; color: #fff; font-family:NotoSansB, sans-serif;}
+    .divMenuList > ul > li > a{display: block;margin-bottom: 20px;padding: 20px 0;font-size: 20px;color: #000; font-family:NotoSansB, sans-serif;}
     .divMenuList > ul > li > ul > li {margin-bottom: 30px;}
     .divMenuList > ul > li > ul > li:last-of-type{margin-bottom: 0;}
     .divMenuList > ul > li:nth-of-type(n+5){margin-top: 65px;}
-    .divMenuList > ul > li > ul > li > a{display: block; color: #fff; font-size: 16px; line-height: 1;  margin-bottom: 14px;}
-    .divMenuList > ul > li > ul > li > ul li a{display: block; padding-left: 16px; position: relative; font-size: 14px; margin-bottom: 5px;color:rgba(255,255,255,0.55)}
-    .divMenuList > ul > li > ul > li > ul li a::after{display: block; content: ''; position: absolute; left: 4px; top: 8px; background: #c5c9d6; width: 4px; height: 4px; border-radius: 100%;}
+    .divMenuList > ul > li > ul > li > a{display: block;color: #000;font-size: 16px;line-height: 1;margin-bottom: 14px;}
+    .divMenuList > ul > li > ul > li > ul li a{display: block;padding-left: 16px;position: relative;font-size: 14px;margin-bottom: 5px;color: #555;}
+    .divMenuList > ul > li > ul > li > ul li a::after{display: block;content: '';position: absolute;left: 4px;top: 8px;background: #555;width: 4px;height: 4px;border-radius: 100%;}
 }
 @media screen and (min-width:1480px){
     .wholeMenuListW{width: 1240px; padding: 45px 0px;}
@@ -221,8 +221,8 @@ option{font-family: Pretendard,sans-serif}
     .divMenuList > ul{background: #f2f2f2; height: 100%;}
     .divMenuList > ul > li > a{width: 30%; position: relative; box-sizing: border-box; padding-left: 20px; display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 50px; font-size: 16px; color: #000; font-family:NotoSansM, sans-serif; z-index: 1;}
     .divMenuList > ul > li > a::after{display: block; content: ''; width: calc(100% + 5px); height: 100%; box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.28); position: absolute; left: 0; top: 0; z-index: -1; opacity: 0; -webkit-transition: 0.3s; transition: 0.3s;}
-    .divMenuList > ul > li.on > a{color: #fff;}
-    .divMenuList > ul > li.on > a::after{opacity: 1;}
+    .divMenuList > ul > li.on > a{color: #000;}
+    .divMenuList > ul > li.on > a::after{opacity: 1;background: #f3f3f4;}
     .divMenuList > ul > li > ul{padding: 0 20px; box-sizing: border-box; visibility: hidden; opacity: 0; background: #fff; height: 100%; position:absolute; top: 0; right: 0px; width: 70%; overflow-y: auto; -webkit-transition: 0.3s; transition: 0.3s;}
     .divMenuList > ul > li.on > ul{opacity: 1; visibility: visible;}
     .divMenuList > ul > li > ul > li > a{display: block; padding: 15px 20px 15px 4px ; border-bottom: 1px solid #d6d6d6; color: #333; font-size: 15px; font-family:NotoSansM, sans-serif; position: relative; box-sizing: border-box;}
