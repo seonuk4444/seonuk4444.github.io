@@ -39,12 +39,11 @@
 .profileContent::after {content:"";display:block;clear:both}
 .profileContent {position:relative}
 .profileContent .briefInfo {float:left;width:156px}
-.book3D {perspective: 400px;}
-.profileContent .briefInfo .bookImg {display:inline-block;position:relative;width:154px;border:1px solid #d9d9d9;box-shadow:0px 6px 18px 0px rgba(0, 0, 0, 0.18);transform-style:preserve-3d;transition:.5s}
-.profileContent .briefInfo .bookImg:hover {transform: rotateY(-30deg) translate(-10%)}
-.profileContent .briefInfo .bookImg .bookBar {display:block;position:absolute;top:0;left:8px;width:5px;height:228px;background:url(../../../image/ko/bg/bookBar.png)}
+.profileContent .briefInfo .bookImg {display:inline-block;position:relative;width:154px;background:#fff;border:1px solid #d9d9d9;box-shadow:0px 6px 18px 0px rgba(0, 0, 0, 0.18);perspective: 1200px;}
+.profileContent .briefInfo .bookImg .bookBar {display:block;position:absolute;top:0;left:8px;width:5px;height:228px;background:url(../../../image/ko/bg/bookBar.png);z-index:1;}
 .profileContent .briefInfo .bookImg .bookSide {display:block;position:absolute;top:-1px;right:-10px;width:11px;height:231px;background:url(../../../image/ko/bg/bookSide.png)}
-.profileContent .briefInfo .bookImg img {width:154px;height:228px}
+.profileContent .briefInfo .bookImg img {width:154px;height:228px;transform-style:preserve-3d;transform-origin:left top ;transition:.5s}
+.profileContent .briefInfo .bookImg img:hover {transform: rotateY(-30deg)}
 .profileContent .briefInfo .bookInfo {margin-top:16px;font-size:0;text-align:center;}
 .profileContent .briefInfo .bookInfo a {display:inline-block;width:16px;height:16px;margin:4px;text-indent:-9999px;}
 .profileContent .briefInfo .bookInfo a.aladin {background:url(../../../image/ko/ico/aladin.png)}
@@ -209,7 +208,8 @@ a.moreView:hover {color:#3459ba;text-decoration:underline;}
 .searchInfo.on .browsingSlide::before {content:"";display:block;position:absolute;top:0;left:-23px;background:#fff;width:55px;height:100%;z-index:2;}
 .searchInfo.on .browsingSlide::after {content:"";display:block;position:absolute;top:0;right:-23px;background:#fff;width:55px;height:100%;z-index:2;}
 .browsingSlide div {height:auto}
-.browsingSlide .slick-list {padding:0 0 20px 192px !important}
+.browsingSlide .slick-list {padding:0 0 20px 0 !important}
+.browsingSlide .slick-track {left:-95px}
 .browsingSlide .slick-slide {width:192px}
 .browsingSlide .browsingItem a {position:relative;display: block;width:175px;background:linear-gradient(-228deg, rgba(0,189,157,1) 0%, rgba(18,176,175,1) 48%, rgba(68,140,222,1) 98%);margin:0 auto;border-radius: 10px;z-index:1;transition:.3s;overflow: hidden;box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.18);}
 .browsingSlide .browsingItem a .topArea {display:block;height:168px;box-sizing: border-box;padding:32px 16px}
@@ -217,10 +217,11 @@ a.moreView:hover {color:#3459ba;text-decoration:underline;}
 .browsingSlide .browsingItem a .bottomArea {display:block;height:90px;background:rgba(0,0,0,0.4);box-sizing: border-box;padding:16px}
 .browsingSlide .browsingItem a .bottomArea span {display:block;color:#fff;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:100%}
   
-.browsingSlide .slick-slide.lt4 .browsingItem  a {transform: translateX(120px) scale(0.9);z-index: -1;}
-.browsingSlide .slick-slide.lt5 .browsingItem  a {transform: translateX(110px) scale(0.9);z-index: -1;}
-.browsingSlide .slick-slide.gt3 .browsingItem a {transform: translateX(-120px) scale(0.9);z-index: -1;}
-.browsingSlide .slick-slide.gt4 .browsingItem a {transform: translateX(-110px) scale(0.9);z-index: -1;}
+.browsingSlide .slick-slide.slick-current .browsingItem  a {transform: translateX(120px) scale(0.9);z-index: -1;}
+.browsingSlide .slick-slide.lt1 .browsingItem  a {transform: translateX(110px) scale(0.9);z-index: -1;}
+.browsingSlide .slick-slide.gt7 .browsingItem a {transform: translateX(-120px) scale(0.9);z-index: -1;}
+.browsingSlide .slick-slide.gt8 .browsingItem a {transform: translateX(-110px) scale(0.9);z-index: -1;}
+
 
 .browseBtns {margin-top:12px;text-align: center;}
 .browseBtns a {margin:0 5px}
@@ -229,15 +230,20 @@ a.moreView:hover {color:#3459ba;text-decoration:underline;}
 .browseBtns .browseNext {display:inline-block;width:56px;height:39px;border-radius: 10px;background:url(../../../image/ko/btn/bookRightB.png) no-repeat center #ededf0;text-indent: -9999px;transition:.5s}
 .browseBtns .browseNext:hover {background:url(../../../image/ko/btn/bookRightW.png) no-repeat center #000;}
 
-@media screen and (max-width:1480px) {
-    .browsingSlide::before, .browsingSlide::after {width:32px}
-    .browsingSlide .slick-slide.lt5 .browsingItem  a {transform: translateX(100px) scale(0.9);}
-    .browsingSlide .slick-slide.gt4 .browsingItem  a {transform: translateX(-100px) scale(0.9);}
-    .searchInfo.on .browsingSlide::before, .searchInfo.on .browsingSlide::after {display:none}
+@media screen and (min-width:1401px) and (max-width:1500px) {
+    .browsingSlide .slick-track {left:calc(50% - 768px)}
+    .searchInfo.on .browsingSlide::before {width:30px;left:0}
+    .searchInfo.on .browsingSlide::after {width:30px;right:0}
 }
+
+@media screen and (max-width:1470px) {
+    .searchInfo.on .browsingSlide::before {width:10px;left:0}
+    .searchInfo.on .browsingSlide::after {width:10px;right:0}
+}
+
 @media screen and (max-width:1400px) {
-    .browsingSlide .slick-list {padding-left:0 !important}
-    .browsingSlide .slick-slide.lt4 .browsingItem  a, .browsingSlide .slick-slide.lt5 .browsingItem  a, .browsingSlide .slick-slide.gt3 .browsingItem a, .browsingSlide .slick-slide.gt4 .browsingItem a {transform: none;z-index:1;}
+    .browsingSlide .slick-track {left:0}
+    .browsingSlide .slick-slide.slick-current .browsingItem  a, .browsingSlide .slick-slide.lt1 .browsingItem  a, .browsingSlide .slick-slide.gt7 .browsingItem a, .browsingSlide .slick-slide.gt8 .browsingItem a {transform: none;z-index:1;}
     .searchInfo.on .browsingSlide::before, .searchInfo.on .browsingSlide::after {display:none}
 }
 

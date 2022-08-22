@@ -486,7 +486,7 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #e3e3e3;resize:none;box
 .advancedSearch .advanceTit{display: block; width: 160px; margin-bottom: 4px; color: #384655; font-size: 16px;}
 .advancedSearch .searchKeyword{margin-bottom: 16px;}
 .advancedSearch .item{position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
-.advancedSearch .selectBox1 {width:auto}
+.advancedSearch .selectBox1 {width:auto !important}
 .advancedSearch .inputSearchKeyword{width: 100%; margin: 0 8px;}
 .advancedSearch .item .selectBoolean{min-width: 100px;}
 .advancedSearch .searchLimit{margin: 8px 0;}
