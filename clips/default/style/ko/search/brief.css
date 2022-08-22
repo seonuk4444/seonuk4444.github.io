@@ -355,7 +355,7 @@
 
     .holdingInfo>div .holdLegend>ul>li {font-size:14px}
     .holdingInfo>div .holdLegend>ul>li:not(:last-child) {margin-right:8px}
-    .holdingInfo>div .holdLegend .charIcon {width:16px;height:16px;line-height: 16px;font-size:12px;margin-right:3px;vertical-align: text-bottom;}
+    .holdingInfo>div .holdLegend .charIcon {width:16px;height:16px;line-height: 16px;font-size:12px;margin-right:3px;vertical-align: 1px;}
     
 }
 
