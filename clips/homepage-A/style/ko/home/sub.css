@@ -76,6 +76,7 @@ option{font-family: Pretendard,sans-serif}
 @media screen and (max-width: 1024px){
     .header1>div {width:auto;padding:0 24px}
     .header1{height: 45px;}
+    .header1.fixed{margin-bottom:60px}
     .header1 h1 a{height: 41px; font-size: 15px; line-height: 41px;}
     .header1 .globalMenu > ul > li {margin-left: 24px;}
     .header1 .globalMenu > ul > li.profile .myMenuBtn {padding:4px 16px}
