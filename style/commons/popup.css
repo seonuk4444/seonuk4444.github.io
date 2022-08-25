@@ -126,6 +126,20 @@
 .popListForm2 ul>li .txt {display:block;margin-left:70px;color:#1e1e1e;font-family: PretendardSB,sans-serif;font-size:1.142rem;}
 .popInnerCont .popListForm2 .txt {margin-bottom:0}
 
+/* 소속기관 찾아보기 */
+.browsePop .srchInfo1 {margin-top:4px}
+.browsePop .srchInfo1>li {font-size:1rem}
+.browsePop .srchInfo1>li a {font-size:1rem}
+
+.browsePop .srchInfo2 {margin-top:24px}
+.browsePop .srchInfo2 p {font-size:1rem}
+.browsePop .srchInfo2 p span {font-size:1rem}
+
+.popSrchResult {margin-top:20px}
+.popSrchResult>ul>li {padding-left:10px;position:relative}
+.popSrchResult>ul>li::before {content:"";display:block;position:absolute;top:10px;left:0;width:5px;height:1px;background:#555}
+.popSrchResult>ul>li:not(:last-child) {margin-bottom:4px}
+.popSrchResult>ul>li>a {font-size:1rem;color:#555}
 
 /* 팝업높이 */
 .keepInfo {height:60%}

@@ -118,6 +118,7 @@
 .resultList>ul>li {position:relative;padding:12px 0 16px 0;border-top:1px solid #e6e6e6}
 .chkForm .resultList>ul>li {padding:12px 0 16px 28px;border-top:1px solid #e6e6e6}
 .resultList>ul>li .listChk {position:absolute;top:13px;left:0}
+.resultList>ul>li .listChk .customChk1 + label {background-position:left center}
 .resultList>ul>li .typeW {font-size:0;margin-bottom:4px}
 .resultList>ul>li .type {display:inline-block;color:#809fb8;font-family: PretendardB,sans-serif;font-size: 0.857rem;}
 .resultList>ul>li .type:not(:last-child) {margin-right: 8px;}

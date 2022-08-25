@@ -32,36 +32,8 @@
 #divContents.up.on {margin-top:64px}
 
 /* subTit */
-.contentTit {padding:12px 18px 0 18px;color:#000;font-family: PretendardB,sans-serif;font-size:1.714rem;}
-
-/* swipeTab */
-.swipeTab.type1 {position:relative;padding:18px 0 0 18px;z-index: 5;background: #fff;}
-.swipeTab.type1 .inner{margin-right: 36px;overflow: hidden;}
-.swipeTab.type1 .tab {display:inline-block;width:auto;}
-.swipeTab.type1 .tab:not(:last-child) {margin-right: 16px;}
-.swipeTab.type1 .tab a {position:relative;display:block;padding-bottom: 6px;color:#000;font-family: PretendardB,sans-serif;font-size: 1.285rem;letter-spacing: -0.025em;}
-.swipeTab.type1 .tab.on a {color:#ff7200;}
-.swipeTab.type1 .tab.on a::after {content:"";display:block;position:absolute;bottom:0;left:0;width:100%;height: 2px;background:#ff7200}
-.swipeTab.type1 .toggleBtn {position:absolute;top:16px;right: 12px;width: 16px;height:100%;background: url(../images/commons/toggleBtn1.png) no-repeat center top 9px;background-size: 16px auto;}
-
-.swipeTabBg {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.55);z-index: 3;}
-.swipeTab.type1.all {border-radius:0 0 10px 10px}
-.swipeTab.type1.all .swiper-wrapper {display:block;font-size: 0;}
-.swipeTab.type1.all .tab {margin-bottom: 10px;margin-right: 8px;min-height:39px}
-.swipeTab.type1.all .tab a {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;min-height:39px;padding: 8px 16px;background:#eee;color:#666;border-radius: 20px;font-size:1.142rem;font-family: Pretendard,sans-serif;box-sizing: border-box;}
-.swipeTab.type1.all .tab.on a {background:#ff7200;color:#fff;font-family: PretendardB,sans-serif;}
-.swipeTab.type1.all .tab.on a::after {display:none}
-.swipeTab.type1.all .toggleBtn {height:16px;background:url(../images/search/moreBtn1.png) no-repeat;background-size:16px auto;transform: rotate(45deg);}
-
-
-.swipeTab.type2 {position:relative;padding:18px 0 0 18px;z-index: 5;background: #fff;}
-.swipeTab.type2 .inner{overflow: hidden;}
-.swipeTab.type2 .tab {display:inline-block;width:auto;}
-.swipeTab.type2 .tab:not(:last-child) {margin-right: 24px;}
-.swipeTab.type2 .tab a {position:relative;display:block;padding-bottom: 6px;color:#474747;font-family: PretendardM,sans-serif;font-size: 1.142rem;letter-spacing: -0.025em;}
-.swipeTab.type2 .tab.on a {color:#000;}
-.swipeTab.type2 .tab.on a::after {content:"";display:block;position:absolute;bottom:0;left:0;width:100%;height: 2px;background:#000}
-
+.contentTit {margin-bottom:9px;padding:12px 18px 0 18px;color:#000;font-family: PretendardB,sans-serif;font-size:1.714rem;}
+.contentTit .subTit {display:block;color:#262626;font-size: 1.071rem;font-family: Pretendard,sans-serif;}
 
 /* divFooter */
 #divFooter {padding:28px 8px 64px 8px;background:#f5f6f8;text-align: center;}
