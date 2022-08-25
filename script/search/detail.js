@@ -1,6 +1,37 @@
 $(document).ready(function(){
 
   //서지상세 시작
+
+  //검색탭
+  let tabSlide1 = new Swiper('.swipeTab.type1 .inner',{
+    slidesPerView:'auto',
+    spaceBetween: 0,
+    freeMode: true,
+  });
+  $(window).on('load',function(){
+    let chk = $('.swipeTab.type1 .tab.on').index();
+    tabSlide1.slideTo(chk)
+  });
+  $('.swipeTab.type1 .toggleBtn').click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $('.swipeTabBg').hide();
+      $('.swipeTab').removeClass('all');
+      tabSlide1 = new Swiper('.swipeTab.type1 .inner',{
+        slidesPerView:'auto',
+        spaceBetween: 0,
+        freeMode: true,
+      });
+    }else{ 
+      $(this).addClass('on');
+      $('.swipeTabBg').show();
+      $('.swipeTab').addClass('all')
+      tabSlide1.destroy();
+      
+    }
+    return false;
+  });
+  
   //추천자료 열고닫기
   $('.infoDetailW .recommendCont .tit').click(function(){
     if($(this).hasClass('on')){

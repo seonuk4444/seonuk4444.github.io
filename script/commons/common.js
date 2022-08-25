@@ -164,6 +164,9 @@ let detailShTab = new Swiper('.detailShTab .inner',{
   slidesPerView:'auto',
   spaceBetween: 0,
   freeMode: true,
+  observer: true,
+  observeParents: true,
+
 });
 
 $('.detailShTab .toggleBtn').click(function(){
