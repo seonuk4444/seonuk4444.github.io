@@ -14,7 +14,7 @@
 .joinBenefit .joinBtns {margin-top:56px}
 
 .easyJoin .easyJoinTit {margin-bottom:20px;color:#060606;font-size: 1.285rem;font-family: PretendardB,sans-serif;}
-.easyJoinList {font-size:0}
+.easyJoinList {font-size:0;text-align: center;}
 .easyJoinList>li {display:inline-block}
 .easyJoinList>li:not(:last-child) {margin-right:24px}
 .easyJoinList>li>a {display:block;text-align: center;}
@@ -86,6 +86,11 @@
 
 .toggleArea {margin-top:6px}
 .toggleAreaInner:not(:last-child) {margin-bottom:24px}
+
+.birthBox {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.birthBox span {display:block;width:100%}
+.birthBox span:nth-of-type(2) {margin:0 8px}
+.birthBox span .inputType3 {width:calc(100% - 17px)}
 
 /* 소셜 로그인 */
 .userWrite .snsKakao {display:inline-block;width:30px;height:30px;background:url(../../images/user/kakao.png) no-repeat center #ffe800;background-size: 20px auto;border-radius: 10px;vertical-align: middle;margin-right:4px;} 
