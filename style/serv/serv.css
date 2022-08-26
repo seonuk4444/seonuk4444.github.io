@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .sjSrc {margin-left:10px;position: relative;}
-.sjSrcBtn {display:inline-block;padding:1px 9px;color:#0d0d0d;font-size:0.928rem;font-family: PretendardM,sans-serif;animation: animateBorder 2s linear infinite;background-image: linear-gradient(38deg,#50ffaf,#18ffe1,#50ffaf,#18ffe1);background-size: 300% 100%;border-radius: 5px;vertical-align: middle;}
+.sjSrcBtn {display:inline-block;padding:1px 9px;color:#0d0d0d;font-size:0.928rem;font-family: PretendardM,sans-serif;animation: animateBorder 3s linear infinite;background-image: linear-gradient(38deg,#1ad3da 0,#06ea71 40%,#1ad3da 50%,#06ea71);background-size: 300% 100%;border-radius: 5px;vertical-align: middle;}
 .academicTab {margin:0 0 12px 4px}
 .academicTab.on {margin-bottom:4px}
 .academicTab>ul {font-size:0}
