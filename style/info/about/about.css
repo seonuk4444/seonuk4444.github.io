@@ -150,11 +150,26 @@
 }
 
 /* db 해외 */
-.dbTable.scroll {height:570px;overflow-y:auto;border-top:2px solid #7b7b7b}
-.dbTable.scroll table {width:100%;min-width:950px}
+/* .dbTable.scroll {height:570px;overflow-y:auto;border-top:2px solid #7b7b7b}
+
 .dbTable table thead th {position:sticky;top:-1px;padding:10px 7px;background:#f3f3f3;color:#1f1f1f;font-size:1.071rem;vertical-align: middle;border:1px solid #cdcdcd;border-top:none;line-height: 1.2;}
 .dbTable table thead th:first-child {width:114px;border-left:none}
 .dbTable table thead th:last-child {border-right:none}
 .dbTable table tbody td {padding:10px 7px;color:#6f6f6f;font-size:1rem;border:1px solid #cdcdcd;text-align:center;line-height:20px;}
 .dbTable table tbody td:first-child {border-top:none;border-left:none}
-.dbTable table tbody td:last-child {border-right:none}
+.dbTable table tbody td:last-child {border-right:none} */
+
+/* .tableStyle1 table {table-layout: inherit;} */
+.dbTable table {min-width:1700px}
+.dbTable.sticky-table table th {font-weight: normal;}
+.dbTable table thead th:first-child {width:114px;}
+.dbTable.sticky-table table td.sticky-cell, .dbTable.sticky-table table th.sticky-cell, .dbTable.sticky-table table td.sticky-cell-opposite, .dbTable.sticky-table table th.sticky-cell-opposite {outline:none;background:#fff}
+.dbTable.sticky-table table th.sticky-cell {background:#f3f3f3;}
+.dbTable.sticky-table table th::after {content:"";display:block;position:absolute;top:0;right:-1px;width:1px;height:100%;background:#cdcdcd}
+.dbTable.sticky-table table tr th:last-child::after {display:none}
+.dbTable.sticky-table table td.sticky-cell::after {content:"";display:block;position:absolute;top:0;right:-1px;width:1px;height:100%;background:#cdcdcd}
+.dbTable.sticky-table table td.sticky-cell.bold::after {content:"";display:block;position:absolute;top:0;right:-1px;width:1px;height:100%;background:#cdcdcd}
+.dbTable.sticky-table table td.sticky-cell.sBdn::after {background: #fff;}
+
+.dbTable.sticky-table table th::before {content:"";display:block;position:absolute;bottom:-1px;left:0;width:100%;height:1px;background:#cdcdcd}
+.dbTable.sticky-table table td.sticky-cell::before {content:"";display:block;position:absolute;bottom:-1px;left:0;width:100%;height:1px;background:#cdcdcd}
