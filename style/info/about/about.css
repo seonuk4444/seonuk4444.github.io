@@ -13,7 +13,7 @@
 .history>ul>li dt {margin:0 0 8px 8px;color:#000;font-family: PretendardB,sans-serif;font-size:1.428rem;letter-spacing: -0.01em;}
 .history>ul>li dd .year {display:inline-block;margin-bottom:4px;padding:4px 12px;background:#eee;color:#000;border-radius: 20px;font-size:1rem;font-family: PretendardSB,sans-serif;letter-spacing: -0.01em;}
 .history>ul>li dd>ul>li:not(:last-child) {margin-bottom:6px}
-.history>ul>li dd div>p {margin-left:8px;color:#8b8b8b;font-family: PretendardM,sans-serif;font-size:1rem;letter-spacing: -0.01em;}
+.history>ul>li dd div>p {margin-left:8px;color:#8b8b8b;font-family: PretendardM,sans-serif;font-size:1rem;letter-spacing: -0.01em;word-break: keep-all;}
 
 /* 홍보관 */
 .innerContBox.exhibit {padding:20px 0}
