@@ -159,6 +159,15 @@ $(document).ready(function () {
       $('.temSlideW').addClass('on');
       $(this).text('닫기')
       $(this).addClass('on');
+      $('.temCont .temItem').click(function(e){
+        e.preventDefault();
+        let ph = $('.thesisPop .popHeader').outerHeight(true);
+        $('.thesisPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
+        $('.temCont .temItem').removeClass('on');
+        $(this).addClass('on');
+        $('.blackBg1').show();
+        $('.thesisPop').addClass('on')
+      });  
     }
   });
 
