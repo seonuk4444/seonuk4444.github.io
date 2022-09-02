@@ -81,6 +81,8 @@ $(document).ready(function(){
   //최신논문들 팝업
   $('.interKeyList .viewListBtns a').click(function(e){
     e.preventDefault();
+    let ph = $('.thesisPop .popHeader').outerHeight(true);
+    $('.thesisPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
     $('.interKeyList .viewListBtns a').removeClass('on');
     $(this).addClass('on');
     $('.blackBg1').show();

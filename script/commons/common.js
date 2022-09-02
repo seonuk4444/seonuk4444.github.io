@@ -125,6 +125,13 @@ $(document).ready(function(){
     spaceBetween: 0,
     freeMode: true,
   });
+  let tabSlide3 = new Swiper('.swipeTab.type3 .inner',{
+    slidesPerView:'auto',
+    spaceBetween: 0,
+    freeMode: true,
+    observer: true,
+    observeParents: true,
+  });
 
  //검색상세화면 뜨는 팝업
  $('.searchInputW').on('click focus', function(){
@@ -214,6 +221,20 @@ $('.divPopup .popCont').on('scroll',function(){
     $(this).parents('.divPopup').addClass('long');
   }
 });
+
+//toggleListForm
+$('.toggleListForm>ul>li>a').click(function(e){
+  e.preventDefault();
+  if($(this).parent().hasClass('on')){
+    $(this).parent().removeClass('on');
+    $(this).next('.toggleHiddenContent').stop().slideUp();
+  }else{
+    $(this).parent().addClass('on');
+    $(this).next('.toggleHiddenContent').stop().slideDown();
+  }
+});
+
+
 
 
 //wholeMenu

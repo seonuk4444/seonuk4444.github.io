@@ -10,13 +10,6 @@ $(document).ready(function(){
 
   });
 
-  let tabSlide3 = new Swiper('.swipeTab.type3 .inner',{
-    slidesPerView:'auto',
-    spaceBetween: 0,
-    freeMode: true,
-    observer: true,
-    observeParents: true,
-  });
 
   $('.sjSrc .sjSrcBtn').click(function(e){
     e.preventDefault();
