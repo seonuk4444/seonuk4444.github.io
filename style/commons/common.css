@@ -537,11 +537,8 @@ a.addInput {border:1px solid #dadada;color:#fff;border-radius: 20px;width:80px;h
 .writeForm .selType4 {white-space:nowrap;text-overflow:ellipsis;}
 .writeForm .emailBox {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .writeForm .emailBox .selType4 {margin-left:8px}
-.writeForm .mDown {margin-left:4px}
+.writeForm .mDown {display:block;margin:8px 0 0 0}
 
-@media screen and (max-width:450px) {
-    .writeForm .mDown {display:block;margin:8px 0 0 0}
-}
 
 @media screen and (max-width:400px) {
     .writeForm .emailBox {-webkit-box-lines: multiple;-ms-flex-wrap: wrap;flex-wrap: wrap;}
@@ -554,3 +551,6 @@ a.addInput {border:1px solid #dadada;color:#fff;border-radius: 20px;width:80px;h
 .guideBox1:not(:last-child) {margin-bottom:16px}
 .guideBox1 .tit {color:#000;font-size:1.071rem;letter-spacing: -0.01em;line-height: 18px;}
 .guideBox1>ul>li {color:#8b8b8b;font-size:1rem;letter-spacing: -0.01em;line-height: 18px;}
+
+/* flex item 100% */
+.flex100Box {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
