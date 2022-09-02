@@ -907,18 +907,20 @@
                                             <li>
                                                 <label class="tit" for="">답변알림요청<img src="images/commons/essential.png" alt="필수"></label>
                                                 <div>
-                                                    <select id="cel1" name="cel1" title="휴대전화 선택" class="selType4 w80">
-                                                        <option value="010" selected="selected">010</option>
-                                                        <option value="011">011</option>
-                                                        <option value="016">016</option>
-                                                        <option value="017">017</option>
-                                                        <option value="018">018</option>
-                                                        <option value="019">019</option>
-                                                    </select>
-                                                    -
-                                                    <input type="text" class="inputType3 w80" id="cel2" name="cel2" onkeyup="numChecks(this);" maxlength="4" title="휴대전화 앞자리">
-                                                    -
-                                                    <input type="text" class="inputType3 w80" id="cel3" name="cel3" onkeyup="numChecks(this);" maxlength="4" title="휴대전화 뒷자리">
+                                                    <span class="flex100Box">
+                                                        <select id="cel1" name="cel1" title="휴대전화 선택" class="selType4">
+                                                            <option value="010" selected="selected">010</option>
+                                                            <option value="011">011</option>
+                                                            <option value="016">016</option>
+                                                            <option value="017">017</option>
+                                                            <option value="018">018</option>
+                                                            <option value="019">019</option>
+                                                        </select>
+                                                        &nbsp;&nbsp;-&nbsp;&nbsp;
+                                                        <input type="text" class="inputType3" id="cel2" name="cel2" onkeyup="numChecks(this);" maxlength="4" title="휴대전화 앞자리">
+                                                        &nbsp;&nbsp;-&nbsp;&nbsp;
+                                                        <input type="text" class="inputType3" id="cel3" name="cel3" onkeyup="numChecks(this);" maxlength="4" title="휴대전화 뒷자리">
+                                                    </span>    
                                                     <span class="mDown">
                                                         <input type="checkbox" class="customChk2" id="tel01">
                                                         <label for="tel01">SMS알림요청동의</label>
