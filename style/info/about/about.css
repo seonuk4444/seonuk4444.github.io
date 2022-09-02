@@ -152,9 +152,9 @@
 /* db 해외 */
 .dbTable.scroll {height:570px;overflow-y:auto;border-top:2px solid #7b7b7b}
 .dbTable.scroll table {width:100%;min-width:950px}
-.dbTable table thead th {position:sticky;top:-1px;background:#f3f3f3;color:#1f1f1f;font-size:1.071rem;vertical-align: middle;border:1px solid #cdcdcd;border-top:none;}
+.dbTable table thead th {position:sticky;top:-1px;padding:10px 7px;background:#f3f3f3;color:#1f1f1f;font-size:1.071rem;vertical-align: middle;border:1px solid #cdcdcd;border-top:none;line-height: 1.2;}
 .dbTable table thead th:first-child {width:114px;border-left:none}
 .dbTable table thead th:last-child {border-right:none}
-.dbTable table tbody td {padding:20px 8px;color:#6f6f6f;font-size:1rem;border:1px solid #cdcdcd;text-align:center;line-height:20px;}
+.dbTable table tbody td {padding:10px 7px;color:#6f6f6f;font-size:1rem;border:1px solid #cdcdcd;text-align:center;line-height:20px;}
 .dbTable table tbody td:first-child {border-top:none;border-left:none}
 .dbTable table tbody td:last-child {border-right:none}
