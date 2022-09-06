@@ -533,7 +533,7 @@ a.addInput {border:1px solid #dadada;color:#fff;border-radius: 20px;width:80px;h
 .writeForm>ul>li .tit span {display:block;color:#727272;font-size:0.928rem;}
 .writeForm>ul>li>div {color:#474747}
 .writeForm>ul>li .explainTxt {margin-top:4px;color:#5a5a5a;font-size:1rem}
-.writeForm>ul>li input[type="file"] {max-width:280px}
+.writeForm>ul>li input[type="file"] {width:100%}
 
 .writeForm .selType4 {white-space:nowrap;text-overflow:ellipsis;}
 .writeForm .emailBox {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
