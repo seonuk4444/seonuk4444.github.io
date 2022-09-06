@@ -424,3 +424,13 @@
     .detailBtns>ul>li>a {font-size:1rem}
 }
 
+/* 해외 리스 페이지 접속시 css */
+.foreignPage .resultList>ul>li .btns .caution {background:url(../../images/commons/alert_foreign.png) no-repeat left top 2px;}
+.foreignPage .resultList>ul>li .btns>ul>li>a .num {color:#4949eb}
+.foreignPage .facetCont .limSearch .limList .txt {color:#4949eb}
+.foreignPage .facetCont .facetList .listCont>ul>li .total {color:#4949eb}
+.foreignPage .thesisFacet .thFacetCont .thShList>ul>li .thShListBtn {background:#4949eb}
+.foreignPage .analysisTab>ul>li>a.on {color:#4949eb}
+.foreignPage .thesisSubjectTab>ul>li.on>a {color:#ff7200}
+.foreignPage .thesisSubjectTab>ul>li.on>a::before {background:#ff7200}
+.foreignPage .rhThTab>ul>li.on>a {background:#4949eb}

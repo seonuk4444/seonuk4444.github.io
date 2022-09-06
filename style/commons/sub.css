@@ -116,3 +116,7 @@
 .floatLogo .c1 {animation: move1 9s infinite;}
 .floatLogo .c2 {animation: move2 9s 1s infinite;}
 .floatLogo .c3 {animation: move3 9s .5s infinite;}
+
+
+/* 해외 리스 페이지 접속시 css */
+.foreignPage .searchBorder {background-image: linear-gradient(90deg,#4949eb,#9c00ff,#4949eb,#9c00ff)}
