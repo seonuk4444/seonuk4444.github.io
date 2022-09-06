@@ -200,6 +200,72 @@ $(document).ready(function(){
     $(this).parents('.divPopup').removeClass('long');
   });
 
+  //내보내기
+  $('.export').click(function(e){
+    e.preventDefault();
+    let ph = $('.exportPop .popHeader').outerHeight(true);
+    $('.exportPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
+    $('.blackBg1').show();
+    $('.exportPop').addClass('on');
+  });
+  $('.exportPopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.exportPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
+  });
+
+  //내책장담기
+  $('.save').click(function(e){
+    e.preventDefault();
+    let ph = $('.savePop .popHeader').outerHeight(true);
+    $('.savePop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
+    $('.blackBg1').show();
+    $('.savePop').addClass('on');
+  });
+  $('.savePopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.savePop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
+  });
+
+  //카테고리 열기
+  $('#interestCodeName1').click(function(){
+    let ph = $('.categoryPop .popHeader').outerHeight(true);
+    $('.categoryPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
+    $('.blackBg1').show();
+    $('.categoryPop').addClass('on');
+    $('#newCabinet_div2').removeClass('long')
+  });
+  $('.categoryPopClose').click(function(e){
+    e.preventDefault();
+    $('.categoryPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
+  });
+
+  //카테고리 폴더
+  $('.folderList>li>a').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next().slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next().slideDown();
+    }
+  }); 
+  
+  $('.folderList>li>ul>li>a').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next().slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next().slideDown();
+    }
+  }); 
 
 });    
 
