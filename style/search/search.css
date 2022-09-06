@@ -425,6 +425,7 @@
 }
 
 /* 해외 리스 페이지 접속시 css */
+.foreignPage .thesisVolResult .thesisTit .volume {color:#4949eb}
 .foreignPage .resultList>ul>li .btns .caution {background:url(../../images/commons/alert_foreign.png) no-repeat left top 2px;}
 .foreignPage .resultList>ul>li .btns>ul>li>a .num {color:#4949eb}
 .foreignPage .facetCont .limSearch .limList .txt {color:#4949eb}
