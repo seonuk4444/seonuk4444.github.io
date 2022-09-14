@@ -58,7 +58,7 @@ $(document).ready(function(){
 
   //example2
   var table = $('#example2').DataTable({
-    ajax: '../data/object.txt',
+    ajax: '/tableCustom/data/object.txt',
     "columnDefs": [
       { className:"alignC cellToggle", "targets": [ 0 ] },
       { className:"brn", "targets": [ 1 ] },
