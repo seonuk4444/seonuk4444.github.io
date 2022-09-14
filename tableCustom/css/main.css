@@ -255,6 +255,7 @@ div.clearer {
     background:url(../image/prevPage.png) no-repeat;
     text-indent: -9999px;
     vertical-align: sub;
+    cursor:pointer;
 }
 .paginate_button.next{
     display:inline-block;
@@ -264,6 +265,7 @@ div.clearer {
     background:url(../image/nextPage.png) no-repeat;
     text-indent: -9999px;
     vertical-align: sub;
+    cursor:pointer;
 }
 .dataTables_paginate>span{
     display:inline-block;
