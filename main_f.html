@@ -1,0 +1,3607 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="style/commons/reset.css">
+	<link rel="stylesheet" href="style/commons/font.css">
+	<link rel="stylesheet" href="style/commons/common.css">
+	<link rel="stylesheet" href="style/commons/popup.css">
+	<link rel="stylesheet" href="ui/swiper/swiper.min.css">
+	<link rel="stylesheet" href="ui/slick/slick.css">
+	<link rel="stylesheet" href="style/main/main.css">
+	<link rel="stylesheet" href="style/search/search.css">
+	<!-- //stylesheet -->
+
+	<!-- script -->
+	<script src="ui/jquery-cdn/jquery-3.5.1.min.js"></script>
+	<script src="ui/swiper/swiper.min.js"></script>
+	<script src="ui/slick/slick.js"></script>
+	<script src="script/commons/common.js"></script>
+	<script src="script/main/main.js"></script>
+	<!-- //script -->
+</head>
+
+<body>
+	<!-- divAccessibility -->
+	<div id="divAccessibility">
+		<ul>
+			<li>
+				<a href="#divSearch">검색 바로가기</a>
+			</li>
+			<li>
+				<a href="#divContent">본문 바로가기(skip to content)</a>
+			</li>
+			<li>
+				<a href="#divFooter">하단정보 바로가기</a>
+			</li>
+		</ul>
+	</div>
+	<!-- //divAccessibility -->
+
+	<div id="divWrapper" class="foreignPage">
+		<!-- blackBg -->
+		<span class="blackBg1"></span>
+		<!-- blackBg -->
+
+		<!-- divHeader -->
+		<div id="divHeader">
+			<div class="topFirstVisit">
+				<img src="images/main/compass.gif" alt="">
+				<p class="txt">RISS 처음 방문이세요?</p>
+			</div>
+			<h1 class="logo">
+				<a href="">
+					<img src="images/main/logo_for.png">
+				</a>
+			</h1>
+			<div class="searchBorder">
+				<div class="searchInputW">
+					<img src="images/main/rLogo_main.png" alt="RISS 서브로고" class="rLogo">
+					<input type="text" class="searchInput" disabled placeholder="무엇을 찾고 계세요??">
+					<input type="submit" class="searchBtn">
+				</div>
+			</div>
+		</div>
+		<!-- //divHeader -->
+
+		<!-- divSearch -->
+		<div id="divSearch" class="on">
+			<!-- searchTop -->
+			<div class="searchTop">
+				<a href="" class="searchClose" title="닫기">닫기</a>
+				<div class="searchBorder">
+					<div class="searchInputW">
+						<img src="images/commons/rLogo_foreign.png" alt="RISS 서브로고" class="rLogo">
+						<input type="text" class="searchInput">
+						<a href="" class="textDel">삭제</a>
+						<input type="submit" class="searchBtn">
+					</div>
+				</div>
+				<a href="" class="detailSearchBtn">상세검색</a>
+			</div>
+			<!-- //searchTop -->
+
+			<!-- detailSearch -->
+			<div class="detailSearch">
+				<div class="detailShTop">
+					<p class="tit">상세검색</p>
+					<a href="" title="검색도움말">검색도움말</a>
+				</div>
+				<div class="detailShCont">
+					<div class="detailShTab">
+						<div class="inner">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide tab on">
+									<a href="" title="국내학술논문">국내학술논문</a>
+								</div>
+								<div class="swiper-slide tab">
+									<a href="" title="학위논문">학위논문</a>
+								</div>
+								<div class="swiper-slide tab">
+									<a href="" title="해외학술논문">해외학술논문</a>
+								</div>
+								<div class="swiper-slide tab">
+									<a href="" title="학술지">학술지</a>
+								</div>
+								<div class="swiper-slide tab">
+									<a href="" title="단행본">단행본</a>
+								</div>
+								<div class="swiper-slide tab">
+									<a href="" title="연구보고서">연구보고서</a>
+								</div>
+								<div class="swiper-slide tab">
+									<a href="" title="공개강의">공개강의</a>
+								</div>
+							</div>
+						</div>
+						<a href="" class="toggleBtn" title="전체보기">버튼</a>
+					</div>
+					<div class="detailShTabContent">
+						<div class="detailShInput">
+							<ul>
+								<li>
+									<div>
+										<select class="selType2">
+											<option selected="selected">논문명</option>
+											<option>저자</option>
+											<option>주제어</option>
+											<option>발행기관</option>
+											<option>초록</option>
+											<option>목차</option>
+											<option>전체</option>
+										</select>
+										<input type="text" class="inputType2">
+										<select class="selType3">
+											<option selected="selected">AND</option>
+											<option>OR</option>
+											<option>NOT</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div>
+										<select class="selType2">
+											<option>논문명</option>
+											<option selected="selected">저자</option>
+											<option>주제어</option>
+											<option>발행기관</option>
+											<option>초록</option>
+											<option>목차</option>
+											<option>전체</option>
+										</select>
+										<input type="text" class="inputType2">
+										<select class="selType3">
+											<option selected="selected">AND</option>
+											<option>OR</option>
+											<option>NOT</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div>
+										<select class="selType2">
+											<option>논문명</option>
+											<option>저자</option>
+											<option selected="selected">주제어</option>
+											<option>발행기관</option>
+											<option>초록</option>
+											<option>목차</option>
+											<option>전체</option>
+										</select>
+										<input type="text" class="inputType2">
+										<select class="selType3">
+											<option selected="selected">AND</option>
+											<option>OR</option>
+											<option>NOT</option>
+										</select>
+										<a href="" class="addInput">추가</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<select class="selType2">
+											<option>논문명</option>
+											<option>저자</option>
+											<option>주제어</option>
+											<option selected="selected">발행기관</option>
+											<option>초록</option>
+											<option>목차</option>
+											<option>전체</option>
+										</select>
+										<input type="text" class="inputType2">
+										<select class="selType3">
+											<option selected="selected">AND</option>
+											<option>OR</option>
+											<option>NOT</option>
+										</select>
+										<a href="" class="addInput">추가</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<select class="selType2">
+											<option>논문명</option>
+											<option>저자</option>
+											<option>주제어</option>
+											<option>발행기관</option>
+											<option selected="selected">초록</option>
+											<option>목차</option>
+											<option>전체</option>
+										</select>
+										<input type="text" class="inputType2">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="detailShTabContW">
+							<!-- 국내학술논문 -->
+							<div class="detailShTabCont">
+								<ul>
+									<li>
+										<p class="tit">발행연도</p>
+										<div class="pubYear">
+											<input type="text" maxlength="4">
+											~
+											<input type="text" maxlength="4">
+										</div>
+									</li>
+									<li>
+										<p class="tit">작성언어</p>
+										<div>
+											<select class="selType4">
+												<option selected="selected">전체</option>
+												<option>한국어</option>
+												<option>영어</option>
+												<option>중국어</option>
+												<option>일본어</option>
+												<option>독일어</option>
+												<option>프랑스어</option>
+												<option>스페인어</option>
+												<option>러시아어</option>
+												<option>기타</option>
+											</select>
+										</div>
+									</li>
+									<li>
+										<p class="tit">주제분류</p>
+										<div>
+											<select class="selType4">
+												<option selected="selected">전체</option>
+												<option>인문학</option>
+												<option>사회과학</option>
+												<option>자연과학</option>
+												<option>공학</option>
+												<option>의약학</option>
+												<option>농수해양</option>
+												<option>예술체육</option>
+												<option>교육</option>
+												<option>복합학</option>
+											</select>
+										</div>
+									</li>
+									<li>
+										<p class="tit">등재여부</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test1">
+													<label for="test1"><span class="type">SCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test2">
+													<label for="test2"><span class="type">SCIE</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test3">
+													<label for="test3"><span class="type">AHCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test4">
+													<label for="test4"><span class="type">SSCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test5">
+													<label for="test5"><span class="type">SCOPUS</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="tit">원문유무료</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test6">
+													<label for="test6"><span class="type">전체</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test7">
+													<label for="test7"><span class="type">유료</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test8">
+													<label for="test8"><span class="type">무료</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //국내학술논문 -->
+							<!-- 학위논문 -->
+							<div class="detailShTabCont">
+								<ul>
+									<li>
+										<p class="tit">학위수여연도</p>
+										<div class="pubYear">
+											<input type="text" maxlength="4">
+											~
+											<input type="text" maxlength="4">
+										</div>
+									</li>
+									<li>
+										<p class="tit">학위유형</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test9">
+													<label for="test9"><span class="type">전체</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test10">
+													<label for="test10"><span class="type">국내박사</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test11">
+													<label for="test11"><span class="type">해외박사</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //학위논문 -->
+							<!-- 해외학술논문 -->
+							<div class="detailShTabCont">
+								<ul>
+									<li>
+										<p class="tit">발행연도</p>
+										<div class="pubYear">
+											<input type="text" maxlength="4">
+											~
+											<input type="text" maxlength="4">
+										</div>
+									</li>
+									<li>
+										<p class="tit">작성언어</p>
+										<div>
+											<select class="selType4">
+												<option selected="selected">전체</option>
+												<option>한국어</option>
+												<option>영어</option>
+												<option>중국어</option>
+												<option>일본어</option>
+												<option>독일어</option>
+												<option>프랑스어</option>
+												<option>스페인어</option>
+												<option>러시아어</option>
+												<option>기타</option>
+											</select>
+										</div>
+									</li>
+									<li>
+										<p class="tit">등재여부</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test12">
+													<label for="test12"><span class="type">SCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test13">
+													<label for="test13"><span class="type">SCIE</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test14">
+													<label for="test14"><span class="type">AHCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test15">
+													<label for="test15"><span class="type">SSCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test16">
+													<label for="test16"><span class="type">SCOPUS</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="tit">원문유무</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test17">
+													<label for="test17"><span class="type">원문있음</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test18">
+													<label for="test18"><span class="type">원문없음</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="tit">원문복사여부</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test19">
+													<label for="test19"><span class="type">무료(FRIC)</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test20">
+													<label for="test20"><span class="type">유료</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //해외학술논문 -->
+							<!-- 학술지 -->
+							<div class="detailShTabCont">
+								<ul>
+									<li>
+										<p class="tit">자료형태</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test6">
+													<label for="test6"><span class="type">국내학술지</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test7">
+													<label for="test7"><span class="type">해외학술지</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="tit">등재여부</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test21">
+													<label for="test21"><span class="type">SCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test22">
+													<label for="test22"><span class="type">SCIE</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test23">
+													<label for="test23"><span class="type">AHCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test24">
+													<label for="test24"><span class="type">SSCI</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test25">
+													<label for="test25"><span class="type">SCOPUS</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="tit">원문복사여부</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test26">
+													<label for="test26"><span class="type">무료</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test27">
+													<label for="test27"><span class="type">유료</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //학술지 -->
+							<!-- 단행본 -->
+							<div class="detailShTabCont">
+								<ul>
+									<li>
+										<p class="tit">발행연도</p>
+										<div class="pubYear">
+											<input type="text" maxlength="4">
+											~
+											<input type="text" maxlength="4">
+										</div>
+									</li>
+									<li>
+										<p class="tit">자료형태</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test28">
+													<label for="test28"><span class="type">단행본</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test29">
+													<label for="test29"><span class="type">비도서</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test30">
+													<label for="test30"><span class="type">해외eBook</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test31">
+													<label for="test31"><span class="type">국내eBook</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="tit">작성언어</p>
+										<div>
+											<select class="selType4">
+												<option selected="selected">전체</option>
+												<option>한국어</option>
+												<option>영어</option>
+												<option>중국어</option>
+												<option>일본어</option>
+												<option>독일어</option>
+												<option>프랑스어</option>
+												<option>스페인어</option>
+												<option>러시아어</option>
+												<option>기타</option>
+											</select>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //단행본 -->
+							<!-- 연구보고서 -->
+							<div class="detailShTabCont">
+								<ul>
+									<li>
+										<p class="tit">발행연도</p>
+										<div class="pubYear">
+											<input type="text" maxlength="4">
+											~
+											<input type="text" maxlength="4">
+										</div>
+									</li>
+									<li>
+										<p class="tit">자료형태</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test32">
+													<label for="test32"><span class="type">한국연구재단(NRF)</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test33">
+													<label for="test33"><span class="type">dCollection</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test34">
+													<label for="test34"><span class="type">국가정책연구포털(NKIS)</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test35">
+													<label for="test35"><span
+															class="type">국립의과학지식센터(NCMIK)</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test36">
+													<label for="test36"><span
+															class="type">교육유관기관지식나눔(Look)</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test37">
+													<label for="test37"><span class="type">한국건설기술연구원</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test38">
+													<label for="test38"><span class="type">기타기관</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //연구보고서 -->
+							<!-- 공개강의 -->
+							<div class="detailShTabCont">
+								<ul>
+									<li>
+										<p class="tit">자료형태</p>
+										<div class="chkList">
+											<ul>
+												<li>
+													<input type="checkbox" class="customChk2" id="test39">
+													<label for="test39"><span class="type">전체</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test40">
+													<label for="test40"><span class="type">국내자료</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test41">
+													<label for="test41"><span class="type">해외자료</span></label>
+												</li>
+												<li>
+													<input type="checkbox" class="customChk2" id="test42">
+													<label for="test42"><span class="type">OAI-PHM(OER)자료</span></label>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p class="tit">작성언어</p>
+										<div>
+											<select class="selType4">
+												<option selected="selected">전체</option>
+												<option>한국어</option>
+												<option>영어</option>
+												<option>중국어</option>
+												<option>일본어</option>
+												<option>독일어</option>
+												<option>프랑스어</option>
+												<option>스페인어</option>
+												<option>러시아어</option>
+												<option>기타</option>
+											</select>
+										</div>
+									</li>
+									<li>
+										<p class="tit">CCL 유형</p>
+										<div>
+											<select class="selType4">
+												<option selected="selected">전체</option>
+												<option>저작자표시</option>
+												<option>저작자표시-비영리</option>
+												<option>저작자표시-변경금지</option>
+												<option>저작자표시-동일조건변경허락</option>
+												<option>저작자표시-비영리-변경금지</option>
+												<option>저작자표시-비영리-동일조건변경허락</option>
+											</select>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //공개강의 -->
+						</div>
+						<div class="detailShBtns">
+							<input type="reset" class="detailReset" value="초기화">
+							<input type="submit" class="detailShBtn" value="검색">
+						</div>
+						<div class="totalDb" id="totalDb" style="display:block;">
+							<!-- 해외전자자료 -->
+							<div class="totalDbTop">
+								<p class="tit">통합검색 <span class="bold">DB </span><span class="subTit">원하는 DB만 선택하여 검색하실
+										수 있습니다.</span></p>
+								<!-- <ul> 
+									<li class="on"><a href="javascript:void(0);">ABC순</a></li>
+									<li><a href="javascript:void(0);">분야별</a></li>
+								</ul> -->
+								<ul>
+									<li>
+										<input type="checkbox" id="chkDBopt1" name="limiters" title="내무료DB" value="">
+										<label for="chkDBopt1"><span class="checkBox disableChk"></span>내무료DB</label>
+									</li>
+									<li>
+										<input type="checkbox" id="chkDBopt2" name="limiters" title="내관심DB" value="">
+										<label for="chkDBopt2"><span class="checkBox disableChk"></span>내관심DB</label>
+									</li>
+									<li>
+										<input type="checkbox" id="chkDBopt4" name="limiters" title="OA" value="">
+										<label for="chkDBopt4"><span class="checkBox"></span>OA</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="dbCont on">
+								<!-- <h4 class="hide">ABC순</h4> -->
+								<div class="dbListW">
+									<div class="dbList">
+										<p>A~C</p>
+										<ul>
+											<li class="">
+												<input type="checkbox" id="ASC" value="Academic Search Complete"
+													name="selectFsearchDB" title="ASC">
+												<label for="ASC"><span class="checkBox"></span>Academic Search
+													Complete</label>
+
+												<a href="javascript:fncGoForeign('/foreign/asc.do?gubun=11','dbInfoAll0');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="ACM" value="ACM Full-Text Collection"
+													name="selectFsearchDB" title="ACM Digital Library">
+												<label for="ACM"><span class="checkBox"></span>ACM Digital Library
+												</label>
+
+												<a href="javascript:fncGoForeign('/foreign/Acm.do?gubun=11','dbInfoAll1');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="ANNUALREVIEWS" value="Annual Reviews"
+													name="selectFsearchDB" title="Annual Reviews">
+												<label for="ANNUALREVIEWS"><span class="checkBox"></span>Annual
+													Reviews</label>
+
+												<span class="new"><img src="images/commons/newIco.png"
+														alt="NEW"></span>
+
+												<a href="javascript:fncGoForeign('/foreign/AnnualReviews.do?gubun=11','dbInfoAll2');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="ARXIV" value="arXiv" name="selectFsearchDB"
+													title="arXiv">
+												<label for="ARXIV"><span class="checkBox"></span>arXiv</label>
+
+												<a href="javascript:fncGoForeign('/foreign/arXiv.do?gubun=11','dbInfoAll3');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+
+
+												<input type="checkbox" id="AVON" value="Alexander Street"
+													name="selectFsearchDB" title="AVON">
+												<label for="AVON"><span class="checkBox"></span>AVON</label>
+
+												<a href="javascript:fncGoForeign('/foreign/avon.do?gubun=11','dbInfoAll5');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="BENTHAM" value="Bentham"
+													name="selectFsearchDB" title="Bentham">
+												<label for="BENTHAM"><span class="checkBox"></span>Bentham
+													Science</label>
+
+												<a href="javascript:fncGoForeign('/foreign/Bentham.do?gubun=11','dbInfoAll6');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('BENTHAM')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="BRILL" value="Brill" name="selectFsearchDB"
+													title="Brill">
+												<label for="BRILL"><span class="checkBox"></span>Brill Journal
+													Collection</label>
+
+												<a href="javascript:fncGoForeign('/foreign/Brill.do?gubun=11','dbInfoAll7');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('BRILL')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="BSC" value="Business Source Complete"
+													name="selectFsearchDB" title="BSC">
+												<label for="BSC"><span class="checkBox"></span>Business Source
+													Complete</label>
+
+												<a href="javascript:fncGoForeign('/foreign/bsc.do?gubun=11','dbInfoAll8');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="CAMBRIDGERNP" value="CJO"
+													name="selectFsearchDB" title="CJO">
+												<label for="CAMBRIDGERNP"><span class="checkBox"></span>Cambridge
+													Journals Online</label>
+
+												<span class="new"><img src="images/commons/newIco.png"
+														alt="NEW"></span>
+
+												<a href="javascript:fncGoForeign('/foreign/CambridgeRnP.do?gubun=11','dbInfoAll9');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="CINAHL" value="CINAHL with Full Text"
+													name="selectFsearchDB" title="CINAHL">
+												<label for="CINAHL"><span class="checkBox"></span>CINAHL with FullText
+												</label>
+
+												<a href="javascript:fncGoForeign('/foreign/cinahl.do?gubun=11','dbInfoAll10');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="disable">
+												<input type="checkbox" id="CINII"
+													value="J-STAGE@Japanese Periodical Index - 雑誌記事索引@JAIRO@CiNii"
+													name="selectFsearchDB" disabled="disabled" title="CiNii">
+												<label for="CINII"><span class="checkBox"></span>CiNii </label>
+
+												<a href="javascript:fncGoForeign('/foreign/CiNii.do?gubun=11','dbInfoAll11');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+										</ul>
+									</div>
+									<div class="dbList">
+										<p>D~L</p>
+										<ul>
+											<li class="">
+												<input type="checkbox" id="DDOD"
+													value="DDOD (Digital Dissertations On Demand)"
+													name="selectFsearchDB" title="DDOD">
+												<label for="DDOD"><span class="checkBox"></span>DDOD</label>
+
+												<a href="javascript:fncGoForeign('/foreign/Ddod.do?gubun=11','dbInfoAll12');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="DEGHSS" value="DEGFULL"
+													name="selectFsearchDB" title="DEGFULL">
+												<label for="DEGHSS"><span class="checkBox"></span>De Gruyter
+													e-Journals</label>
+
+												<a href="javascript:fncGoForeign('/foreign/deg.do?gubun=11','dbInfoAll13');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('DEGHSS')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="DOAJ"
+													value="Directory of Open Access Journals" name="selectFsearchDB"
+													title="DOAJ">
+												<label for="DOAJ"><span class="checkBox"></span>DOAJ</label>
+
+												<a href="javascript:fncGoForeign('/foreign/Doaj.do?gubun=11','dbInfoAll14');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="EBSCOEBOOK"
+													value="eBook Collection (EBSCOhost)" name="selectFsearchDB"
+													title="EBSCOEBOOK">
+												<label for="EBSCOEBOOK"><span class="checkBox"></span>EBSCO eBook
+												</label>
+
+												<a href="javascript:fncGoForeign('/foreign/NetLibrary.do?gubun=11','dbInfoAll15');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('EBSCOEBOOK')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="EBSCOUPC"
+													value="eBook University Press Collection (EBSCOhost)"
+													name="selectFsearchDB" title="UPC">
+												<label for="EBSCOUPC"><span class="checkBox"></span>EBSCO eBook
+													UPC</label>
+
+												<a href="javascript:fncGoForeign('/foreign/ebscoupc.do?gubun=11','dbInfoAll16');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('EBSCOUPC')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="EDUSOURCE" value="Education Source"
+													name="selectFsearchDB" title="Education Source">
+												<label for="EDUSOURCE"><span class="checkBox"></span>Education Source
+												</label>
+
+												<a href="javascript:fncGoForeign('/foreign/EduSource.do?gubun=11','dbInfoAll17');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="EECT" value="EECT" name="selectFsearchDB"
+													title="EECT">
+												<label for="EECT"><span class="checkBox"></span>EECT</label>
+
+												<a href="javascript:fncGoForeign('/foreign/eect.do?gubun=11','dbInfoAll18');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('EECT')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="ESC" value="ESC" name="selectFsearchDB"
+													title="ESC">
+												<label for="ESC"><span class="checkBox"></span>Emerald Specialist
+													Collection</label>
+
+												<a href="javascript:fncGoForeign('/foreign/esc.do?gubun=11','dbInfoAll19');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('ESC')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="GVRL"
+													value="GVRL (Gale Virtual Reference Library)" name="selectFsearchDB"
+													title="GVRL">
+												<label for="GVRL"><span class="checkBox"></span>GVRL</label>
+
+												<a href="javascript:fncGoForeign('/foreign/GVRL.do?gubun=11','dbInfoAll20');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('GVRL')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="IOP" value="IOPFULL" name="selectFsearchDB"
+													title="IOPFULL">
+												<label for="IOP"><span class="checkBox"></span>IOP Publishing
+													Journal</label>
+
+												<span class="new"><img src="images/commons/newIco.png"
+														alt="NEW"></span>
+
+												<a href="javascript:fncGoForeign('/foreign/IOP.do?gubun=11','dbInfoAll21');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('IOP')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="disable">
+												<input type="checkbox" id="JCR" value="ISI (JCR)" name="selectFsearchDB"
+													disabled="disabled" title="JCR">
+												<label for="JCR"><span class="checkBox"></span>JCR </label>
+
+												<a href="javascript:fncGoForeign('/foreign/Jcr.do?gubun=11','dbInfoAll22');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="JSTORANS" value="JSTORAS"
+													name="selectFsearchDB" title="JSTORAS">
+												<label for="JSTORANS"><span class="checkBox"></span>JSTOR Arts &amp;
+													Sciences Collection</label>
+
+												<span class="new"><img src="images/commons/newIco.png"
+														alt="NEW"></span>
+
+												<a href="javascript:fncGoForeign('/foreign/JstorAnS.do?gubun=11','dbInfoAll23');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('JSTORANS')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="JSTOR" value="JSTOR" name="selectFsearchDB"
+													title="JSTOR">
+												<label for="JSTOR"><span class="checkBox"></span>JSTOR Life Sciences
+													Collection</label>
+
+												<a href="javascript:fncGoForeign(' /foreign/JSTOR.do?gubun=11','dbInfoAll24');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('JSTOR')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="LWW" value="LWW" name="selectFsearchDB"
+													title="LWW">
+												<label for="LWW"><span class="checkBox"></span>LWW Premier Journals
+												</label>
+
+												<span class="new"><img src="images/commons/newIco.png"
+														alt="NEW"></span>
+
+												<a href="javascript:fncGoForeign('/foreign/LWW.do?gubun=11','dbInfoAll29');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+										</ul>
+									</div>
+									<div class="dbList">
+										<p>M~W</p>
+										<ul>
+											<li class="">
+												<input type="checkbox" id="MLA" value="MLA International Bibliography"
+													name="selectFsearchDB" title="MLA">
+												<label for="MLA"><span class="checkBox"></span>MLA International
+													Bibliography </label>
+
+												<a href="javascript:fncGoForeign('/foreign/mla.do?gubun=11','dbInfoAll30');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="disable">
+												<input type="checkbox" id="MDO" value="" name="selectFsearchDB"
+													disabled="disabled" title="Music ＆ Dance Online">
+												<label for="MDO"><span class="checkBox"></span>Music and Dance
+													Online</label>
+
+												<a href="javascript:fncGoForeign('/foreign/mdo.do?gubun=11','dbInfoAll31');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="disable">
+												<input type="checkbox" id="OREILLY" value="oreilly"
+													name="selectFsearchDB" disabled="disabled" title="oreilly">
+												<label for="OREILLY"><span class="checkBox"></span>O'Reilly Higher
+													Education</label>
+
+												<a href="javascript:fncGoForeign('/foreign/oreilly.do?gubun=11','dbInfoAll32');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('OREILLY')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="OAISTER" value="OAIster"
+													name="selectFsearchDB" title="OAIster">
+												<label for="OAISTER"><span class="checkBox"></span>OAIster (OCLC
+													OAIster)</label>
+
+												<a href="javascript:fncGoForeign('/foreign/Oaister.do?gubun=11','dbInfoAll33');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="OUP" value="OUPNA" name="selectFsearchDB"
+													title="OUP">
+												<label for="OUP"><span class="checkBox"></span>OUP Journals Collection -
+													Near Archive</label>
+
+												<a href="javascript:fncGoForeign('/foreign/oup.do?gubun=11','dbInfoAll34');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="PAO" value="PAO (Periodicals Archive Online)"
+													name="selectFsearchDB" title="PAO">
+												<label for="PAO"><span class="checkBox"></span>Periodicals Archive
+													Online</label>
+
+												<a href="javascript:fncGoForeign('/foreign/PAO.do?gubun=11','dbInfoAll37');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('PAO')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="PERSEE" value="Persée" name="selectFsearchDB"
+													title="Persée">
+												<label for="PERSEE"><span class="checkBox"></span>Persée</label>
+
+												<a href="javascript:fncGoForeign('/foreign/Persee.do?gubun=11','dbInfoAll38');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="disable">
+												<input type="checkbox" id="PQC"
+													value="Proquest Central (journal content only)"
+													name="selectFsearchDB" disabled="disabled" title="ProQuest Central">
+												<label for="PQC"><span class="checkBox"></span>ProQuest Central </label>
+
+												<a href="javascript:fncGoForeign('/foreign/pqc.do?gubun=11','dbInfoAll42');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('PQC')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="disable">
+												<input type="checkbox" id="PRC" value="PRC" name="selectFsearchDB"
+													disabled="disabled" title="PRC">
+												<label for="PRC"><span class="checkBox"></span>ProQuest eBook
+													Reference</label>
+
+												<a href="javascript:fncGoForeign('/foreign/PRC.do?gubun=11','dbInfoAll43');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="PHP" value="PHP" name="selectFsearchDB"
+													title="PHP">
+												<label for="PHP"><span class="checkBox"></span>ProQuest Historical
+													Periodicals</label>
+
+												<span class="new"><img src="images/commons/newIco.png"
+														alt="NEW"></span>
+
+												<a href="javascript:fncGoForeign('/foreign/PHP.do?gubun=11','dbInfoAll44');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('PHP')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="disable">
+												<input type="checkbox" id="PML" value="ProQuest Medical Library"
+													name="selectFsearchDB" disabled="disabled" title="PML">
+												<label for="PML"><span class="checkBox"></span>ProQuest Medical
+													Library</label>
+
+												<a href="javascript:fncGoForeign('/foreign/Pml.do?gubun=11','dbInfoAll45');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+
+												<span class="new"><a href="javascript:fncDbGuide('PML')"
+														title="안내 바로가기"><img src="images/commons/infoIco.png"
+															alt="NEW"></a></span>
+											</li>
+											<li class="">
+												<input type="checkbox" id="SD" value="ScienceDirect"
+													name="selectFsearchDB" title="ScienceDirect">
+												<label for="SD"><span class="checkBox"></span>ScienceDirect</label>
+
+												<span class="new"><img src="images/commons/newIco.png"
+														alt="NEW"></span>
+
+												<a href="javascript:fncGoForeign('/foreign/ScienceDirect.do?gubun=11','dbInfoAll46');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="SOCINDEX" value="SocINDEX with Full Text"
+													name="selectFsearchDB" title="SocINDEX with FullText">
+												<label for="SOCINDEX"><span class="checkBox"></span>SocINDEX with
+													FullText</label>
+
+												<a href="javascript:fncGoForeign('/foreign/SocIndex.do?gubun=11','dbInfoAll47');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+											<li class="">
+												<input type="checkbox" id="WILEY" value="WILEY" name="selectFsearchDB"
+													title="Wiley">
+												<label for="WILEY"><span class="checkBox"></span>Wiley Online
+													Library</label>
+
+												<a href="javascript:fncGoForeign('/foreign/wiley.do?gubun=11','dbInfoAll52');"
+													class="shortCut" title="바로가기">링크 바로가기</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="detailSearchCloseW">
+					<a href="" class="detailSearchClose" title="상세검색닫기">상세검색닫기</a>
+				</div>
+
+			</div>
+			<!-- //detailSearch -->
+
+			<!-- searchHistory -->
+			<div class="searchHistory">
+				<div class="titArea">
+					<p class="tit">최근검색어</p>
+					<ul class="shManageW">
+						<li>
+							<a href="" class="shBtn" title="최근검색어 옵션">최근검색어 옵션</a>
+							<ul class="shManage">
+								<li class="allHistoryDel">
+									<a href="" title="전체삭제">전체삭제</a>
+								</li>
+								<li class="noAuto">
+									<a href="" title="자동저장끄기">자동저장끄기</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+				<!-- <p class="noHistory">최근 검색어가 없습니다.</p> -->
+				<ul>
+					<li>
+						<div>
+							<a href="" class="txt" title="Korea journal">Korea journal</a>
+							<a href="" class="delete" title="삭제"><img src="images/commons/delType2.png"
+									alt="최근검색어 삭제"></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="" class="txt" title="증강현실">증강현실</a>
+							<a href="" class="delete" title="삭제"><img src="images/commons/delType2.png"
+									alt="최근검색어 삭제"></a>
+						</div>
+
+					</li>
+					<li>
+						<div>
+							<a href="" class="txt" title="4차 산업혁명">4차 산업혁명</a>
+							<a href="" class="delete" title="삭제"><img src="images/commons/delType2.png"
+									alt="최근검색어 삭제"></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="" class="txt" title="빅데이터">빅데이터</a>
+							<a href="" class="delete" title="삭제"><img src="images/commons/delType2.png"
+									alt="최근검색어 삭제"></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="" class="txt" title="인공지능">인공지능</a>
+							<a href="" class="delete" title="삭제"><img src="images/commons/delType2.png"
+									alt="최근검색어 삭제"></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="" class="txt" title="education">education</a>
+							<a href="" class="delete" title="삭제"><img src="images/commons/delType2.png"
+									alt="최근검색어 삭제"></a>
+						</div>
+
+					</li>
+					<li>
+						<div>
+							<a href="" class="txt" title="자바">자바</a>
+							<a href="" class="delete" title="삭제"><img src="images/commons/delType2.png"
+									alt="최근검색어 삭제"></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- //searchHistory -->
+			<!-- keywordList -->
+			<div class="keywordList">
+				<div class="titArea">
+					<p class="tit">인기검색어</p>
+					<p class="date">2022-06-28 기준</p>
+				</div>
+				<ul>
+					<li class="list">
+						<a href="">
+							<span class="num">1</span>
+							<span class="keyword">이종우</span>
+							<span class="info up">&uarr;3</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">2</span>
+							<span class="keyword">메타버스</span>
+							<span class="info down">&darr;1</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">3</span>
+							<span class="keyword">이우제</span>
+							<span class="info down">&darr;1</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">4</span>
+							<span class="keyword">여성</span>
+							<span class="info down">&darr;1</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">5</span>
+							<span class="keyword">정체성</span>
+							<span class="info">-</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">6</span>
+							<span class="keyword">바나나</span>
+							<span class="info">-</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">7</span>
+							<span class="keyword">스트레오 정합</span>
+							<span class="info">-</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">8</span>
+							<span class="keyword">다층분석</span>
+							<span class="info">-</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">9</span>
+							<span class="keyword">의사소통</span>
+							<span class="info">-</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="num">10</span>
+							<span class="keyword">실수인식</span>
+							<span class="info new">New</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //keywordList -->
+		</div>
+		<!-- //divSearch -->
+
+		<!-- Content -->
+		<div id="divContent">
+			<!-- contents1 quickMenu -->
+			<div class="contents1">
+				<h2 class="skip">퀵메뉴</h2>
+				<ul class="quickMenu">
+					<li class="quick1">
+						<a href="">
+							<span class="imgArea">
+								<img src="images/main/forIcon1.png" alt="전자저널 인덱스">
+							</span>
+							<span class="txt">전자저널<br>인덱스</span>
+						</a>
+					</li>
+					<li class="quick2">
+						<a href="">
+							<span class="imgArea">
+								<img src="images/main/forIcon2.png" alt="해외전자자료 이용안내">
+							</span>
+							<span class="txt">해외전자자료<br>이용안내</span>
+						</a>
+					</li>
+					<li class="quick3">
+						<a href="">
+							<span class="imgArea">
+								<img src="images/main/forIcon3.png" alt="서비스 권한">
+							</span>
+							<span class="txt">서비스 권한</span>
+						</a>
+					</li>
+					<li class="quick4">
+						<a href="">
+							<span class="imgArea">
+								<img src="images/main/forIcon4.png" alt="해외전자자료 통계">
+							</span>
+							<span class="txt">해외전자자료<br>통계</span>
+						</a>
+					</li>
+					<li class="quick5">
+						<a href="">
+							<span class="imgArea">
+								<img src="images/main/forIcon5.png" alt="접속오류 해결">
+							</span>
+							<span class="txt">접속오류<br>해결</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //contents1 quickMenu -->
+
+			<!-- 구독기관 , 관심DB  contents2 -->
+			<div class="contents2">
+				<div class="subscriptionW">
+					<div class="subscription">
+						<div class="overflowBox">
+							<ul class="subscriptTab">
+								<li class="subscriptTab1 on">
+									<a href="" title="전체학술 DB">전체학술 <span>DB</span><span class="dbCount">58</span></a>
+									<div class="tabCont">
+										<!-- <div class="noResultW"><p>내 관심 DB를 설정 해 보세요</p></div> -->
+										<p class="tabInfo">총 48개 해외전자자료 DB의 4만 6천여종의 전자저널과 ebook, 잡지 등 을 RISS에서 자유롭게
+											이용해보세요.
+										</p>
+										<ul class="radioBtnW">
+											<li>
+												<input id="sort1" name="q" class="radioType1 small" type="radio"
+													value="" checked="checked">
+												<label for="sort1"><span class="checkBox"></span>인기순</label>
+											</li>
+											<li>
+												<input id="sort2" name="q" class="radioType1 small" type="radio"
+													value="">
+												<label for="sort2"><span class="checkBox"></span>ABC순</label>
+											</li>
+										</ul>
+										<div class="listViewW">
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">저널, 논문, 도서, 잡지</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="listMoreW">
+											<span class="count">
+												<span class="current">1</span>/<span class="total">2</span>
+											</span>
+											<a href="" title="더보기" class="listMore">더보기</a>
+										</div>
+									</div>
+								</li>
+								<li class="subscriptTab2">
+									<a href="" title="내 무료 DB">내 무료 <span>DB</span><img src="images/main/lock.png"
+											alt="잠금" class="lock"></a>
+									<div class="tabCont">
+										<!-- <div class="noResultW"><p>내 관심 DB를 설정 해 보세요</p></div> -->
+										<p class="tabInfo">총 48개 해외전자자료 DB의 4만 6천여종의 전자저널과 ebook, 잡지 등 을 RISS에서 자유롭게
+											이용해보세요.
+										</p>
+										<ul class="radioBtnW">
+											<li>
+												<input id="sort1" name="q" class="radioType1" type="radio" value=""
+													checked="checked">
+												<label for="sort1"><span class="checkBox"></span>인기순</label>
+											</li>
+											<li>
+												<input id="sort2" name="q" class="radioType1" type="radio" value="">
+												<label for="sort2"><span class="checkBox"></span>ABC순</label>
+											</li>
+										</ul>
+										<div class="listViewW">
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">저널, 논문, 도서, 잡지</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">저널, 논문, 도서, 잡지</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="listMoreW">
+											<span class="count">
+												<span class="current">1</span>/<span class="total">2</span>
+											</span>
+											<a href="" title="더보기" class="listMore">더보기</a>
+										</div>
+									</div>
+								</li>
+								<li class="subscriptTab3">
+									<a href="" title="조건부 무료 DB">조건부 무료 <span>DB</span><img src="images/main/lock.png"
+											alt="잠금" class="lock"></a>
+									<div class="tabCont">
+										<!-- <div class="noResultW"><p>내 관심 DB를 설정 해 보세요</p></div> -->
+										<p class="tabInfo">총 48개 해외전자자료 DB의 4만 6천여종의 전자저널과 ebook, 잡지 등 을 RISS에서 자유롭게
+											이용해보세요.
+										</p>
+										<ul class="radioBtnW">
+											<li>
+												<input id="sort1" name="q" class="radioType1" type="radio" value=""
+													checked="checked">
+												<label for="sort1"><span class="checkBox"></span>인기순</label>
+											</li>
+											<li>
+												<input id="sort2" name="q" class="radioType1" type="radio" value="">
+												<label for="sort2"><span class="checkBox"></span>ABC순</label>
+											</li>
+										</ul>
+										<div class="listViewW">
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">저널, 논문, 도서, 잡지</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">저널, 논문, 도서, 잡지</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="listMoreW">
+											<span class="count">
+												<span class="current">1</span>/<span class="total">2</span>
+											</span>
+											<a href="" title="더보기" class="listMore">더보기</a>
+										</div>
+									</div>
+								</li>
+								<li class="subscriptTab4">
+									<a href="" title="내 관심 DB" class="interest">내 관심 <span>DB<img
+												src="images/main/lock.png" alt="잠금" class="lock"></span>
+										<span class="intersetIco">저장되는 효과</span>
+										<span class="interestDot">저장됨을 알리는 효과</span>
+									</a>
+									<div class="tabCont">
+										<!-- <div class="noResultW"><p>내 관심 DB를 설정 해 보세요</p></div> -->
+										<p class="tabInfo">총 48개 해외전자자료 DB의 4만 6천여종의 전자저널과 ebook, 잡지 등 을 RISS에서 자유롭게
+											이용해보세요.
+										</p>
+										<ul class="radioBtnW">
+											<li>
+												<input id="sort1" name="q" class="radioType1" type="radio" value=""
+													checked="checked">
+												<label for="sort1"><span class="checkBox"></span>인기순</label>
+											</li>
+											<li>
+												<input id="sort2" name="q" class="radioType1" type="radio" value="">
+												<label for="sort2"><span class="checkBox"></span>ABC순</label>
+											</li>
+										</ul>
+										<div class="listViewW">
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">저널, 논문, 도서, 잡지</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="contListWs">
+												<ul class="contListW">
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Oxford Referernce
+																	Premium(ORP),
+																	Oxford Referernce Premium(ORP)</a>
+																<p class="detail">인문과학 , 사회과학 , 자연과학 , 예술/체육 , 교육,인문과학 ,
+																	사회과학 , 자연과학 , 예술/체육 , 교육</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">Web DB</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">ACM Digital LibraryDB</a>
+																<p class="detail">국내외 통계자료</p>
+																<div class="usage">
+																	<p class="acess">조건부무료</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Brill Journal Collection</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="listCont">
+															<div class="classify">
+																<span class="type">전자저널</span>
+																<span class="new">N</span>
+															</div>
+															<div class="dbInfo">
+																<a href="" class="subject">Cambridge Read & Publish</a>
+																<p class="detail">서지정보 및 원문</p>
+																<div class="usage">
+																	<p class="acess">무료이용</p>
+																	<p class="location">통합검색</p>
+																</div>
+
+															</div>
+															<div class="bottom">
+																<div class="botFuntion">
+																	<a href="" class="goInfo">정보</a>
+																	<a href="" class="favorite">
+																		<img src="images/main/favorOn2.png"
+																			class="favorOn">
+																		<img src="images/main/favorOff.png"
+																			class="favorOff">
+																	</a>
+																	<div class="favorPop1">
+																		<p>내 관심DB에 등록 되었습니다.</p>
+																	</div>
+																	<div class="favorPop2">
+																		<p>내 관심DB에서 삭제 되었습니다.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="listMoreW">
+											<span class="count">
+												<span class="current">1</span>/<span class="total">2</span>
+											</span>
+											<a href="" title="더보기" class="listMore">더보기</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //구독기관 , 관심DB contents2 -->
+
+			<!-- 주제별 전자저널  contents3 -->
+			<div class="contents3">
+				<div class="journal">
+					<div>
+						<div class="titArea">
+							<h2>주제별 전자저널</h2>
+							<div class="sbjSearch">
+								<input type="text" id="searchWord" value=""
+									onkeyup="if(window.event.keyCode == 13){ searchSubject(); }"
+									placeholder="주제분야 찾기"><button onclick="javascript:searchSubject();">주제검색</button>
+							</div>
+						</div>
+						<div class="sbjTab">
+							<div class="sbjList">
+								<div class="list">
+									<a href="" title="Agriculture" class="click"><span
+											class="tit">Agriculture</span></a>
+								</div>
+								<div class="list">
+									<a href="" title="Auxiliary Sciences of History"><span class="tit">Auxiliary
+											Sciences of
+											History</span></a>
+								</div>
+								<div class="list">
+									<a href=""
+										title="Bibliography. Library science. Information resources (General)"><span
+											class="tit">Bibliography. Library science. Information resources
+											(General)</span></a>
+								</div>
+								<div class="list">
+									<a href="" title="Education"><span class="tit">Education</span></a>
+								</div>
+								<div class="list">
+									<a href="" title="Fine arts"><span class="tit">Fine arts</span></a>
+								</div>
+								<div class="list">
+									<a href="" title="General Works"><span class="tit">General Works</span></a>
+								</div>
+								<div class="list">
+									<a href=""><span class="tit">Geography. Anthropology. Recreation</span></a>
+								</div>
+								<div class="list">
+									<a href=""><span class="tit">History (General) and History of Europe</span></a>
+								</div>
+								<div class="list">
+									<a href=""><span class="tit">History : America</span></a>
+								</div>
+								<div class="list">
+									<a href=""><span class="tit">Extra sbj</span></a>
+								</div>
+								<div class="list">
+									<a href=""><span class="tit">Extra sbj2</span></a>
+								</div>
+								<div class="list">
+									<a href=""><span class="tit">Extra sbj3</span></a>
+								</div>
+								<div class="list">
+									<a href=""><span class="tit">Extra sbj4</span></a>
+								</div>
+								<div class="list">
+									<a href=""><span class="tit">Extra sbj5</span></a>
+								</div>
+							</div>
+							<div class="sbjBar">
+								<span></span>
+							</div>
+						</div>
+						<!-- tab클릭시 바뀔영역 -->
+						<div class="changeArea">
+							<div class="changeTit">
+								<p class="firstLetter">H</p>
+								<p class="tit">History (General) and History of Europe</p>
+							</div>
+							<ul class="changeList on">
+								<li><a href="">History (General) <span class="total">(1273)</span></a></li>
+								<li><a href="">History of Africa <span class="total">(472)</span></a></li>
+								<li><a href="">History of Austria. Liechtenstein. Hungary. Czechoslovakia <span
+											class="total">(89)</span></a></li>
+								<li><a href="">History of Balkan Peninsula <span class="total">(190)</span></a></li>
+								<li><a href="">History of Central Europe <span class="total">(7)</span></a></li>
+								<li><a href="">History of Eastern Europe (General) <span class="total">(52)</span></a>
+								</li>
+								<li><a href="">History of France <span class="total">(249)</span></a></li>
+								<li><a href="">History of Germany <span class="total">(191)</span></a></li>
+								<li><a href="">History of Great Britain <span class="total">(533)</span></a></li>
+								<li><a href="">History of Greece <span class="total">(119)</span></a></li>
+								<li><a href="">History of Gypsies <span class="total">(13)</span></a></li>
+								<li><a href="">History of Italy <span class="total">(218)</span></a></li>
+								<li><a href="">History of Low Countries. Benelux Countries <span
+											class="total">(21)</span></a></li>
+								<li><a href="">History of Netherlands (Holland) <span class="total">(27)</span></a></li>
+								<li><a href="">History of Northern Europe. Scandinavia <span
+											class="total">(56)</span></a>
+								</li>
+								<li><a href="">History of Oceania (South Seas) <span class="total">(110)</span></a></li>
+								<li><a href="">History of Poland <span class="total">(49)</span></a></li>
+								<li><a href="">History of Portugal <span class="total">(16)</span></a></li>
+								<li><a href="">History of Russia. Soviet Union. Former Soviet Republics <span
+											class="total">(280)</span></a></li>
+								<li><a href="">History of Spain <span class="total">(108)</span></a></li>
+								<li><a href="">History of Switzerland <span class="total">(7)</span></a></li>
+								<li><a href="">History of the Greco-Roman world <span class="total">(68)</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //주제별 전자저널  contents3 -->
+
+		</div>
+		<!-- //divContent -->
+		<div id="divFooter">
+			<div class="sns">
+				<ul>
+					<li class="insta">
+						<a href="" title="인스타그램">인스타그램</a>
+					</li>
+					<li class="facebook">
+						<a href="" title="페이스북">페이스북</a>
+					</li>
+					<li class="youtube">
+						<a href="" title="유튜브">유튜브</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footerInfo">
+				<address>41061 대구광역시 동구 동내로 64(동내동1119) KERIS빌딩</address>
+				<p class="call">고객센터 (평일: 09:00 ~ 18:00)<span>1599-3122</span></p>
+				<p class="copy">Copyright© KERIS. ALL RIGHTS RESERVED</p>
+			</div>
+			<div class="footerMenu">
+				<ul>
+					<li>
+						<a href="" title="이용약관">이용약관</a>
+					</li>
+					<li>
+						<a href="" title="개인정보처리방침">개인정보처리방침</a>
+					</li>
+					<li>
+						<a href="" title="개인정보 재동의">개인정보 재동의</a>
+					</li>
+					<li>
+						<a href="" title="기관소개">기관소개</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="floating">
+			<ul class="menu">
+				<li class="allMenu">
+					<a href="" title="메뉴">메뉴</a>
+				</li>
+				<li class="firstVisit">
+					<a href="" title="처음방문이세요">처음방문이세요</a>
+				</li>
+				<li class="home">
+					<a href="" title="홈">홈</a>
+				</li>
+				<li class="myriss">
+					<a href="" title="MyRISS">MyRISS</a>
+				</li>
+				<li class="foreign">
+					<a href="" title="해외전자정보이동버튼">
+						<span class="txt">
+							<strong>GO</strong>
+							해외전자<br>정보
+						</span>
+						<svg class="floatLogo" width="120" height="120" viewBox="0 0 10 10" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="c1" opacity="0.4"
+								d="M7.79 3.3C6.51 1.94 3.19 0.48 1.45 2C-0.18 3.64 1.06 7.04 2.34 8.41C3.61 9.82 6.05 9.92 7.62 8.58C9.06 7.09 9.12 4.66 7.79 3.3Z"
+								fill="#ff7200" />
+							<path class="c2" opacity="0.25"
+								d="M7.1 8.47C8.37 6.93 9.46 3.2 7.6 1.57C5.64 0.0600002 2.2 1.85 0.93 3.4C-0.39 4.94 -0.16 7.53 1.48 9.02C3.26 10.34 5.85 10.06 7.1 8.47Z"
+								fill="#ff7200" />
+							<path opacity="0.5"
+								d="M5.18 9.01C3.75 8.95 1.12 7.66 1.11 6.14C1.09 4.4 3.57 1.45 5.23 1.87C6.84 2.08 7.98 4.64 8.05 6.14C8 7.57 6.64 8.97 5.18 9.01Z"
+								fill="#ff7200" />
+							<path class="c3" opacity="0.25"
+								d="M2.05 8.7C3.81 9.64 7.68 9.98 8.91 7.83C10 5.62 7.57 2.6 5.8 1.66C4.03 0.67 1.54 1.4 0.4 3.3C-0.54 5.3 0.24 7.79 2.05 8.7Z"
+								fill="#ff7200" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- wholeMenu -->
+		<div class="wholeMenu">
+			<div class="wholeMenuTop">
+				<div class="wholeBtns">
+					<a href="" class="setting" title="설정"></a>
+					<a href="" title="닫기" class="wholeMenuClose"></a>
+				</div>
+				<div class="loginW">
+					<div class="userInfo">
+						<p class="user"><span>퓨쳐누리</span> 님</p>
+					</div>
+					<div class="loginBtns">
+						<!-- <a href="" title="로그인" class="login">로그인</a> -->
+						<a href="" title="로그아웃" class="logout">로그아웃</a>
+					</div>
+				</div>
+			</div>
+			<div class="wholeMenuCont">
+				<!-- wholeMenuNav -->
+				<div class="wholeMenuNav">
+					<div class="inner">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide tab on">
+								<a href="#wm1" title="학술연구정보서비스 검색">학술연구정보서비스 검색</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm2" title="MYRISS">MYRISS</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm3" title="회원서비스">회원서비스</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm4" title="회원서비스">설정</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm5" title="About RISS">About RISS</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm6" title="RISS 처음 방문 이세요?">RISS 처음 방문 이세요?</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm7" title="고객센터">고객센터</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm8" title="RISS 활용도 분석">RISS 활용도 분석</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm9" title="최신/인기 학술자료">최신/인기 학술자료</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm10" title="해외자료신청(E-DDS)">해외자료신청(E-DDS)</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm11" title="공지사항">공지사항</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm12" title="해외전자정보서비스 검색">해외전자정보서비스 검색</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm13" title="Databases & Journals">Databases & Journals</a>
+							</div>
+							<div class="swiper-slide tab">
+								<a href="#wm14" title="해외전자자료 이용안내">해외전자자료 이용안내</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //wholeMenuNav -->
+				<div class="wholeMenuList">
+					<ul>
+						<!-- 학술연구정보서비스 검색 -->
+						<li id="wm1" class="fixEdit">
+							<a href="" title="학술연구정보서비스 검색" class="tit">학술연구정보서비스 검색</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="통합검색">통합검색</a>
+								</li>
+								<li>
+									<a href="" title="학위논문">학위논문</a>
+								</li>
+								<li>
+									<a href="" title="국내학술논문">국내학술논문</a>
+								</li>
+								<li>
+									<a href="" title="해외학술논문">해외학술논문</a>
+								</li>
+								<li>
+									<a href="" title="학술지">학술지</a>
+								</li>
+								<li>
+									<a href="" title="단행본">단행본</a>
+								</li>
+								<li>
+									<a href="" title="연구보고서">연구보고서</a>
+								</li>
+								<li>
+									<a href="" title="공개강의">공개강의</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //학술연구정보서비스 검색 -->
+						<!-- MyRISS -->
+						<li id="wm2" class="fixEdit">
+							<a href="" title="MyRISS" class="tit">MyRISS</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="내 추천논문">내 추천논문</a>
+								</li>
+								<li>
+									<a href="" title="내 책장">내 책장</a>
+								</li>
+								<li>
+									<a href="" title="내 최근 본 논문">내 최근 본 논문</a>
+								</li>
+								<li>
+									<a href="" title="내 저작물관리">내 저작물관리</a>
+								</li>
+								<li>
+									<a href="" title="내 구매·신청 현황">내 구매·신청 현황</a>
+								</li>
+								<li>
+									<a href="" title="내 서비스 사용권한">내 서비스 사용권한</a>
+								</li>
+								<li>
+									<a href="" title="내 관심 DB">내 관심 DB</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //MyRISS -->
+						<!-- 회원서비스 -->
+						<li id="wm3" class="fixEdit">
+							<a href="" title="회원서비스" class="tit">회원서비스</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="회원가입">회원가입</a>
+								</li>
+								<li>
+									<a href="" title="로그인">로그인</a>
+								</li>
+								<li>
+									<a href="" title="아이디 찾기">아이디 찾기</a>
+								</li>
+								<li>
+									<a href="" title="비밀번호 찾기">비밀번호 찾기</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //회원서비스 -->
+						<!-- 설정 -->
+						<li id="wm4" class="fixEdit">
+							<a href="" title="설정" class="tit">설정</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="내 정보">내 정보</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //설정 -->
+						<!-- About RISS -->
+						<li id="wm5" class="fixEdit">
+							<a href="" title="About RISS" class="tit">About RISS</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="RISS 홍보관">RISS 홍보관</a>
+								</li>
+								<li>
+									<a href="" title="DB연계 현황">DB연계 현황</a>
+								</li>
+								<li>
+									<a href="" title="이용안내">이용안내</a>
+								</li>
+								<li>
+									<a href="" title="소식지">소식지</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //About RISS -->
+						<!-- RISS 처음 방문 이세요? -->
+						<li id="wm6" class="fixEdit">
+							<a href="" title="RISS 처음 방문 이세요?" class="tit">RISS 처음 방문 이세요?</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="RISS란?">RISS란?</a>
+								</li>
+								<li>
+									<a href="" title="RISS 이용권한">RISS 이용권한</a>
+								</li>
+								<li>
+									<a href="" title="내 관심논문 등록방법">내 관심논문 등록방법</a>
+								</li>
+								<li>
+									<a href="" title="RISS 자료 유형별 이용방법">RISS 자료 유형별 이용방법</a>
+								</li>
+								<li>
+									<a href="" title="복사/대출 이용방법">복사/대출 이용방법</a>
+								</li>
+								<li>
+									<a href="" title="해외전자자료 이용방법">해외전자자료 이용방법</a>
+								</li>
+								<li>
+									<a href="" title="RISS 정보취약계층 서비스 이용방법">RISS 정보취약계층 서비스 이용방법</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //RISS 처음 방문 이세요? -->
+						<!-- 고객센터 -->
+						<li id="wm7" class="fixEdit">
+							<a href="" title="고객센터" class="tit">고객센터</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="자주 찾는 질문">자주 찾는 질문</a>
+								</li>
+								<li>
+									<a href="" title="상담 신청">상담 신청</a>
+								</li>
+								<li>
+									<a href="" title="상담 내역 확인">상담 내역 확인</a>
+								</li>
+								<li>
+									<a href="" title="RISS 자료 유형별 이용방법">RISS 자료 유형별 이용방법</a>
+								</li>
+								<li>
+									<a href="" title="복사/대출 이용방법">복사/대출 이용방법</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //고객센터 -->
+						<!-- RISS 활용도 분석 -->
+						<li id="wm8" class="fixEdit">
+							<a href="" title="RISS 활용도 분석" class="tit">RISS 활용도 분석</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="자료 현황 통계">자료 현황 통계</a>
+								</li>
+								<li>
+									<a href="" title="주제별 활용통계 분석">주제별 활용통계 분석</a>
+								</li>
+								<li>
+									<a href="" title="학술지 활용도 분석">학술지 활용도 분석</a>
+								</li>
+								<li>
+									<a href="" title="원문다운로드 분석">원문다운로드 분석</a>
+								</li>
+								<li>
+									<a href="" title="복사/대출제공 기관 분석">복사/대출제공 기관 분석</a>
+								</li>
+								<li>
+									<a href="" title="복사/대출신청 기관 분석">복사/대출신청 기관 분석</a>
+								</li>
+								<li>
+									<a href="" title="활용도 높은 주제">활용도 높은 주제</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //RISS 활용도 분석 -->
+						<!-- 최신/인기 학술자료 -->
+						<li id="wm9" class="fixEdit">
+							<a href="" title="최신/인기 학술자료" class="tit">최신/인기 학술자료</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="최신자료">최신자료</a>
+								</li>
+								<li>
+									<a href="" title="인기자료">인기자료</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //최신/인기 학술자료 -->
+						<!-- 해외자료신청(E-DDS) -->
+						<li id="wm10" class="fixEdit">
+							<a href="" title="해외자료신청(E-DDS)" class="tit">해외자료신청(E-DDS)</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="비용지원 서비스 안내">비용지원 서비스 안내</a>
+								</li>
+								<li>
+									<a href="" title="도움말">도움말</a>
+								</li>
+								<li>
+									<a href="" title="해외자료신청(E-DDS) 신청">해외자료신청(E-DDS) 신청</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //해외자료신청(E-DDS) -->
+						<!-- 공지사항 -->
+						<li id="wm11" class="fixEdit">
+							<a href="" title="공지사항" class="tit">공지사항</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="공지사항">공지사항</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //공지사항 -->
+						<!-- 해외전자정보서비스 검색 -->
+						<li id="wm12" class="fixEdit">
+							<a href="" title="해외전자정보서비스 검색" class="tit">해외전자정보서비스 검색</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="Academic Journals">Academic Journals</a>
+								</li>
+								<li>
+									<a href="" title="Ebooks">Ebooks</a>
+								</li>
+								<li>
+									<a href="" title="Dissertations">Dissertations</a>
+								</li>
+								<li>
+									<a href="" title="Conference Materials">Conference Materials</a>
+								</li>
+								<li>
+									<a href="" title="Reviews">Reviews</a>
+								</li>
+								<li>
+									<a href="" title="Reports">Reports</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //해외전자정보서비스 검색 -->
+						<!-- Databases & Journals -->
+						<li id="wm13" class="fixEdit">
+							<a href="" title="Databases & Journals" class="tit">Databases & Journals</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="전자저널 리스트">전자저널 리스트</a>
+								</li>
+								<li>
+									<a href="" title="학술DB 리스트">학술DB 리스트</a>
+								</li>
+								<li>
+									<a href="" title="주제별 리스트">주제별 리스트</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //Databases & Journals -->
+						<!-- 해외전자자료 이용안내 -->
+						<li id="wm14" class="fixEdit">
+							<a href="" title="해외전자자료 이용안내" class="tit">해외전자자료 이용안내</a>
+							<!-- depth2 -->
+							<ul>
+								<li>
+									<a href="" title="해외전자자료 이용안내">해외전자자료 이용안내</a>
+								</li>
+								<li>
+									<a href="" title="해외DB 구독대학">해외DB 구독대학</a>
+								</li>
+								<li>
+									<a href="" title="해외DB 상세정보">해외DB 상세정보</a>
+								</li>
+							</ul>
+							<!-- //depth2 -->
+						</li>
+						<!-- //해외전자자료 이용안내 -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //wholeMenu -->
+
+	</div>
+
+
+
+	</div>
+</body>
+
+</html>
