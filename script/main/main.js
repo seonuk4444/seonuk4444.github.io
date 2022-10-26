@@ -57,6 +57,13 @@ $(document).ready(function(){
     let scH1 = $('.subscription').height();
     let scH2 = $('.tabCont').height();
     $('.subscriptionW').css('height', scH1 + scH2);
+
+    //윈도우 렉으로 슬릭보다 먼저 높이값을 구해 로드시 높이값 스트립트 추가
+    $(window).on('load',function(){
+        scH1 = $('.subscription').height();
+        scH2 = $('.tabCont').height();
+        $('.subscriptionW').css('height', scH1 + scH2);
+    });
     $(window).on('resize',function(){
         scH1 = $('.subscription').height();
         scH2 = $('.tabCont').height();
