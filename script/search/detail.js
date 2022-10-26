@@ -112,9 +112,9 @@ $(document).ready(function(){
   });
 
   //analysisTab
-  $('.analysisTab>ul>li>a').click(function(){
-    $('.analysisTab>ul>li>a').removeClass('on');
-    $(this).addClass('on')
+  $('.analysisTab .tab>a').click(function(){
+    $('.analysisTab .tab').removeClass('on');
+    $(this).parent().addClass('on')
     $('.analysisTabCont>div').hide();
     $('.analysisTabCont>div').eq($(this).parent().index()).show();
     return false;
@@ -291,6 +291,46 @@ $(document).ready(function(){
     $('.blackBg1').hide();
     $('.keepInfo').removeClass('on');
     $(this).parents('.divPopup').removeClass('long');
+  });
+
+  //공유하기
+  $('.infoDetail .btnBunch>ul>li>a.share').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next('.btnShareList').slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next('.btnShareList').slideDown();
+    }
+  });
+
+  //오류접수
+  $('.infoDetail .btnBunch>ul>li>a.recept').click(function(e){
+    e.preventDefault();
+    let ph = $('.errorReceptionPop .popHeader').outerHeight(true);
+    $('.errorReceptionPop .popCont').css({'height':'calc(100% - ' +ph+'px)'});
+    $('.blackBg1').show();
+    $('.errorReceptionPop').addClass('on');
+  });
+
+  $('.errorReceptionPopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.errorReceptionPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
+  });
+
+  //인용정보
+  $('.kcInfoToggle').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')){
+      $(this).removeClass('on');
+      $(this).next('.kcToggleArea').slideUp();
+    }else{
+      $(this).addClass('on');
+      $(this).next('.kcToggleArea').slideDown();
+    }
   });
 
 });    

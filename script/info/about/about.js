@@ -12,7 +12,7 @@ $(document).ready(function () {
   if ($('.cardSlideW').length) {
     $('.cardSlideW').slick(slickOpt1);
   };
-  $('.cardNews .exhibitAll').click(function (e) {
+  $('.cardnews .exhibitAll').click(function (e) {
     e.preventDefault();
     if ($(this).hasClass('on')) {
       $('.cardSlideW').removeClass('on')
@@ -189,6 +189,19 @@ $(document).ready(function () {
     $(this).parents('.divPopup').removeClass('long');
   });
 
+  //꿀팁 내보내기
+  $('.slideInfo .infoBottom .function .export').click(function(e){
+    e.preventDefault();
+    let ph = $('.tipExportPop .popHeader').outerHeight(true);
+    $('.tipExportPop .popCont').css({'height':'calc(100% - ' +ph+'px)'});
+    $('.blackBg1').css('z-index',399).show();
+    $('.tipExportPop').addClass('on')
+  });
 
-
+  $('.tipExportPopClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').css('z-index',11).hide();
+    $('.tipExportPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
+  });
 });    
