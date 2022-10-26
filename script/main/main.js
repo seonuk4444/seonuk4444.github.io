@@ -43,9 +43,7 @@ $(document).ready(function(){
         var listView = {
             slide : 'div',
             infinite: true,
-            arrows : true,
-            prevArrow : "<button type='button' class='listViewPrev'>Previous</button>",
-            nextArrow : "<button type='button' class='listViewNext'>Next</button>",
+            arrows : false,
             slidesToShow : 1,
             slidesToScroll: 1,
             speed: 1000,
