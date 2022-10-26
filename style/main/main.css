@@ -323,8 +323,6 @@
 .favorPop2 p{color:#fff;word-break: keep-all;}
 
 .listViewW .slick-list{padding-bottom:36px}
-.listViewW .listViewPrev{position:absolute;bottom:16px;left:8px;width:39px;height:14px;background:url(../../images/main/listPrev.png) no-repeat;border:none;text-indent: -9999px;cursor: pointer;}
-.listViewW .listViewNext{position:absolute;bottom:16px;right:8px;width:39px;height:14px;background:url(../../images/main/listNext.png) no-repeat;border:none;text-indent: -9999px;cursor: pointer;}
 .subscriptTab .listMoreW{position:absolute;bottom:12px;left:50%;transform: translateX(-50%);-webkit-transform: translateX(-50%);padding:0 16px;height:25px;line-height: 25px;border-radius: 15px;background:#fff;color:#191919;font-size:1rem;text-align: center;transition:.3s;box-sizing: border-box;}
 .subscriptTab .listMoreW:hover{background:#4949eb;color:#fff}
 .subscriptTab .listMoreW .count{margin-right:6px;font-size:1rem}
