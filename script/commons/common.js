@@ -234,6 +234,20 @@ $('.toggleListForm>ul>li>a').click(function(e){
   }
 });
 
+//이용약관 팝업
+$('.clauseBtn').click(function(e){
+  e.preventDefault();
+  let ph = $('.clausePop .popHeader').outerHeight(true);
+  $('.clausePop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
+  $('.blackBg1').show();
+  $('.clausePop').addClass('on');
+});
+$('.clausePopClose').click(function(e){
+  e.preventDefault();
+  $('.blackBg1').hide();
+  $('.clausePop').removeClass('on');
+  $(this).parents('.divPopup').removeClass('long');
+});
 
 
 
