@@ -140,4 +140,20 @@ $(document).ready(function(){
     }
   });
 
+  //관심학술지 팝업
+  $('.interKeywordBtn').click(function(e){
+    e.preventDefault();
+    let ph = $('.interSearchPop .popHeader').outerHeight(true);
+    $('.interSearchPop .popCont').css({'height':'calc(100% - ' +ph+'px)'})
+    $('.blackBg1').show();
+    $('.interSearchPop').addClass('on')
+  });  
+
+  $('.interSearchClose').click(function(e){
+    e.preventDefault();
+    $('.blackBg1').hide();
+    $('.interSearchPop').removeClass('on');
+    $(this).parents('.divPopup').removeClass('long');
+  });
+
 });    
