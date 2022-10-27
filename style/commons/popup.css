@@ -32,6 +32,8 @@
 .divPopTable {margin-top:12px;border:1px solid #ddd;border-radius: 5px;overflow: hidden;}
 .divPopTable table {width: 100%;table-layout: fixed;}
 .divPopTable table thead th {padding:8px 12px;background:#f3f3f3;color:#000;text-align: center;border:1px solid #ddd;border-top:none;vertical-align: middle;font-size:1.071rem;word-break: keep-all;}
+.divPopTable table thead th:first-child{border-left:none}
+.divPopTable table thead th:last-child{border-right:none}
 .divPopTable table tbody th {padding:8px 12px;background:#f3f3f3;color:#000;text-align: left;border:1px solid #ddd;border-top:none;border-left:none;vertical-align: middle;font-size:1.071rem;word-break: keep-all;}
 .divPopTable table tbody tr td:first-child {border-left:none}
 .divPopTable table tbody tr:last-child th {border-bottom:none}
@@ -105,7 +107,9 @@
 
 
 /* thesisPop */
-.thesisPop .newThList>li:not(:last-child) {margin-bottom:24px}
+.thesisPop .newThList>li{padding:12px 0}
+.thesisPop .newThList>li:first-child{padding-top:0}
+.thesisPop .newThList>li:not(:last-child) {border-bottom:1px solid #e6e6e6}
 .thesisPop .newThList a.tit {display:inline-block;color:#181818;line-height: 20px;font-family: PretendardSB,sans-serif;font-size:1.142rem;}
 .thesisPop .newThList a.tit .highlight {position:relative;color:#181818;font-family: PretendardSB,sans-serif;font-size:1.142rem;;z-index: 1;}
 .thesisPop .newThList a.tit .highlight::after {content:"";display:block;position:absolute;bottom: 2px;left:0;width: 100%;height: 9px;background:#fff09c;z-index: -1;}
@@ -152,3 +156,21 @@
 .savePop .btnBunch a.btnType1 {margin-left:4px}
 .myPop .btnBunch a.btnType2 {margin-right:4px}
 .myPop .btnBunch a.btnType1 {margin-left:4px}
+.interSearchPop .btnBunch a.btnType2 {margin-right:4px}
+.interSearchPop .btnBunch a.btnType1 {margin-left:4px}
+
+
+/* 활용꿀팁 내보내기 */
+.tipExportPop{z-index:400;}
+.example{margin-top:32px}
+.example .title{margin-bottom:12px;color:#000;font-size:1.214rem;font-family: PretendardM,sans-serif;}
+.example .exImg{display:block;border:1px solid #e6e6e6;border-radius: 10px;text-align: center;overflow: hidden;}
+.example .exImg img{width:100%;height:auto}
+
+/* 관심학술지 설정 */
+.interSearchPop .txt{margin-bottom:12px;color:#000;font-size:1.071rem}
+.journalList{border:1px solid #ddd;padding:12px;min-height:30px;max-height:200px;border-radius: 10px;overflow-y: auto;box-sizing: border-box}
+.journalList>ul>li:not(:last-child){margin-bottom:4px}
+.journalList>ul>li .highlight{color:#ff7200}
+.foreignPage .journalList>ul>li .highlight{color:#4949eb}
+.interSearchPop .nodata{font-size:1rem}

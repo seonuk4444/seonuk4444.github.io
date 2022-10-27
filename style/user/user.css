@@ -75,6 +75,7 @@
 .withOneBtn {font-size:0}
 .withOneBtn .inputType3 {width:calc(100% - 92px)}
 .withOneBtn .btnType4 {margin-left:8px;min-width:84px;box-sizing: border-box;text-align: center;}
+.foreignPage .withOneBtn #userid{width:calc(100% - 176px) !important}
 
 .liListForm>ul {font-size:0}
 .liListForm>ul>li {display:inline-block;margin-bottom:4px}
@@ -91,7 +92,12 @@
 .birthBox span {display:block;width:100%}
 .birthBox span:nth-of-type(2) {margin:0 8px}
 .birthBox span .inputType3 {width:calc(100% - 17px)}
-
+.foreignPage .birthBox span .inputType3{width:calc(100% - 50px)}
+@media screen and (max-width:390px) {
+    .foreignPage .birthBox{-webkit-box-lines: multiple; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+    .foreignPage .birthBox span{width:46%}
+    .foreignPage .birthBox span:last-child{margin-top:12px}
+}
 /* 소셜 로그인 */
 .userWrite .snsKakao {display:inline-block;width:30px;height:30px;background:url(../../images/user/kakao.png) no-repeat center #ffe800;background-size: 20px auto;border-radius: 10px;vertical-align: middle;margin-right:4px;} 
 .userWrite .snsNaver {display:inline-block;width:30px;height:30px;background:url(../../images/user/naver.png) no-repeat center #00c83c;background-size:14px auto;border-radius: 10px;vertical-align: middle;margin-right:4px;} 

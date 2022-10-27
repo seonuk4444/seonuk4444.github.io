@@ -2,7 +2,7 @@
 
 .chart_cont {margin-bottom:20px}
 .chart_box {padding:12px;border:1px solid #e7e7e9;border-radius: 10px;}
-.chart_box ul {font-size:0}
+.chart_box ul {font-size:0;margin-bottom:28px}
 .chart_box ul li {display:inline-block;padding-top:44px}
 .chart_box ul li:not(:last-child) {margin-right:16px}
 .chart_box ul li.docT {background:url(../../images/analytics/ra_icon_1.png) top center no-repeat}
@@ -18,7 +18,7 @@
 .chart_box ul li span.dcnt {margin-top:4px;font-size:1rem;line-height: 1;color:#000;font-family: PretendardM,sans-serif;}
 .chart_box ul.doc_cnt {display: block;margin: 0 auto;}
 
-.chartArea {width:100%;height:200px;margin-top:28px}
+.chart_cmt{margin-top:20px}
 .chart_cmt>ul>li {position:relative;padding-left:10px;color:#606060;font-size:1rem}
 .chart_cmt>ul>li::before {content:"";display:block;position: absolute;top:9px;left:0;width:4px;height:1px;background:#606060;}
 .chart_cmt>ul>li span {color:#ff7200;font-size:1rem}
