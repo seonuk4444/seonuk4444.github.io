@@ -1,4 +1,4 @@
-$(document).on('ready',function () {
+$(document).ready(function(){
 
     //로드 이벤트
     $(window).on('load', function () {
