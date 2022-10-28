@@ -33,7 +33,6 @@ $(document).ready(function(){
       });
     $('.academicDepth2 .tab a').click(function(e){
         e.preventDefault();
-        console.log($(this).parent().index())
         $(this).parents('.academicDepth2').find('.tab').removeClass('on');
         $(this).parent().addClass('on');
         $(this).parents('.academicCont').find('.acaInnerCont').hide();
