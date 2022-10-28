@@ -372,8 +372,8 @@ a.addInput {border:1px solid #dadada;color:#fff;border-radius: 20px;width:80px;h
 .wholeMenuTop .loginW {margin:20px 0 0 0}
 .wholeMenuTop .loginW::after {content:"";display:block;clear:both}
 .wholeMenuTop .loginW .userInfo {float:left;width:calc(100% - 100px)}
-.wholeMenuTop .loginW .userInfo p {color:#080808;font-size:1.714rem;font-family: PretendardM,sans-serif;}
-.wholeMenuTop .loginW .userInfo p span {display:inline-block;color:#080808;font-size:1.714rem;font-family: PretendardB,sans-serif;max-width:calc(100% - 30px);text-overflow: ellipsis;white-space: nowrap;overflow: hidden;vertical-align: text-bottom;}
+.wholeMenuTop .loginW .userInfo p {display:flex;align-items: center;color:#080808;font-size:1.714rem;font-family: PretendardM,sans-serif;}
+.wholeMenuTop .loginW .userInfo p span {display:inline-block;color:#080808;font-size:1.714rem;font-family: PretendardB,sans-serif;max-width:calc(100% - 30px);text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 .wholeMenuTop .loginW .loginBtns {float:right;margin-top:4px}
 .wholeMenuTop .loginW .loginBtns a {display:inline-block;padding:3px 15px;border:1px solid #b1b1b1;border-radius: 15px;color:#5b5b5b;font-family: PretendardM,sans-serif;font-size:1rem}
 .wholeMenuCont {background:#f5f6f8;padding:16px 12px 32px 12px}
