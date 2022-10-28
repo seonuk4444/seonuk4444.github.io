@@ -15,7 +15,7 @@
 .searchBorder input[type="text"]:disabled{background:none;}
 .searchBorder{width:100%;position:relative;height: 50px;border-radius: 30px;animation: animateBorder 2s linear infinite;background-image: linear-gradient(135deg,#ffa800,#ff2a00,#ffa800,#ff2a00);background-size: 300% 100%;transition: height .3s;}
 
-.searchInputW{animation: animateBorder 4s linear infinite;background-image: linear-gradient(135deg,#ffa800,#ff2a00,#ffa800,#ff2a00);background-size: 300% 100%}
+.searchInputW{position:absolute;top:2px;left:2px;display:flex;align-items: center;width:calc(100% - 4px);height:calc(100% - 4px);animation: animateBorder 4s linear infinite;background-image: linear-gradient(135deg,#ffa800,#ff2a00,#ffa800,#ff2a00);background-size: 300% 100%;border-radius: 30px;}
 .searchInput{position:absolute;top:0;left:0;width:100%;height: 46px;padding: 0 68px 0 64px;box-sizing: border-box;border:none;outline:none;border-radius: 30px;font-size: 1.285rem;letter-spacing: -0.025em;font-family: PretendardM,sans-serif;transition: height .3s}
 .searchInput::placeholder{color:#fff !important;font-family: PretendardM,sans-serif;letter-spacing: -0.01em;}
 #divHeader .searchInputW{cursor: pointer;}
@@ -23,6 +23,8 @@
 .rLogo{position:relative;margin-left: 20px;z-index: 2;width: 22px;}
 .searchBtn{position:absolute;top:0;right: 18px;width: 24px;height: 100%;background:url(../../images/main/mainSearchBtn.png) no-repeat center;z-index: 2;text-indent: -9999px;border:none;background-size: 24px auto;}
 
+#divSearch .textDel{position:absolute;top:0;right: 52px;width: 16px;height: 100%;background:url(../../images/commons/delType1.png) no-repeat center;z-index: 2;text-indent: -9999px;background-size: 16px auto;}
+#divSearch .searchBtn {position:absolute;top:0;right: 18px;width: 24px;height: 100%;background:url(../../images/commons/searchBtn1.png) no-repeat center;z-index: 2;text-indent: -9999px;border:none;background-size: 24px auto;}
 
 @keyframes animateBorder{
     0%{ background-position: 100% 0%; }
