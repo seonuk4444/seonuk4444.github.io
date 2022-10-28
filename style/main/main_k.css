@@ -83,11 +83,11 @@
 
 .academicCont{display:none;}
 .academicCont.on{display:block;}
-.academicDepth2{margin-bottom:6px;font-size:0;}
-.academicDepth2>li{display:inline-block;margin-bottom:8px}
-.academicDepth2>li:not(:last-child){margin-right:6px}
-.academicDepth2>li>a{display:block;padding:5px 14px;background:#e7e9eb;color:#0d0d0d;border-radius: 20px;font-size:1.142rem}
-.academicDepth2>li.on>a{background:#000;color:#fff}
+.academicDepth2{margin-bottom:6px;overflow: hidden;}
+.academicDepth2 .swiper-slide{display:inline-block;width:auto;}
+.academicDepth2 .swiper-slide:not(:last-child){margin-right:6px}
+.academicDepth2 .swiper-slide.tab a{display:block;padding:5px 14px;background:#e7e9eb;color:#0d0d0d;border-radius: 20px;font-size:1.142rem}
+.academicDepth2 .swiper-slide.tab.on a{background:#000;color:#fff}
 
 .academicDepth3W{margin-bottom:20px}
 .acaInnerCont{display:none;padding:14px 16px 8px 16px;border:1px solid #030303;border-radius: 5px;}
