@@ -24,18 +24,18 @@ $(document).ready(function(){
     //소속기관 높이 -> ** 슬릭 선언 후에 높이값 스크립트 들어가야함
     let scH1 = $('.subscription').height();
     let scH2 = $('.tabCont').height();
-    $('.subscriptionW').css('height', scH1 + scH2);
+    $('.subscriptionW').css('height', scH2 + 45);
 
     //윈도우 렉으로 슬릭보다 먼저 높이값을 구해 로드시 높이값 스트립트 추가
     $(window).on('load', function () {
         scH1 = $('.subscription').height();
         scH2 = $('.tabCont').height();
-        $('.subscriptionW').css('height', scH1 + scH2);
+        $('.subscriptionW').css('height', scH2 + 45);
     });
     $(window).on('resize', function () {
         scH1 = $('.subscription').height();
         scH2 = $('.tabCont').height();
-        $('.subscriptionW').css('height', scH1 + scH2);
+        $('.subscriptionW').css('height',  scH2 + 45);
     });
 
 
