@@ -148,7 +148,7 @@
 .floating .menu>li.firstVisit a{background: url(../../images/commons/firstVisit.png) no-repeat center top 1px;background-size: 31px auto;}
 .floating .menu>li.home a{background: url(../../images/commons/home.png) no-repeat center top;background-size: 24px auto;}
 .floating .menu>li.myriss a{background: url(../../images/commons/myRiss.png) no-repeat center top 1px;background-size: 25px auto;}
-.floating .menu>li.foreign a{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;position:relative;margin-top: -32px;}
+.floating .menu>li.foreign a{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;position:relative;margin-top: -32px;overflow: visible;}
 .floating .menu>li.foreign .txt{color:#fff;position:absolute;top: 23px;left: 48.5%;transform: translateX(-50%);font-family: GmarketM,sans-serif;font-size: 0.857rem;line-height:1.1;word-break: keep-all;}
 .floating .menu>li.foreign .txt strong{display:block;font-family: GmarketB,sans-serif;font-size: 0.857rem;}
 .floating .floatLogo{margin-top:-24px}
