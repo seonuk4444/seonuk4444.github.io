@@ -594,12 +594,12 @@ a.addInput {border:1px solid #dadada;color:#fff;border-radius: 20px;width:80px;h
 
 
 /* 이용약관 추가 */
-div.clause{line-height:130%; color:#403F42; height:auto;font-size:1rem;}
+.clausePop div.clause{line-height:130%; color:#403F42; height:auto;font-size:1rem;}
 .clauseTit{color:#3c3c3c;font-size:1.142rem;font-weight:normal;}
-div.clause h1,div.clause h2,div.clause h3,div.clause h4,div.clause h5,div.clause h6{font-size:1.071rem; color:#403f32; font-weight:normal;}
-div.clause ol li{margin-top:7px;font-size:1rem}
-div.clause h2{margin-top:25px; margin-bottom:25px;}
-div.clause li.last{margin-bottom:25px;}
-div.clause li.last h2{margin:0; font-weight:normal;}
-div.clause .margin{margin-top:20px;}
-div.clause .left{margin-left:12px;}
+.clausePop div.clause h1,div.clause h2,div.clause h3,div.clause h4,div.clause h5,div.clause h6{font-size:1.071rem; color:#403f32; font-weight:normal;}
+.clausePop div.clause ol li{margin-top:7px;font-size:1rem}
+.clausePop div.clause h2{margin-top:25px; margin-bottom:25px;}
+.clausePop div.clause li.last{margin-bottom:25px;}
+.clausePop div.clause li.last h2{margin:0; font-weight:normal;}
+.clausePop div.clause .margin{margin-top:20px;}
+.clausePop div.clause .left{margin-left:12px;}
