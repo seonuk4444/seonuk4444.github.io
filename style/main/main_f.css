@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* divWrapper */
-#divWrapper{background:#f5f6f8}
+#divWrapper{background:#f3f1f8}
 
 /* divHeader */
 #divHeader{padding:12px 16px 0 16px;background:#fff}
@@ -88,9 +88,9 @@
 .quickMenu>li .imgArea{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;height:52px}
 .quickMenu>li.quick1 .imgArea img{width:50px;height:auto;}
 .quickMenu>li.quick2 .imgArea img{width:50px;height:auto;}
-.quickMenu>li.quick3 .imgArea img{width:50px;height:auto;}
-.quickMenu>li.quick4 .imgArea img{width:50px;height:auto;}
-.quickMenu>li.quick5 .imgArea img{width:50px;height:auto;}
+.quickMenu>li.quick3 .imgArea img{margin-top:-14px;width:50px;height:auto;}
+.quickMenu>li.quick4 .imgArea img{margin-top:-4px;width:50px;height:auto;}
+.quickMenu>li.quick5 .imgArea img{margin-top:-4px;width:50px;height:auto;}
 
 .quickMenu>li .txt{display:block;margin-top:6px;color:#1e1e1e;font-family: PretendardM,sans-serif;font-size:1rem;line-height: 1;}
 
@@ -109,20 +109,19 @@
 }
 
 /* 구독 */
-.contents2{margin:0}
+.contents2{margin:0;padding-top:8px}
 .subscriptionW{height:526px;box-sizing: border-box;}
 .subscription{position:relative;}
 .subscriptTab{display:table;margin: 0 auto;padding:12px 10px 0 10px}
 .subscriptTab>li{display:inline-block}
-.subscriptTab>li:not(:last-child){margin-right: 3px;}
 .subscriptTab>li.link:not(:last-child){margin-right: 15px;}
-.subscriptTab>li>a{display:block;position:relative;padding: 6px 8px;border-radius: 5px;color:#36376f;font-size:1.142rem;}
-.subscriptTab>li>a>span{color:#36376f;font-size:1.142rem;}
-.subscriptTab>li>a .lock{width: 19px;height: auto;margin-left:4px;image-rendering: -webkit-optimize-contrast;vertical-align: sub;}
-.subscriptTab>li.on>a{background:#36376f;color:#fff}
+.subscriptTab>li>a{display:block;position:relative;padding: 9px 15px;border-radius: 5px;color:#36376f;font-size:1.071rem;font-family: PretendardB,sans-serif;}
+.subscriptTab>li>a>span{color:#36376f;font-size:1.071rem;}
+.subscriptTab>li>a .lock{position:absolute;top:-11px;right:-7px;display:block;width: 24px;height: auto;margin-left:4px;image-rendering: -webkit-optimize-contrast;z-index:1;}
+.subscriptTab>li.on>a{background:#36376f;color:#fff;border-radius: 30px;}
 .subscriptTab>li.on>a>span{color:#fff}
 
-.subscriptTab>li>a .dbCount{display:inline-block;width:19px;height:19px;margin-left:4px;background:#d0cbe0;color:#36376f;border-radius: 100%;line-height: 19px;text-align: center;font-size:10px;font-family:PretendardSB,sans-serif;box-sizing: border-box;vertical-align: text-bottom;}
+.subscriptTab>li>a .dbCount{position:absolute;top:-11px;right:-7px;display:block;width:24px;height:24px;background:#fff;color:#2a2a2a;border-radius: 100%;line-height: 24px;text-align: center;font-size:0.857rem;font-family:PretendardSB,sans-serif;box-sizing: border-box;box-shadow: -1px 4px 6px 0px rgba(0, 0, 0, 0.22);}
 .subscriptTab>li.on>a .dbCount{background:#fff;color:#1c1d3e}
 
 /* 저장되는 효과 추가 */
@@ -132,7 +131,7 @@
 
 .subscriptTab .tabCont{display:none;position:absolute;top:56px;left:0;width:100%}
 .subscriptTab>li.on .tabCont{display:block}
-.subscriptTab .tabCont .tabInfo{margin:0 10px 8px 10px;color:#1c1d3e;font-size:1rem;text-align: center;line-height: 1.2;word-break: keep-all;}
+.subscriptTab .tabCont .tabInfo{margin:0 10px 24px 10px;color:#8b8b96;font-size:1rem;text-align: center;line-height: 18px;word-break: keep-all;}
 .subscriptTab .radioBtnW{margin:0 0 8px 10px}
 .subscriptTab .radioBtnW>li{display:inline-block}
 .subscriptTab .radioBtnW>li:not(:last-child){margin-right:8px}
@@ -185,7 +184,7 @@
 	.contListW>li{width:calc(50% - 20px);width:-webkit-calc(50% - 20px)}
 }
 @media screen and (max-width:500px){
-	.contListW>li{width:calc(50% - 10px);width:-webkit-calc(50% - 10px);margin:0 5px 10px 5px}
+	.contListW>li{width:calc(50% - 10px);width:-webkit-calc(50% - 10px);margin:0 5px 12px 5px}
 }
 @media screen and (max-width:400px){
 	.contListW .listCont .classify .type{max-width:80px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
