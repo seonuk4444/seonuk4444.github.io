@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(window).on('load', function () {
         setTimeout(function () {
             $('.topFirstVisit .txt').addClass('on');
-        }, 2000)
+        }, 1000)
 
     });
 

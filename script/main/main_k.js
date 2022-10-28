@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(window).on('load',function(){
         setTimeout(function(){
             $('.topFirstVisit .txt').addClass('on');
-        },2000)
+        },1000)
         
     });
 
@@ -24,9 +24,17 @@ $(document).ready(function(){
         $('.academicContW .academicCont').eq($(this).parent().index()).show();
 
     });
-    $('.academicDepth2>li>a').click(function(e){
+    let academic = new Swiper('.academicCont .inner',{
+        slidesPerView:'auto',
+        spaceBetween: 0,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+      });
+    $('.academicDepth2 .tab a').click(function(e){
         e.preventDefault();
-        $(this).parents('.academicDepth2').find('li').removeClass('on');
+        console.log($(this).parent().index())
+        $(this).parents('.academicDepth2').find('.tab').removeClass('on');
         $(this).parent().addClass('on');
         $(this).parents('.academicCont').find('.acaInnerCont').hide();
         $(this).parents('.academicCont').find('.acaInnerCont').eq($(this).parent().index()).show();
