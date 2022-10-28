@@ -75,8 +75,10 @@
 .withOneBtn {font-size:0}
 .withOneBtn .inputType3 {width:calc(100% - 92px)}
 .withOneBtn .btnType4 {margin-left:8px;min-width:84px;box-sizing: border-box;text-align: center;}
-.foreignPage .withOneBtn #userid{width:calc(100% - 176px) !important}
-
+.foreignPage .withOneBtn #userid{width:calc(100% - 186px) !important}
+@media screen and (max-width:1024px) {
+    .foreignPage .withOneBtn #userid{width:calc(100% - 176px) !important}
+}
 .liListForm>ul {font-size:0}
 .liListForm>ul>li {display:inline-block;margin-bottom:4px}
 .liListForm>ul>li:not(:last-child) {margin-right:16px}
