@@ -117,7 +117,8 @@
 .subscriptTab>li.link:not(:last-child){margin-right: 15px;}
 .subscriptTab>li>a{display:block;position:relative;padding: 9px 15px;border-radius: 5px;color:#36376f;font-size:1.071rem;font-family: PretendardB,sans-serif;}
 .subscriptTab>li>a>span{color:#36376f;font-size:1.071rem;}
-.subscriptTab>li>a .lock{position:absolute;top:-11px;right:-7px;display:block;width: 24px;height: auto;margin-left:4px;image-rendering: -webkit-optimize-contrast;z-index:1;}
+.subscriptTab>li>a .lock{position:absolute;top:-11px;right:1px;display:block;width: 24px;height: auto;margin-left:4px;image-rendering: -webkit-optimize-contrast;z-index:1;}
+.subscriptTab>li.on>a .lock{right:-7px}
 .subscriptTab>li.on>a{background:#36376f;color:#fff;border-radius: 30px;}
 .subscriptTab>li.on>a>span{color:#fff}
 
@@ -176,7 +177,7 @@
 .subscriptTab .listMoreW:hover span, .subscriptTab .listMoreW:hover a{color:#fff}
 
 .overflowBox{overflow-x: auto;}
-.subscriptTab{min-width:490px}
+.subscriptTab{min-width:430px}
 
 
 @media screen and (max-width:768px){
