@@ -71,6 +71,8 @@ $(document).ready(function(){
   let floatingH = $('.floating').height();
   let wholeTopH = $('.wholeMenuTop').outerHeight(true)
   $('.detailBtns').css('bottom', floatingH);
+
+  let prevScrollpos = window.pageYOffset;
   $(window).on('scroll',function(event){
     winWidth = window.innerWidth || document.documentElement.clientWidth;
     let scroll = $(this).scrollTop();
